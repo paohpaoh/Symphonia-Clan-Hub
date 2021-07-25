@@ -40,7 +40,7 @@ body {
     background-image: url("../images/background5a.jpg");
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   #hero-image {
     background-image: url("../images/mobile-background1.jpg");
   }
@@ -61,6 +61,7 @@ body {
 }
 .placeholder {
   height: 70vh;
+  padding-left: 20px;
 }
 .team-comps {
   max-width: 500px;
@@ -97,9 +98,8 @@ body {
 }
 .boss-selector {
   margin-right: 5px;
-  text-align: middle !important;
-  vertical-align: middle !important;
-  align-self: middle !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }
 .unit-filter-selector {
 }

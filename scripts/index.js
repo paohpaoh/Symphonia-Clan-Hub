@@ -91,7 +91,7 @@ function generateComps(whichCB) {
 
   // filter based on boss
   let tempComps = teamComps.slice();
-  const whichBoss = $(".boss-selector #select-menu").val();
+  const whichBoss = $("select.boss-selector").val();
   $(tempComps).each((x, tempComp) => {
     if (whichBoss == "6") {
       return false;

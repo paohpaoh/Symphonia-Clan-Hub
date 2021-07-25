@@ -44,7 +44,7 @@
               <div class="col">
                 <button
                   type="button"
-                  class="btn btn-sm btn-light"
+                  class="btn btn-light py-0"
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"
                 >
@@ -221,9 +221,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col boss-selector">
+              <div class="col">
                 <div class="select-box">
-                  <select id="select-menu">
+                  <select id="select-menu" class="boss-selector">
                     <option
                       value="0"
                       selected="selected"
@@ -251,7 +251,16 @@
             </button>
           </div>
           <hr class="pt-0 mt-0 mb-4" />
-          <div id="teamCompsCB"><div class="placeholder"></div></div>
+          <div id="teamCompsCB">
+            <div class="placeholder">
+              Damage goals for each boss:<br />
+              - Boss 1: xxx,xxx,xxx<br />
+              - Boss 2: xxx,xxx,xxx<br />
+              - Boss 3: xxx,xxx,xxx<br />
+              - Boss 4: xxx,xxx,xxx<br />
+              - Boss 5: xxx,xxx,xxx
+            </div>
+          </div>
         </div>
       </div>
     </div>
