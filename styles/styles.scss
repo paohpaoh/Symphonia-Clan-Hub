@@ -91,6 +91,10 @@ body {
   height: 70vh;
   padding-left: 20px;
 }
+.placeholder-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .team-comps {
   max-width: 500px;
 }
@@ -126,6 +130,11 @@ body {
 }
 .boss-selector {
   margin-right: 5px;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.lap-selector {
+  margin-left: 5px;
   padding-top: 2px !important;
   padding-bottom: 2px !important;
 }

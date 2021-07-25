@@ -125,7 +125,9 @@ function generateComps(whichCB) {
   let tempComps = teamComps.slice();
   const whichBoss = $("select.boss-selector").val();
   if (whichBoss == "0") {
-    $("#teamCompsCB").append("<div>Select a boss to display team comps.</div>");
+    $("#teamCompsCB").append(
+      '<div class="placeholder-text">Select a boss to display team comps.</div>'
+    );
     return false;
   }
   $(tempComps).each((x, tempComp) => {
@@ -139,7 +141,7 @@ function generateComps(whichCB) {
   tempComps = tempComps.filter(item => item);
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
-      "<div>No team comps currently available for this boss. Check back later for updates!</div>"
+      '<div class="placeholder-text">No team comps currently available for this boss. Check back later for updates!</div>'
     );
     return false;
   }
