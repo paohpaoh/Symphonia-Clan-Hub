@@ -168,6 +168,58 @@ comp13 = {
   player: "paoh",
   notes: "FULL AUTO"
 };
+comp14 = {
+  unit1: ["suzuna", 3],
+  unit2: ["summer kokkoro", 3],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1264448,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp15 = {
+  unit1: ["shiori", 5],
+  unit2: ["saren", 5],
+  unit3: ["makoto", 5],
+  unit4: ["kaori", 4],
+  unit5: ["jun", 3],
+  damage: 1157580,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp16 = {
+  unit1: ["kyouka", 5],
+  unit2: ["summer karyl", 5],
+  unit3: ["misato", 2],
+  unit4: ["akari", 5],
+  unit5: ["ilya", 5],
+  damage: 962207,
+  boss: 3,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO - Ilya tends to die a lot"
+};
+comp17 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["summer kokkoro", 3],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 5],
+  unit5: ["kaori", 5],
+  damage: 1085609,
+  boss: 4,
+  clanBattle: 6,
+  lap: 2,
+  player: "Shrek",
+  notes: "FULL AUTO"
+};
 var teamComps = [
   comp1,
   comp2,
@@ -181,7 +233,11 @@ var teamComps = [
   comp10,
   comp11,
   comp12,
-  comp13
+  comp13,
+  comp14,
+  comp15,
+  comp16,
+  comp17
 ];
 
 function compareDamage(comp1, comp2) {
