@@ -19,7 +19,13 @@ body {
   background-color: transparent;
   font-family: Arial;
   left: 0;
+  top: 0;
   right: 0;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 0px;
+  padding-left: 8px;
 }
 #hero-image {
   background-position: center;
@@ -84,7 +90,7 @@ body {
   margin-left: 0px !important;
 }
 .stars-container {
-  max-width: 37px;
+  max-width: 30px;
 }
 .cb-selector {
   margin-left: 5px;
