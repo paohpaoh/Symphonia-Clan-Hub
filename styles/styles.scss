@@ -15,6 +15,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: black;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -61,12 +62,14 @@ body {
   margin-bottom: -8% !important;
 }
 @media only screen and (min-width: 600px) {
-  #hero-image {
+  #hero-image,
+  body {
     background-image: url("../images/background5a.jpg");
   }
 }
 @media only screen and (max-width: 600px) {
-  #hero-image {
+  #hero-image,
+  body {
     background-image: url("../images/mobile-background1.jpg");
   }
 }

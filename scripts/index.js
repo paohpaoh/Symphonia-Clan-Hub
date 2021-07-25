@@ -1,79 +1,111 @@
 var comp1 = {
-  unit1: ["shiori", 5],
-  unit2: ["saren", 5],
-  unit3: ["makoto", 5],
-  unit4: ["kaori", 5],
-  unit5: ["jun", 3],
-  damage: 1137218,
-  boss: 4,
-  lap: "1",
-  clanBattle: "6",
-  player: "paoh"
+  unit1: ["mitsuki", 5],
+  unit2: ["djeeta", 3],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 3],
+  damage: 1286575,
+  boss: 2,
+  lap: 1,
+  clanBattle: 6,
+  player: "paoh",
+  notes: ""
 };
 var comp2 = {
-  unit1: ["kyouka", 3],
-  unit2: ["misato", 2],
-  unit3: ["summer karyl", 5],
-  unit4: ["akari", 5],
-  unit5: ["ilya", 5],
-  damage: 1284718,
-  boss: 3,
-  clanBattle: "6",
-  lap: "1",
-  player: "paoh"
+  unit1: ["shiori", 5],
+  unit2: ["suzuna", 5],
+  unit3: ["saren", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1274444,
+  boss: 2,
+  clanBattle: 6,
+  lap: 1,
+  player: "paoh",
+  notes: ""
 };
 var comp3 = {
-  unit1: ["suzuna", 5],
-  unit2: ["mitsuki", 5],
-  unit3: ["kokkoro", 5],
-  unit4: ["makoto", 5],
-  unit5: ["kaori", 5],
-  damage: 1092638,
-  boss: 5,
-  clanBattle: "6",
-  lap: "2",
-  player: "paoh"
+  unit1: ["kyouka", 5],
+  unit2: ["summer karyl", 3],
+  unit3: ["misato", 5],
+  unit4: ["akari", 4],
+  unit5: ["ilya", 5],
+  damage: 1046744,
+  boss: 3,
+  clanBattle: 6,
+  lap: 1,
+  player: "paoh",
+  notes: ""
 };
 var comp4 = {
-  unit1: ["shiori", 5],
-  unit2: ["saren", 5],
-  unit3: ["makoto", 5],
-  unit4: ["kaori", 5],
-  unit5: ["jun", 3],
-  damage: 1146082,
-  boss: 4,
-  clanBattle: "6",
-  lap: "1",
-  player: "paoh"
-};
-var comp5 = {
-  unit1: ["kyouka", 3],
-  unit2: ["misato", 2],
-  unit3: ["summer karyl", 5],
+  unit1: ["kyouka", 5],
+  unit2: ["summer karyl", 3],
+  unit3: ["karyl", 5],
   unit4: ["akari", 5],
   unit5: ["ilya", 5],
-  damage: 981378,
+  damage: 989411,
   boss: 3,
   clanBattle: "6",
-  lap: "1",
-  player: "paoh"
+  lap: 1,
+  player: "paoh",
+  notes: ""
+};
+var comp5 = {
+  unit1: ["arisa", 3],
+  unit2: ["summer kokkoro", 3],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1343753,
+  boss: 4,
+  clanBattle: 6,
+  lap: 1,
+  player: "paoh",
+  notes: ""
 };
 var comp6 = {
-  unit1: ["suzuna", 5],
+  unit1: ["shiori", 5],
   unit2: ["mitsuki", 5],
-  unit3: ["kokkoro", 5],
-  unit4: ["makoto", 5],
+  unit3: ["yukari", 5],
+  unit4: ["makoto", 4],
   unit5: ["kaori", 5],
-  damage: 871249,
+  damage: 1206839,
+  boss: 4,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: ""
+};
+var comp7 = {
+  unit1: ["summer kokkoro", 3],
+  unit2: ["djeeta", 3],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1291084,
+  boss: 4,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: ""
+};
+var comp8 = {
+  unit1: ["shiori", 5],
+  unit2: ["suzuna", 5],
+  unit3: ["saren", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1345229,
   boss: 5,
-  clanBattle: "6",
-  lap: "2",
-  player: "paoh"
+  clanBattle: 6,
+  lap: 1,
+  player: "paoh",
+  notes: ""
 };
 // for (let i = 0; i <= 3; i += 1) {
 //   stuff;
 // }
-var teamComps = [comp1, comp2, comp3, comp4, comp5, comp6];
+var teamComps = [comp1, comp2, comp3, comp4, comp5, comp6, comp7, comp8];
 function compareDamage(comp1, comp2) {
   if (comp1.damage < comp2.damage) {
     return 1;
@@ -101,6 +133,12 @@ function generateComps(whichCB) {
     }
   });
   tempComps = tempComps.filter(item => item);
+  if (tempComps.length == 0) {
+    $("#teamCompsCB").append(
+      "<div>No team comps currently available. Check back later for updates!</div>"
+    );
+    return this;
+  }
   $(tempComps).each((i, comp) => {
     let starContainer1String = "";
     for (stars = 1; stars < 5; stars += 1) {
