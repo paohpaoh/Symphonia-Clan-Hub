@@ -72,7 +72,7 @@ var comp6 = {
   damage: 1206839,
   boss: 4,
   clanBattle: 6,
-  lap: 2,
+  lap: 1,
   player: "paoh",
   notes: ""
 };
@@ -85,7 +85,7 @@ var comp7 = {
   damage: 1291084,
   boss: 4,
   clanBattle: 6,
-  lap: 2,
+  lap: 1,
   player: "paoh",
   notes: ""
 };
@@ -123,6 +123,7 @@ function generateComps(whichCB) {
 
   // filter based on boss
   let tempComps = teamComps.slice();
+  const whichLap = $(".lap-selector select").val();
   const whichBoss = $("select.boss-selector").val();
   if (whichBoss == "0") {
     $("#teamCompsCB").append(
@@ -138,7 +139,25 @@ function generateComps(whichCB) {
       tempComps[x] = "";
     }
   });
+  $(tempComps).each((x, tempComp) => {
+    console.log("whichLap is " + whichLap);
+    switch (whichLap) {
+      case "1":
+        if (tempComp.lap != 1) {
+          tempComps[x] = "";
+          console.log("case 1 removed");
+        }
+        break;
+      case "2":
+        if (tempComp.lap == 1) {
+          tempComps[x] = "";
+          console.log("case 2 removed");
+        }
+        break;
+    }
+  });
   tempComps = tempComps.filter(item => item);
+  console.log(tempComps);
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
       '<div class="placeholder-text">No team comps currently available for this boss. Check back later for updates!</div>'
