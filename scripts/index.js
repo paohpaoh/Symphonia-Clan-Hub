@@ -1,4 +1,4 @@
-var comp1 = {
+comp1 = {
   unit1: ["mitsuki", 5],
   unit2: ["djeeta", 3],
   unit3: ["hiyori", 5],
@@ -9,9 +9,9 @@ var comp1 = {
   lap: 1,
   clanBattle: 6,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp2 = {
+comp2 = {
   unit1: ["shiori", 5],
   unit2: ["suzuna", 5],
   unit3: ["saren", 5],
@@ -22,9 +22,9 @@ var comp2 = {
   clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp3 = {
+comp3 = {
   unit1: ["kyouka", 5],
   unit2: ["summer karyl", 3],
   unit3: ["misato", 5],
@@ -35,9 +35,9 @@ var comp3 = {
   clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp4 = {
+comp4 = {
   unit1: ["kyouka", 5],
   unit2: ["summer karyl", 3],
   unit3: ["karyl", 5],
@@ -45,12 +45,12 @@ var comp4 = {
   unit5: ["ilya", 5],
   damage: 989411,
   boss: 3,
-  clanBattle: "6",
+  clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp5 = {
+comp5 = {
   unit1: ["arisa", 3],
   unit2: ["summer kokkoro", 3],
   unit3: ["hiyori", 5],
@@ -61,9 +61,9 @@ var comp5 = {
   clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp6 = {
+comp6 = {
   unit1: ["shiori", 5],
   unit2: ["mitsuki", 5],
   unit3: ["yukari", 5],
@@ -74,9 +74,9 @@ var comp6 = {
   clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp7 = {
+comp7 = {
   unit1: ["summer kokkoro", 3],
   unit2: ["djeeta", 3],
   unit3: ["hiyori", 5],
@@ -87,9 +87,9 @@ var comp7 = {
   clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-var comp8 = {
+comp8 = {
   unit1: ["shiori", 5],
   unit2: ["suzuna", 5],
   unit3: ["saren", 5],
@@ -100,12 +100,90 @@ var comp8 = {
   clanBattle: 6,
   lap: 1,
   player: "paoh",
-  notes: ""
+  notes: "FULL AUTO"
 };
-// for (let i = 0; i <= 3; i += 1) {
-//   stuff;
-// }
-var teamComps = [comp1, comp2, comp3, comp4, comp5, comp6, comp7, comp8];
+comp9 = {
+  unit1: ["kyouka", 5],
+  unit2: ["summer karyl", 5],
+  unit3: ["misato", 2],
+  unit4: ["akari", 5],
+  unit5: ["ilya", 5],
+  damage: 1046744,
+  boss: 3,
+  clanBattle: 6,
+  lap: 2,
+  player: "FennekZero",
+  notes: "FULL AUTO"
+};
+comp10 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["kokkoro", 5],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1008419,
+  boss: 1,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp11 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["kokkoro", 5],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1144933,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp12 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["kokkoro", 5],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1381250,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "FennekZero",
+  notes:
+    "MANUAL: Tank swap with Kokkoro and align Kaori + Hiyori UB with Makoto UB"
+};
+comp13 = {
+  unit1: ["arisa", 3],
+  unit2: ["summer kokkoro", 3],
+  unit3: ["hiyori", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1337653,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+var teamComps = [
+  comp1,
+  comp2,
+  comp3,
+  comp4,
+  comp5,
+  comp6,
+  comp7,
+  comp8,
+  comp9,
+  comp10,
+  comp11,
+  comp12,
+  comp13
+];
+
 function compareDamage(comp1, comp2) {
   if (comp1.damage < comp2.damage) {
     return 1;
@@ -135,29 +213,25 @@ function generateComps(whichCB) {
     if (whichBoss == "6") {
       return false;
     }
-    if (tempComp.boss != whichBoss) {
+    if (tempComps[x].boss != whichBoss) {
       tempComps[x] = "";
     }
   });
   $(tempComps).each((x, tempComp) => {
-    console.log("whichLap is " + whichLap);
     switch (whichLap) {
       case "1":
         if (tempComp.lap != 1) {
           tempComps[x] = "";
-          console.log("case 1 removed");
         }
         break;
       case "2":
         if (tempComp.lap == 1) {
           tempComps[x] = "";
-          console.log("case 2 removed");
         }
         break;
     }
   });
   tempComps = tempComps.filter(item => item);
-  console.log(tempComps);
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
       '<div class="placeholder-text">No team comps currently available for this boss. Check back later for updates!</div>'
@@ -245,7 +319,9 @@ function generateComps(whichCB) {
         comp.damage.toLocaleString("en") +
         "</b> - <i>submitted by " +
         comp.player +
-        '</i><hr class="comp-spacer" /></div>' +
+        "</i>" +
+        // '<hr class="comp-spacer" />' +
+        "</div>" +
         '<div class="container mb-4 p-1 text-center">' +
         '<div class="row mx-1">' +
         '<div class="col p-1 mr-1">' +
@@ -317,6 +393,10 @@ function generateComps(whichCB) {
         starContainer5String +
         "</div>" +
         "</div>" +
+        "</div>" +
+        '<div class="notes"><i>Notes</i> - ' +
+        comp.notes +
+        "<hr />" +
         "</div>" +
         "</div>" +
         "</div>" +

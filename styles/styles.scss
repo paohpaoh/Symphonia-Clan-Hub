@@ -100,8 +100,12 @@ body {
 }
 .submission-info {
   padding-left: 11px;
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   font-size: 1.1em;
+}
+.notes {
+  margin-top: -5px;
+  text-align: left;
 }
 .unit {
   min-width: 50px !important;
