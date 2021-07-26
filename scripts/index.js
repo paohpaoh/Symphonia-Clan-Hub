@@ -467,7 +467,90 @@ comp35 = {
   player: "wasd3223",
   notes: "MOSTLY AUTO: Spam Kaori UB at the last few seconds"
 };
+comp36 = {
+  unit1: ["kyouka", 5],
+  unit2: ["summer karyl", 5],
+  unit3: ["akari", 5],
+  unit4: ["yukari", 3],
+  unit5: ["ilya", 5],
+  damage: 689147,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "mooTheCow",
+  notes: "FULL AUTO"
+};
+comp37 = {
+  unit1: ["summer kokkoro", 5],
+  unit2: ["hiyori", 5],
+  unit3: ["makoto", 5],
+  unit4: ["kaori", 5],
+  unit5: ["jun", 3],
+  damage: 935488,
+  boss: 4,
+  clanBattle: 6,
+  lap: 2,
+  player: "realda",
+  notes: "FULL AUTO"
+};
+comp38 = {
+  unit1: ["suzuna", 4],
+  unit2: ["summer kokkoro", 5],
+  unit3: ["tamaki", 5],
+  unit4: ["makoto", 5],
+  unit5: ["kaori", 5],
+  damage: 918947,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "Hayabusa",
+  notes: "MANUAL"
+};
+comp39 = {
+  unit1: ["shiori", 5],
+  unit2: ["suzuna", 5],
+  unit3: ["makoto", 5],
+  unit4: ["kaori", 5],
+  unit5: ["jun", 3],
+  damage: 909559,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "Shrek",
+  notes: "MANUAL"
+};
+comp40 = {
+  unit1: ["shiori", 5],
+  unit2: ["saren", 5],
+  unit3: ["makoto", 4],
+  unit4: ["kaori", 5],
+  unit5: ["jun", 3],
+  damage: 739377,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp41 = {
+  unit1: ["arisa", 3],
+  unit2: ["mitsuki", 5],
+  unit3: ["summer kokkoro", 3],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 681820,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
 var teamComps = [
+  comp41,
+  comp40,
+  comp39,
+  comp37,
+  comp36,
   comp35,
   comp34,
   comp33,
@@ -505,12 +588,13 @@ var teamComps = [
   comp1
 ];
 
+console.log(teamComps);
 function compareDamage(comp1, comp2) {
-  if (comp1.damage < comp2.damage) {
-    return 1;
+  if (comp1.damage > comp2.damage) {
+    return -1;
   }
   if (comp2.damage > comp1.damage) {
-    return -1;
+    return 1;
   }
   return 0;
 }
