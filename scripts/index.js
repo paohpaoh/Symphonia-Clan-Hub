@@ -195,17 +195,17 @@ comp15 = {
   notes: "FULL AUTO"
 };
 comp16 = {
-  unit1: ["kyouka", 5],
-  unit2: ["summer karyl", 5],
-  unit3: ["misato", 2],
-  unit4: ["akari", 5],
-  unit5: ["ilya", 5],
-  damage: 962207,
+  unit1: ["kyouka", 3],
+  unit2: ["summer karyl", 3],
+  unit3: ["hatsune", 5],
+  unit4: ["karyl", 5],
+  unit5: ["akari", 5],
+  damage: 956436,
   boss: 3,
   clanBattle: 6,
   lap: 2,
   player: "paoh",
-  notes: "FULL AUTO - Ilya tends to die a lot"
+  notes: "FULL AUTO - Akari dies but it's alright (sort of)"
 };
 comp17 = {
   unit1: ["mitsuki", 5],
@@ -218,6 +218,45 @@ comp17 = {
   clanBattle: 6,
   lap: 2,
   player: "Shrek",
+  notes: "FULL AUTO"
+};
+comp18 = {
+  unit1: ["kyouka", 5],
+  unit2: ["summer karyl", 5],
+  unit3: ["misato", 2],
+  unit4: ["akari", 5],
+  unit5: ["ilya", 5],
+  damage: 1052855,
+  boss: 3,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp19 = {
+  unit1: ["shiori", 5],
+  unit2: ["mitsuki", 5],
+  unit3: ["yukari", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 863869,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "FennekZero",
+  notes: "MANUAL: Line up UBs with Mitsuki's circle"
+};
+comp20 = {
+  unit1: ["shiori", 5],
+  unit2: ["mitsuki", 5],
+  unit3: ["yukari", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 797244,
+  boss: 4,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
   notes: "FULL AUTO"
 };
 var teamComps = [
@@ -237,7 +276,10 @@ var teamComps = [
   comp14,
   comp15,
   comp16,
-  comp17
+  comp17,
+  comp18,
+  comp19,
+  comp20
 ];
 
 function compareDamage(comp1, comp2) {
