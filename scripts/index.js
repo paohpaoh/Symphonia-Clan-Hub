@@ -402,7 +402,34 @@ comp30 = {
   player: "paoh",
   notes: "FULL AUTO"
 };
+comp31 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["hiyori", 5],
+  unit3: ["makoto", 5],
+  unit4: ["kaori", 5],
+  unit5: ["jun", 3],
+  damage: 884140,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "wasd3223",
+  notes: "FULL AUTO"
+};
+comp32 = {
+  unit1: ["shiori", 5],
+  unit2: ["suzuna", 5],
+  unit3: ["summer kokkoro", 3],
+  unit4: ["makoto", 5],
+  unit5: ["kaori", 5],
+  damage: 1177493,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "wasd3223",
+  notes: "FULL AUTO"
+};
 var teamComps = [
+  comp31,
   comp30,
   comp29,
   comp28,
