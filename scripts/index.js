@@ -298,6 +298,58 @@ comp22 = {
   player: "paoh",
   notes: "FULL AUTO"
 };
+comp23 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["yukari", 5],
+  unit3: ["eriko", 4],
+  unit4: ["makoto", 5],
+  unit5: ["kaori", 5],
+  damage: 585940,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp24 = {
+  unit1: ["suzuna", 5],
+  unit2: ["summer kokkoro", 3],
+  unit3: ["eriko", 4],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 579404,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp25 = {
+  unit1: ["suzuna", 5],
+  unit2: ["arisa", 3],
+  unit3: ["summer kokkoro", 3],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 642313,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp26 = {
+  unit1: ["suzuna", 5],
+  unit2: ["mitsuki", 3],
+  unit3: ["yukari", 3],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 755732,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
 var teamComps = [
   comp1,
   comp2,
@@ -320,7 +372,11 @@ var teamComps = [
   comp19,
   comp20,
   comp21,
-  comp22
+  comp22,
+  comp23,
+  comp24,
+  comp25,
+  comp26
 ];
 
 function compareDamage(comp1, comp2) {
