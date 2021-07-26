@@ -428,7 +428,50 @@ comp32 = {
   player: "wasd3223",
   notes: "FULL AUTO"
 };
+comp33 = {
+  unit1: ["suzuna", 5],
+  unit2: ["summer kokkoro", 3],
+  unit3: ["tamaki", 5],
+  unit4: ["makoto", 5],
+  unit5: ["jun", 3],
+  damage: 719602,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "FULL AUTO"
+};
+comp34 = {
+  unit1: ["shiori", 5],
+  unit2: ["suzuna", 5],
+  unit3: ["mitsuki", 5],
+  unit4: ["yukari", 5],
+  unit5: ["makoto", 5],
+  damage: 788765,
+  boss: 5,
+  clanBattle: 6,
+  lap: 2,
+  player: "FennekZero",
+  notes: "FULL AUTO"
+};
+comp35 = {
+  unit1: ["mitsuki", 5],
+  unit2: ["hiyori", 5],
+  unit3: ["makoto", 5],
+  unit4: ["kaori", 5],
+  unit5: ["jun", 3],
+  damage: 986036,
+  boss: 4,
+  clanBattle: 6,
+  lap: 2,
+  player: "wasd3223",
+  notes: "MOSTLY AUTO: Spam Kaori UB at the last few seconds"
+};
 var teamComps = [
+  comp35,
+  comp34,
+  comp33,
+  comp32,
   comp31,
   comp30,
   comp29,
