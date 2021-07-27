@@ -627,7 +627,7 @@ function generateComps(whichCB) {
     return false;
   }
   $(tempComps).each((x, tempComp) => {
-    if (whichBoss == "6") {
+    if (whichBoss == "7") {
       return false;
     }
     if (tempComps[x].boss != whichBoss) {
