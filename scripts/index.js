@@ -588,7 +588,6 @@ var teamComps = [
   comp1
 ];
 
-console.log(teamComps);
 function compareDamage(comp1, comp2) {
   if (comp1.damage > comp2.damage) {
     return -1;
@@ -601,11 +600,10 @@ function compareDamage(comp1, comp2) {
 teamComps.sort(compareDamage);
 
 function generateComps(whichCB) {
-  // clear current comps
-  $("#teamCompsCB").html("");
+  $("#teamCompsCB").html(""); // clear current comps
+  let tempComps = teamComps.slice();
 
   // filter based on boss
-  let tempComps = teamComps.slice();
   const whichLap = $(".lap-selector select").val();
   const whichBoss = $("select.boss-selector").val();
   if (whichBoss == "0") {
@@ -622,6 +620,9 @@ function generateComps(whichCB) {
       tempComps[x] = "";
     }
   });
+  tempComps = tempComps.filter(item => item);
+
+  // filter based on lap
   $(tempComps).each((x, tempComp) => {
     switch (whichLap) {
       case "1":
@@ -637,9 +638,46 @@ function generateComps(whichCB) {
     }
   });
   tempComps = tempComps.filter(item => item);
+
+  // filter based on unchecked unit checkboxes
+  $("input:checkbox:not(:checked)").each((i, e) => {
+    $(tempComps).each((x, tempComp) => {
+      if (
+        tempComps[x].unit1[0] ==
+          $(e)
+            .next()
+            .text()
+            .toLowerCase() ||
+        tempComps[x].unit2[0] ==
+          $(e)
+            .next()
+            .text()
+            .toLowerCase() ||
+        tempComps[x].unit3[0] ==
+          $(e)
+            .next()
+            .text()
+            .toLowerCase() ||
+        tempComps[x].unit4[0] ==
+          $(e)
+            .next()
+            .text()
+            .toLowerCase() ||
+        tempComps[x].unit5[0] ==
+          $(e)
+            .next()
+            .text()
+            .toLowerCase()
+      ) {
+        tempComps[x] = "";
+      }
+    });
+  });
+  tempComps = tempComps.filter(item => item);
+
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
-      '<div class="placeholder-text">No team comps currently available for this boss. Check back later for updates!</div>'
+      '<div class="placeholder-text">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
     );
     return false;
   }
