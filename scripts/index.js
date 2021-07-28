@@ -558,7 +558,21 @@ comp42 = {
   player: "Bloo",
   notes: "FULL AUTO"
 };
+comp43 = {
+  unit1: ["arisa", 5],
+  unit2: ["mitsuki", 4],
+  unit3: ["kokkoro", 5],
+  unit4: ["makoto", 4],
+  unit5: ["kaori", 5],
+  damage: 1489349,
+  boss: 2,
+  clanBattle: 6,
+  lap: 2,
+  player: "paoh",
+  notes: "MANUAL"
+};
 var teamComps = [
+  comp43,
   comp42,
   comp41,
   comp40,
