@@ -995,7 +995,7 @@ var unitList = [
   { unit: "Chika", range: 790 },
   { unit: "Maho", range: 795 },
   { unit: "Yui", range: 800 },
-  // { unit: "Yuki", range: 805 },
+  { unit: "Yuki", range: 805 },
   { unit: "Kyouka", range: 810 }
 ];
 
