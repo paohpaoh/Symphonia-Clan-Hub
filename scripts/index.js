@@ -676,12 +676,20 @@ function compareDamage(comp1, comp2) {
 }
 teamComps.sort(compareDamage);
 
-function generateComps(whichCB) {
+function generateComps() {
   $("#teamCompsCB").html(""); // clear current comps
   let tempComps = JSON.parse(JSON.stringify(teamComps));
 
+  // filter based on clan clanBattle
+  const whichCB = $("select.cb-selector").val();
+  $(tempComps).each((x, tempComp) => {
+    if (tempComps[x].clanBattle != whichCB) {
+      tempComps[x] = "";
+    }
+  });
+  tempComps = tempComps.filter(item => item);
+
   // filter based on boss
-  const whichLap = $(".lap-selector select").val();
   const whichBoss = $("select.boss-selector").val();
   if (whichBoss == "0") {
     $("#teamCompsCB").append(
@@ -700,6 +708,7 @@ function generateComps(whichCB) {
   tempComps = tempComps.filter(item => item);
 
   // filter based on lap
+  const whichLap = $(".lap-selector select").val();
   $(tempComps).each((x, tempComp) => {
     switch (whichLap) {
       case "1":

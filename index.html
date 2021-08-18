@@ -105,6 +105,10 @@
                   if you've found a bug.<br /><br />
                   Stuff I changed / added since last CB:<br />
                   <ul>
+                    <li>
+                      You can now select past CBs in the team comps tab by
+                      clicking the text that says "CB#7"
+                    </li>
                     <li>Added unit filters to team comps tab</li>
                     <li>New navigation bar</li>
                     <li>New pages added</li>
@@ -112,14 +116,23 @@
                   </ul>
                   Planning to add / fix:<br />
                   <ul>
-                    <li>Clean up team comp filters to only include CB units</li>
                     <li>Add distance / unit range guide to the Guides tab</li>
                     <li>Fix offset background image</li>
                     <li>
                       Make the unit filter pop up itself scrollable so you don't
                       have to scroll the entire page
                     </li>
-                    <li>Add clan battle selector</li>
+                    <li>
+                      <strike
+                        >Clean up team comp filters to only include CB
+                        units</strike
+                      >
+                      - DONE
+                    </li>
+                    <li>
+                      <strike>Add clan battle selector</strike> - DONE: in the
+                      team comps tab, click the text that says "CB#7"
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -132,26 +145,21 @@
             aria-labelledby="cbcomps-tab"
           >
             <div class="team-comps mx-auto text-white">
-              <h4 class="text-center mb-3">
-                <b>Team Comps: <span>CB#6</span></b>
+              <h4 class="ms-5 text-center mb-3">
+                <b>Team Comps: </b
+                ><select
+                  class="form-select form-select-lg cb-selector text-white bg-transparent border-0 px-0 mx-0"
+                  size="1"
+                  aria-label="CB Selector"
+                >
+                  <option value="6">CB#6</option>
+                  <option value="7" selected>CB#7</option>
+                  <option value="8">CB#8</option>
+                </select>
               </h4>
+
               <div class="container mb-2 p-1">
                 <div class="row text-center justify-content-middle">
-                  <!-- <div class="col cb-selector">
-                  <div class="select-box">
-                    <select id="select-menu" disabled>
-                      <option value="0" class="">Select CB</option>
-                      <option
-                        selected="selected"
-                        value="1"
-                        class="cb-select-options"
-                        >Clan Battle #6</option
-                      >
-                      <option value="2" class="text-muted">Clan Battle #7</option>
-                      <option value="3" class="text-muted">Clan Battle #8</option>
-                    </select>
-                  </div>
-                </div> -->
                   <div class="col lap-selector">
                     <div class="select-box">
                       <select id="select-menu">

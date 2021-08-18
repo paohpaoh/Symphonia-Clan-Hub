@@ -164,7 +164,12 @@ button.active {
   max-width: 30px;
 }
 .cb-selector {
-  margin-left: 5px;
+  display: inline-block !important;
+  width: 100px !important;
+  font-weight: bold;
+  &:focus {
+    box-shadow: none !important;
+  }
 }
 .boss-selector {
   margin-right: 5px;
