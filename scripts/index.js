@@ -685,12 +685,12 @@ function generateComps() {
   switch (whichCB) {
     case "6":
       $("#damage-goals").html(
-        "Minimum damage goals for each boss:<br />- Boss 1 Lap 1: xxx,xxx,xxx damage<br />- Boss 2 Lap 1: xxx,xxx,xxx damage<br />- Boss 3 Lap 1: xxx,xxx,xxx damage<br />- Boss 4 Lap 1: xxx,xxx,xxx damage<br />- Boss 5 Lap 1: xxx,xxx,xxx damage<br /><br />- Boss 1 Lap 2+: 1,200,000+ damage<br />- Boss 2 Lap 2+: 1,100,000+ damage<br />- Boss 3 Lap 2+: 920,000+ damage<br />- Boss 4 Lap 2+: 900,000+ damage<br />- Boss 5 Lap 2+: 700,000+ damage"
+        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br /></div><div class='col'><u>Lap 2</u><br />B1: 1,200,000+<br />B2: 1,100,000+<br />B3: 920,000+<br />B4: 900,000+<br />B5: 700,000+</div></div>"
       );
       break;
     case "7":
       $("#damage-goals").html(
-        "Minimum damage goals for each boss:<br />- Boss 1 Lap 1: xxx,xxx,xxx damage<br />- Boss 2 Lap 1: xxx,xxx,xxx damage<br />- Boss 3 Lap 1: xxx,xxx,xxx damage<br />- Boss 4 Lap 1: xxx,xxx,xxx damage<br />- Boss 5 Lap 1: xxx,xxx,xxx damage<br /><br />- Boss 1 Lap 2+: xxx,xxx,xxx damage<br />- Boss 2 Lap 2+: xxx,xxx,xxx damage<br />- Boss 3 Lap 2+: xxx,xxx,xxx damage<br />- Boss 4 Lap 2+: xxx,xxx,xxx damage<br />- Boss 5 Lap 2+: xxx,xxx,xxx damage"
+        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br /></div><div class='col'><u>Lap 2</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx<br />B5: xxx,xxx,xxx</div></div>"
       );
       break;
     case "8":
@@ -845,7 +845,7 @@ function generateComps() {
       }
     }
     $("#teamCompsCB").append(
-      "<div>" +
+      '<div class="placeholder">' +
         '<div class="submission-info"> B' +
         comp.boss +
         "L" +
