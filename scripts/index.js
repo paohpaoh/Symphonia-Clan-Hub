@@ -1100,9 +1100,9 @@ tempUnitList2.sort(compareRange);
 const sarenRange = tempUnitList2.find(i => i.unit === "Saren").range;
 for (i = 0; i < tempUnitList2.length; i += 1) {
   $("div.guides").append(
-    `<div class="d-inline-block text-center unit-range m-1"><img class="img-fluid unit-range rounded-3" src="./images/${
-      tempUnitList2[i].unit
-    }.png" /><div class="unit-range">${Math.abs(
+    `<div class="d-inline-block text-center unit-range m-1"><img class="img-fluid unit-range rounded-3" src="./images/${tempUnitList2[
+      i
+    ].unit.toLowerCase()}.png" /><div class="unit-range">${Math.abs(
       tempUnitList2[i].range - sarenRange
     )}</div></div>`
   );
