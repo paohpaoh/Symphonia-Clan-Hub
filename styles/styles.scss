@@ -123,9 +123,6 @@ button.active {
 }
 .placeholder {
   height: 70vh;
-  padding-left: 20px;
-}
-.placeholder-text {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -177,9 +174,10 @@ button.active {
   }
 }
 .boss-selector {
-  margin-right: 5px;
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
+  border: 1px solid grey;
+  color: grey;
+  font-family: Courier, Courier New, Arial, Helvetica;
+  font-size: 1.2rem;
 }
 .lap-selector {
   margin-left: 5px;
@@ -191,12 +189,11 @@ button.active {
 .form-check {
   text-align: left !important;
 }
-.text-primary {
-  color: red !important;
-}
-.bg-primary {
-  color: red !important;
-}
 .modal-backdrop {
   position: static !important;
+}
+.active-boss {
+  color: white;
+  border-color: white;
+  border-bottom: 1px solid transparent;
 }

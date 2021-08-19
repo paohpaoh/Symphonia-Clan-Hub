@@ -682,6 +682,20 @@ function generateComps() {
 
   // filter based on clan clanBattle
   const whichCB = $("select.cb-selector").val();
+  switch (whichCB) {
+    case "6":
+      $("#damage-goals").html(
+        "Minimum damage goals for each boss:<br />- Boss 1 Lap 1: xxx,xxx,xxx damage<br />- Boss 2 Lap 1: xxx,xxx,xxx damage<br />- Boss 3 Lap 1: xxx,xxx,xxx damage<br />- Boss 4 Lap 1: xxx,xxx,xxx damage<br />- Boss 5 Lap 1: xxx,xxx,xxx damage<br /><br />- Boss 1 Lap 2+: 1,200,000+ damage<br />- Boss 2 Lap 2+: 1,100,000+ damage<br />- Boss 3 Lap 2+: 920,000+ damage<br />- Boss 4 Lap 2+: 900,000+ damage<br />- Boss 5 Lap 2+: 700,000+ damage"
+      );
+      break;
+    case "7":
+      $("#damage-goals").html(
+        "Minimum damage goals for each boss:<br />- Boss 1 Lap 1: xxx,xxx,xxx damage<br />- Boss 2 Lap 1: xxx,xxx,xxx damage<br />- Boss 3 Lap 1: xxx,xxx,xxx damage<br />- Boss 4 Lap 1: xxx,xxx,xxx damage<br />- Boss 5 Lap 1: xxx,xxx,xxx damage<br /><br />- Boss 1 Lap 2+: xxx,xxx,xxx damage<br />- Boss 2 Lap 2+: xxx,xxx,xxx damage<br />- Boss 3 Lap 2+: xxx,xxx,xxx damage<br />- Boss 4 Lap 2+: xxx,xxx,xxx damage<br />- Boss 5 Lap 2+: xxx,xxx,xxx damage"
+      );
+      break;
+    case "8":
+      $("#damage-goals").html("CB#8 has not yet begun");
+  }
   $(tempComps).each((x, tempComp) => {
     if (tempComps[x].clanBattle != whichCB) {
       tempComps[x] = "";
@@ -690,17 +704,8 @@ function generateComps() {
   tempComps = tempComps.filter(item => item);
 
   // filter based on boss
-  const whichBoss = $("select.boss-selector").val();
-  if (whichBoss == "0") {
-    $("#teamCompsCB").append(
-      '<div class="placeholder-text">Select a boss to display team comps.</div>'
-    );
-    return false;
-  }
+  const whichBoss = $(".active-boss").val();
   $(tempComps).each((x, tempComp) => {
-    if (whichBoss == "7") {
-      return false;
-    }
     if (tempComps[x].boss != whichBoss) {
       tempComps[x] = "";
     }
@@ -708,7 +713,7 @@ function generateComps() {
   tempComps = tempComps.filter(item => item);
 
   // filter based on lap
-  const whichLap = $(".lap-selector select").val();
+  const whichLap = $(".lap-selector .form-check-input:checked").val();
   $(tempComps).each((x, tempComp) => {
     switch (whichLap) {
       case "1":
@@ -764,7 +769,7 @@ function generateComps() {
 
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
-      '<div class="placeholder-text">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
+      '<div class="placeholder">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
     );
     return false;
   }
@@ -935,7 +940,23 @@ function generateComps() {
   });
 }
 
-$("#generate-comps").on("click", function() {
+let bossSelectorValue = "1";
+$(".boss-selector").on("click", e => {
+  $(".boss-selector").removeClass("active-boss");
+  $(e.target).addClass("active-boss");
+  bossSelectorValue = $(e.target).val();
+});
+
+$(".boss-selector").on("click", function() {
+  generateComps();
+});
+$(".lap-selector").on("click", function() {
+  generateComps();
+});
+$("#btnFilterClose").on("click", function() {
+  generateComps();
+});
+$(".cb-selector option").on("click", function() {
   generateComps();
 });
 

@@ -104,6 +104,7 @@
                 you've found a bug.<br /><br />
                 Stuff I changed / added since last CB:<br />
                 <ul>
+                  <li>Revamped the CB Comps UI</li>
                   <li>Added Saren distance reference to Guides tab</li>
                   <li>
                     You can now select past CBs in the team comps tab by
@@ -151,33 +152,34 @@
                   size="1"
                   aria-label="CB Selector"
                 >
-                  <option value="6">CB#6</option>
-                  <option value="7" selected>CB#7</option>
+                  <option value="6" selected>CB#6</option>
+                  <option value="7">CB#7</option>
                   <option value="8">CB#8</option>
                 </select>
               </h4>
-
-              <div class="container mb-2 p-1">
+              <div id="damage-goals" class="mx-2 px-2 border-top border-bottom">
+                Minimum damage goals for each boss:<br />
+                - Boss 1 Lap 1: xxx,xxx,xxx damage<br />
+                - Boss 2 Lap 1: xxx,xxx,xxx damage<br />
+                - Boss 3 Lap 1: xxx,xxx,xxx damage<br />
+                - Boss 4 Lap 1: xxx,xxx,xxx damage<br />
+                - Boss 5 Lap 1: xxx,xxx,xxx damage<br /><br />
+                - Boss 1 Lap 2+: xxx,xxx,xxx damage<br />
+                - Boss 2 Lap 2+: xxx,xxx,xxx damage<br />
+                - Boss 3 Lap 2+: xxx,xxx,xxx damage<br />
+                - Boss 4 Lap 2+: xxx,xxx,xxx damage<br />
+                - Boss 5 Lap 2+: xxx,xxx,xxx damage
+              </div>
+              <div class="container mb-2 p-1 mt-3">
                 <div class="row text-center justify-content-middle">
-                  <div class="col lap-selector">
-                    <div class="select-box">
-                      <select id="select-menu">
-                        <option value="0" class="">Select Lap</option>
-                        <option value="1" class="">Lap 1</option>
-                        <option selected="selected" value="2" class=""
-                          >Lap 2+</option
-                        >
-                      </select>
-                    </div>
-                  </div>
                   <div class="col">
                     <button
                       type="button"
-                      class="btn btn-light py-0"
+                      class="btn btn-light"
                       data-bs-toggle="modal"
                       data-bs-target="#staticBackdrop"
                     >
-                      Set Filters
+                      Set Unit Filters
                     </button>
 
                     <!-- Modal -->
@@ -198,70 +200,94 @@
                             </h6>
                           </div>
                           <div class="modal-body">
-                            <div class="container mb-4 p-1 h-100"></div>
+                            <div class="container p-1 h-100"></div>
                           </div>
-                          <div class="modal-footer">
-                            <b
-                              >To apply your changes, close this box and click
-                              "Generate Team Comps".</b
-                            >
+                          <div class="modal-footer justify-content-center">
                             <button
                               type="button"
                               class="btn btn-primary"
+                              id="btnFilterClose"
                               data-bs-dismiss="modal"
                             >
-                              <b>Close</b>
+                              <b>Apply Filters</b>
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="select-box">
-                      <select id="select-menu" class="boss-selector">
-                        <option
-                          value="0"
-                          selected="selected"
-                          class="cb-select-options"
-                          >Select Boss</option
-                        >
-                        <option value="1" class="">B1</option>
-                        <option value="2" class="">B2</option>
-                        <option value="3" class="">B3</option>
-                        <option value="4" class="">B4</option>
-                        <option value="5" class="">B5</option>
-                        <option value="6" class="">B6</option>
-                        <option value="7" class="">All bosses</option>
-                      </select>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="text-center">
-                <button
-                  id="generate-comps"
-                  type="button"
-                  class="btn btn-light text-dark mt-2 mb-3 py-1"
-                >
-                  <b>Generate Team Comps</b>
-                </button>
-              </div>
-              <hr class="pt-0 mt-0 mb-4" />
-              <div id="teamCompsCB">
-                <div class="placeholder">
-                  Minimum damage goals for each boss:<br />
-                  - Boss 1 Lap 1: xxx,xxx,xxx<br />
-                  - Boss 2 Lap 1: xxx,xxx,xxx<br />
-                  - Boss 3 Lap 1: xxx,xxx,xxx<br />
-                  - Boss 4 Lap 1: xxx,xxx,xxx<br />
-                  - Boss 5 Lap 1: xxx,xxx,xxx<br /><br />
-                  - Boss 1 Lap 2+: 1,200,000+ damage<br />
-                  - Boss 2 Lap 2+: 1,100,000+ damage<br />
-                  - Boss 3 Lap 2+: 920,000+ damage<br />
-                  - Boss 4 Lap 2+: 900,000+ damage<br />
-                  - Boss 5 Lap 2+: 700,000+ damage
+              <div class="text-center mt-3">
+                <div class="form-check form-check-inline lap-selector">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="lapRadio"
+                    id="radio1"
+                    value="1"
+                    checked
+                  />
+                  <label class="form-check-label" for="radio1">
+                    Lap 1
+                  </label>
                 </div>
+                <div class="form-check form-check-inline lap-selector">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="lapRadio"
+                    id="radio2"
+                    value="2"
+                  />
+                  <label class="form-check-label" for="radio2">
+                    Lap 2+
+                  </label>
+                </div>
+              </div>
+              <div class="text-center mt-3 mb-1">Select Boss</div>
+              <div class="container mx-0 px-0">
+                <div class="row text-center px-2 mx-0 border-bottom">
+                  <button
+                    class="col mx-1 boss-selector text-center active-boss bg-transparent"
+                    value="1"
+                  >
+                    1
+                  </button>
+                  <button
+                    class="col mx-1 boss-selector text-center bg-transparent"
+                    value="2"
+                  >
+                    2
+                  </button>
+                  <button
+                    class="col mx-1 boss-selector text-center bg-transparent"
+                    value="3"
+                  >
+                    3
+                  </button>
+                  <button
+                    class="col mx-1 boss-selector text-center bg-transparent"
+                    value="4"
+                  >
+                    4
+                  </button>
+                  <button
+                    class="col mx-1 boss-selector text-center bg-transparent"
+                    value="5"
+                  >
+                    5
+                  </button>
+                  <button
+                    class="col mx-1 boss-selector text-center bg-transparent"
+                    value="6"
+                  >
+                    6
+                  </button>
+                </div>
+              </div>
+              <div id="teamCompsCB" class="mt-3">
+                <div class="placeholder"></div>
               </div>
             </div>
           </div>
