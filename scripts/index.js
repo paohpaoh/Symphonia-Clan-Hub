@@ -943,6 +943,7 @@ $("#generate-comps").on("click", function() {
 const navHeight = $("nav.navbar").outerHeight(true);
 $(".tab-pane").css("padding-top", navHeight + 25);
 
+// close navbar after clicking a navbar item
 $("button.nav-link").click(() => {
   $("button.navbar-toggler").addClass("collapsed");
   $(".navbar-collapse").removeClass("show");
@@ -1008,13 +1009,6 @@ var unitList = [
   { unit: "Kyouka", range: 810, cb: true }
 ];
 
-$(unitList).each(i => {
-  if (!unitList[i].cb) {
-    unitList[i] = "";
-  }
-});
-unitList = unitList.filter(item => item);
-
 function compareRange(unit1, unit2) {
   if (unit1.range < unit2.range) {
     return -1;
@@ -1036,7 +1030,15 @@ function compareNames(unit1, unit2) {
 }
 unitList.sort(compareNames);
 
+// populate unit filter modal
 var tempUnitList = JSON.parse(JSON.stringify(unitList));
+// remove non-CB units
+$(tempUnitList).each(i => {
+  if (!tempUnitList[i].cb) {
+    tempUnitList[i] = "";
+  }
+});
+tempUnitList = tempUnitList.filter(item => item);
 let unitCounter = 0;
 const rowCount = Math.ceil(tempUnitList.length / 3);
 var modalContent = document.createElement("div");
@@ -1070,3 +1072,17 @@ for (columns = 1; columns <= 3; columns += 1) {
   $(modalContent).append(tempColumn);
 }
 $(".modal-body .container").append(modalContent);
+
+// show unit range from saren
+var tempUnitList2 = JSON.parse(JSON.stringify(unitList));
+tempUnitList2.sort(compareRange);
+const sarenRange = tempUnitList2.find(i => i.unit === "Saren").range;
+for (i = 0; i < tempUnitList2.length; i += 1) {
+  $("div.guides").append(
+    `<div class="d-inline-block text-center unit-range m-1"><img class="img-fluid unit-range rounded-3" src="./images/${
+      tempUnitList2[i].unit
+    }.png" /><div class="unit-range">${Math.abs(
+      tempUnitList2[i].range - sarenRange
+    )}</div></div>`
+  );
+}

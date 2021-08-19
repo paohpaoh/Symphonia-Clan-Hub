@@ -144,6 +144,11 @@ button.active {
 .unit {
   min-width: 50px !important;
 }
+.unit-range {
+  max-width: 40px;
+  min-width: 30px;
+  font-size: 0.75rem;
+}
 .comp-spacer {
   padding-top: 1px !important;
   padding-bottom: 0px !important;
