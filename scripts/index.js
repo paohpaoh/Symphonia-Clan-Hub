@@ -685,12 +685,12 @@ function generateComps() {
   switch (whichCB) {
     case "6":
       $("#damage-goals").html(
-        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br /></div><div class='col'><u>Lap 2</u><br />B1: 1,200,000+<br />B2: 1,100,000+<br />B3: 920,000+<br />B4: 900,000+<br />B5: 700,000+</div></div>"
+        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br />B6: xxx,xxx,xxx</div><div class='col'><u>Lap 2</u><br />B1: 1,200,000+<br />B2: 1,100,000+<br />B3: 920,000+<br />B4: 900,000+<br />B5: 700,000+<br />B6: xxx,xxx,xxx</div></div>"
       );
       break;
     case "7":
       $("#damage-goals").html(
-        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br /></div><div class='col'><u>Lap 2</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx<br />B5: xxx,xxx,xxx</div></div>"
+        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br />B6: xxx,xxx,xxx</div><div class='col'><u>Lap 2</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx<br />B5: xxx,xxx,xxx<br />B6: xxx,xxx,xxx</div></div>"
       );
       break;
     case "8":
@@ -769,7 +769,7 @@ function generateComps() {
 
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
-      '<div class="placeholder">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
+      '<div class="placeholder-text">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
     );
     return false;
   }
@@ -845,7 +845,7 @@ function generateComps() {
       }
     }
     $("#teamCompsCB").append(
-      '<div class="placeholder">' +
+      '<div class="placeholder mx-auto">' +
         '<div class="submission-info"> B' +
         comp.boss +
         "L" +
@@ -857,7 +857,7 @@ function generateComps() {
         "</i>" +
         // '<hr class="comp-spacer" />' +
         "</div>" +
-        '<div class="container mb-4 p-1 text-center">' +
+        '<div class="container mb-3 p-1 text-center">' +
         '<div class="row mx-1">' +
         '<div class="col p-1 mr-1">' +
         "<img" +
