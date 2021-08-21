@@ -685,12 +685,12 @@ function generateComps() {
   switch (whichCB) {
     case "6":
       $("#damage-goals").html(
-        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br />B6: xxx,xxx,xxx</div><div class='col'><u>Lap 2</u><br />B1: 1,200,000+<br />B2: 1,100,000+<br />B3: 920,000+<br />B4: 900,000+<br />B5: 700,000+<br />B6: xxx,xxx,xxx</div></div>"
+        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: 1,200,000+<br />B2: 1,100,000+<br />B3: 920,000+<br />B4: 900,000+<br />B5: 700,000+<br />B6: ---,---,---</div></div></div>'
       );
       break;
     case "7":
       $("#damage-goals").html(
-        "Minimum damage goals for each boss:<div class='row mt-1'><div class='col'><u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br />B6: xxx,xxx,xxx</div><div class='col'><u>Lap 2</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3: xxx,xxx,xxx<br />B4: xxx,xxx,xxx<br />B5: xxx,xxx,xxx<br />B6: xxx,xxx,xxx</div></div>"
+        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
       );
       break;
     case "8":
@@ -778,9 +778,7 @@ function generateComps() {
     for (stars = 1; stars < 5; stars += 1) {
       if (stars < comp.unit1[1]) {
         starContainer1String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer1String +=
           '<div class="col p-0 star">' +
@@ -792,9 +790,7 @@ function generateComps() {
     for (stars = 1; stars < 5; stars += 1) {
       if (stars < comp.unit2[1]) {
         starContainer2String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer2String +=
           '<div class="col p-0 star">' +
@@ -806,9 +802,7 @@ function generateComps() {
     for (stars = 1; stars < 5; stars += 1) {
       if (stars < comp.unit3[1]) {
         starContainer3String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer3String +=
           '<div class="col p-0 star">' +
@@ -820,9 +814,7 @@ function generateComps() {
     for (stars = 1; stars < 5; stars += 1) {
       if (stars < comp.unit4[1]) {
         starContainer4String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer4String +=
           '<div class="col p-0 star">' +
@@ -834,9 +826,7 @@ function generateComps() {
     for (stars = 1; stars < 5; stars += 1) {
       if (stars < comp.unit5[1]) {
         starContainer5String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer5String +=
           '<div class="col p-0 star">' +
@@ -845,8 +835,7 @@ function generateComps() {
       }
     }
     $("#teamCompsCB").append(
-      '<div class="placeholder mx-auto">' +
-        '<div class="submission-info"> B' +
+      '<div class="placeholder mx-auto"><div class="submission-info"> B' +
         comp.boss +
         "L" +
         comp.lap +
@@ -857,85 +846,54 @@ function generateComps() {
         "</i>" +
         // '<hr class="comp-spacer" />' +
         "</div>" +
-        '<div class="container mb-3 p-1 text-center">' +
-        '<div class="row mx-1">' +
-        '<div class="col p-1 mr-1">' +
+        '<div class="container mb-3 p-1 text-center"><div class="row mx-1"><div class="col p-1 mr-1">' +
         "<img" +
         ' class="img-fluid unit rounded-3"' +
         ` src="./images/${comp.unit1[0]}.png"` +
         " />" +
-        '<div class="container stars-container p-0">' +
-        '<div class="row p-0">' +
-        '<div class="col p-0 star first-star">' +
-        '<img class="img-fluid" src="./images/star.png" />' +
+        '<div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" />' +
         "</div>" +
         starContainer1String +
-        "</div>" +
-        "</div>" +
-        "</div>" +
+        "</div></div></div>" +
         '<div class="col p-1 mr-1">' +
         "<img" +
         ' class="img-fluid unit rounded-3"' +
         ` src="./images/${comp.unit2[0]}.png"` +
         " />" +
-        '<div class="container stars-container p-0">' +
-        '<div class="row p-0">' +
-        '<div class="col p-0 star first-star">' +
-        '<img class="img-fluid" src="./images/star.png" />' +
+        '<div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" />' +
         "</div>" +
         starContainer2String +
-        "</div>" +
-        "</div>" +
-        "</div>" +
+        "</div></div></div>" +
         '<div class="col p-1">' +
         "<img" +
         ' class="img-fluid unit rounded-3"' +
         ` src="./images/${comp.unit3[0]}.png"` +
         " />" +
-        '<div class="container stars-container p-0">' +
-        '<div class="row p-0">' +
-        '<div class="col p-0 star first-star">' +
-        '<img class="img-fluid" src="./images/star.png" />' +
+        '<div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" />' +
         "</div>" +
         starContainer3String +
-        "</div>" +
-        "</div>" +
-        "</div>" +
+        "</div></div></div>" +
         '<div class="col p-1 ml-1">' +
         "<img" +
         ' class="img-fluid unit rounded-3"' +
         ` src="./images/${comp.unit4[0]}.png"` +
         " />" +
-        '<div class="container stars-container p-0">' +
-        '<div class="row p-0">' +
-        '<div class="col p-0 star first-star">' +
-        '<img class="img-fluid" src="./images/star.png" />' +
+        '<div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" />' +
         "</div>" +
         starContainer4String +
-        "</div>" +
-        "</div>" +
-        "</div>" +
+        "</div></div></div>" +
         '<div class="col p-1 ml-1">' +
         "<img" +
         ' class="img-fluid unit rounded-3"' +
         ` src="./images/${comp.unit5[0]}.png"` +
         " />" +
-        '<div class="container stars-container p-0">' +
-        '<div class="row p-0">' +
-        '<div class="col p-0 star first-star">' +
-        '<img class="img-fluid" src="./images/star.png" />' +
+        '<div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" />' +
         "</div>" +
         starContainer5String +
-        "</div>" +
-        "</div>" +
-        "</div>" +
+        "</div></div></div>" +
         '<div class="notes"><i>Notes</i> - ' +
         comp.notes +
-        "<hr />" +
-        "</div>" +
-        "</div>" +
-        "</div>" +
-        "</div>"
+        "<hr /></div></div></div></div>"
     );
   });
 }

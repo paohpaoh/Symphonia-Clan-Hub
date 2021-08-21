@@ -165,22 +165,28 @@
               </h4>
               <div id="damage-goals" class="mx-2 p-2 border-top border-bottom">
                 Minimum damage goals for each boss:
-                <div class="row mt-1">
-                  <div class="col">
-                    <u>Lap 1</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3:
-                    xxx,xxx,xxx<br />B4: xxx,xxx,xxx <br />B5: xxx,xxx,xxx<br />B6:
-                    xxx,xxx,xxx
+                <div class="row mt-1 justify-content-center">
+                  <div class="col-6 text-center">
+                    <u>Lap 1</u>
+                    <div class="text-left mx-auto ps-3">
+                      B1: ---,---,---<br />B2: ---,---,---<br />B3:
+                      ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6:
+                      ---,---,---
+                    </div>
                   </div>
-                  <div class="col">
-                    <u>Lap 2</u><br />B1: xxx,xxx,xxx<br />B2: xxx,xxx,xxx<br />B3:
-                    xxx,xxx,xxx<br />B4: xxx,xxx,xxx<br />B5: xxx,xxx,xxx<br />B6:
-                    xxx,xxx,xxx
+                  <div class="col-6 text-center">
+                    <u>Lap 2</u>
+                    <div class="text-left mx-auto ps-3">
+                      B1: ---,---,---<br />B2: ---,---,---<br />B3:
+                      ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6:
+                      ---,---,---
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="container mb-2 p-1 mt-3">
-                <div class="row text-center justify-content-middle">
-                  <div class="col">
+                <div class="row text-center">
+                  <div class="col-8 my-auto">
                     <button
                       type="button"
                       class="btn btn-light"
@@ -224,35 +230,36 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col-4 my-auto ps-0 pe-0">
+                    <div class="form-check lap-selector">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="lapRadio"
+                        id="radio1"
+                        value="1"
+                        checked
+                      />
+                      <label class="form-check-label" for="radio1">
+                        Lap 1
+                      </label>
+                    </div>
+                    <div class="form-check lap-selector">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="lapRadio"
+                        id="radio2"
+                        value="2"
+                      />
+                      <label class="form-check-label" for="radio2">
+                        Lap 2+
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="text-center mt-3">
-                <div class="form-check form-check-inline lap-selector">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="lapRadio"
-                    id="radio1"
-                    value="1"
-                    checked
-                  />
-                  <label class="form-check-label" for="radio1">
-                    Lap 1
-                  </label>
-                </div>
-                <div class="form-check form-check-inline lap-selector">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="lapRadio"
-                    id="radio2"
-                    value="2"
-                  />
-                  <label class="form-check-label" for="radio2">
-                    Lap 2+
-                  </label>
-                </div>
-              </div>
+
               <div class="text-center mt-3 mb-1">Select Boss</div>
               <div class="container mx-0 px-0">
                 <div class="row text-center px-2 mx-0 border-2 border-bottom">
