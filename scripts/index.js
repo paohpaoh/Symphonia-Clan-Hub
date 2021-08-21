@@ -781,9 +781,7 @@ function generateComps() {
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer1String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star-grey.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
       }
     }
     let starContainer2String = "";
@@ -793,9 +791,7 @@ function generateComps() {
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer2String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star-grey.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
       }
     }
     let starContainer3String = "";
@@ -805,9 +801,7 @@ function generateComps() {
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer3String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star-grey.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
       }
     }
     let starContainer4String = "";
@@ -817,9 +811,7 @@ function generateComps() {
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer4String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star-grey.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
       }
     }
     let starContainer5String = "";
@@ -829,9 +821,7 @@ function generateComps() {
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
       } else {
         starContainer5String +=
-          '<div class="col p-0 star">' +
-          ' <img class="img-fluid" src="./images/star-grey.png" />' +
-          " </div>";
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
       }
     }
     $("#teamCompsCB").append(
@@ -845,12 +835,7 @@ function generateComps() {
         comp.player +
         "</i>" +
         // '<hr class="comp-spacer" />' +
-        "</div>" +
-        '<div class="container mb-3 p-1 text-center"><div class="row mx-1"><div class="col p-1 mr-1">' +
-        "<img" +
-        ' class="img-fluid unit rounded-3"' +
-        ` src="./images/${comp.unit1[0]}.png"` +
-        " />" +
+        `</div><div class="container mb-3 p-1 text-center"><div class="row mx-1"><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit1[0]}.png" />` +
         '<div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" />' +
         "</div>" +
         starContainer1String +

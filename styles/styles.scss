@@ -16,6 +16,10 @@ html {
 }
 body {
   background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -25,7 +29,7 @@ body {
     background: transparent;
   }
   scrollbar-width: none;
-  position: relative;
+  // position: relative;
   font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
 }
@@ -43,40 +47,20 @@ button.active {
   // border-radius: 0px !important;
 }
 .wrapper {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   top: 0;
-  bottom: 0;
   left: 0;
-  // right: -17px;
-  width: 100%;
+  width: 100% !important;
   height: 100vh;
-  background-color: transparent;
-  margin-top: -8px;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: 0px;
-  padding-left: 8px;
-  padding-right: 0px;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     display: none;
   }
 }
-#hero-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  padding-right: 0px;
-  margin-right: -8px;
-  margin-bottom: -8% !important;
-}
 @media only screen and (min-width: 600px) {
-  // #hero-image,
   body {
     background-image: url("../images/background5a.jpg");
   }
@@ -102,7 +86,6 @@ button.active {
   }
 }
 @media only screen and (max-width: 600px) {
-  // #hero-image,
   body {
     background-image: url("../images/mobile-background1.jpg");
   }
@@ -126,6 +109,7 @@ button.active {
   // margin-right: 10px;
 }
 .placeholder-text {
+  min-height: 40vh;
   margin-left: 20px;
   margin-right: 10px;
 }
