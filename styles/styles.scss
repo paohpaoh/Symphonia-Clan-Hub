@@ -104,12 +104,13 @@ button.active {
   position: relative;
   height: 15px;
 }
+#teamCompsCB {
+  min-height: 80vh;
+}
 .placeholder {
-  // margin-left: 10px;
-  // margin-right: 10px;
 }
 .placeholder-text {
-  min-height: 40vh;
+  min-height: 80vh;
   margin-left: 20px;
   margin-right: 10px;
 }
