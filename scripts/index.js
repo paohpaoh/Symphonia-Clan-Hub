@@ -769,6 +769,136 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO - Don't use this it's bad."
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["mitsuki", 5],
+    unit3: ["kokkoro", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1162157,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["s kokkoro", 3],
+    unit3: ["kokkoro", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1181418,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["s kokkoro", 3],
+    unit3: ["kokkoro", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1100264,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["saren", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 4],
+    damage: 934151,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Don't use this team; replace Suzuna with Shiori."
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["mitsuki", 5],
+    unit3: ["kokkoro", 5],
+    unit4: ["makoto", 5],
+    unit5: ["lima", 5],
+    damage: 785306,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Makoto dies way too early."
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["suzuna", 5],
+    unit3: ["monika", 5],
+    unit4: ["makoto", 5],
+    unit5: ["jun", 5],
+    damage: 1117238,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["yukari", 5],
+    unit3: ["eriko", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1022280,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["hiyori", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 908102,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 939761,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["arisa", 3],
+    unit2: ["kokkoro", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 886261,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
@@ -797,7 +927,7 @@ function generateComps() {
       break;
     case "7":
       $("#damage-goals").html(
-        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: 10,500,000+<br />B3: 1,050,000+<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
+        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: 1,050,000+<br />B3: 1,050,000+<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
       );
       break;
     case "8":
@@ -886,7 +1016,7 @@ function generateComps() {
     );
   } else if (whichBoss == "3") {
     $("#teamCompsCB").append(
-      "<div class='placeholder'>Saren comp is probably optimal for this one because it allows the most flexibility for your other team comps. May require Jun to be 4* or higher(?)<br /><br /></div>"
+      "<div class='placeholder'>UPDATE - Saren comp is only optimal if you are not timelining Boss 5, or if you aren't able to hit Boss 5. If you are going full <strike>monkey</strike> auto, use a Jun comp that does NOT have Shiori/Suzuna on Boss 3. This way you can run the archer auto comp on Boss 5.<br /><br /></div>"
     );
   }
   $(tempComps).each((i, comp) => {
