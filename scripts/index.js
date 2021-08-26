@@ -925,6 +925,58 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["hiyori", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["rima", 5],
+    damage: 1141441,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["s kokkoro", 3],
+    unit3: ["djeeta", 5],
+    unit4: ["makoto", 5],
+    unit5: ["jun", 5],
+    damage: 1072472,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "SEIMODO",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["eriko", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["rima", 5],
+    damage: 941009,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["tamaki", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["rima", 5],
+    damage: 978634,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
