@@ -662,6 +662,47 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1173585,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "FULL AUTO - borrowed Asose's or Fennek's Ilya. If Ilya dies, reset your game and try the run again but borrow kyarunyan's Ilya instead for improved survivability."
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1134853,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "FULL AUTO - borrowed kyarunyan's Ilya for improved survivability but slightly lower damage."
+  },
+  {
+    unit1: ["kyouka", 4],
+    unit2: ["s karyl", 5],
+    unit3: ["hatsune", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1074506,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "Layth",
+    notes: "FULL AUTO - for people who don't have Karyl built."
   }
 ];
 
@@ -690,7 +731,7 @@ function generateComps() {
       break;
     case "7":
       $("#damage-goals").html(
-        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
+        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: 10,500,000+<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
       );
       break;
     case "8":
@@ -772,6 +813,11 @@ function generateComps() {
       '<div class="placeholder-text">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
     );
     return false;
+  }
+  if (whichBoss == "2") {
+    $("#teamCompsCB").append(
+      "<div class='placeholder'>If you are unable to build 3 physical teams (i.e. you are missing Jun or lack physical DPS units) but you can build mages, you should hit Boss 2 with your mage team.<br /><br /></div>"
+    );
   }
   $(tempComps).each((i, comp) => {
     let starContainer1String = "";
