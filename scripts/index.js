@@ -1085,6 +1085,32 @@ var teamComps = [
     player: "paoh",
     notes:
       "FULL AUTO - good choice for a team 3 after using your main DPS on Bosses 3-5."
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["kokkoro", 5],
+    unit3: ["djeeta", 4],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1149258,
+    boss: 1,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["mimi", 5],
+    unit3: ["s tamaki", 3],
+    unit4: ["tamaki", 5],
+    unit5: ["makoto", 5],
+    damage: 997571,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
