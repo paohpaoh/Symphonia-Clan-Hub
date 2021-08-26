@@ -1578,7 +1578,7 @@ $("#recommended-select option").on("click", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
 });
-$("#recommended-select option").on("touchend", () => {
+$("#recommended-select option").on("touchstart", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
 });
