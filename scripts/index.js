@@ -1251,7 +1251,6 @@ function generateRecommendedComps() {
   tempComps = tempComps.filter(item => item);
 
   let whichRecommendedComp = $("#recommended-select").val();
-  console.log(whichRecommendedComp);
   $(tempComps).each((x, tempComp) => {
     if (tempComps[x].special != whichRecommendedComp) {
       tempComps[x] = "";
@@ -1579,7 +1578,7 @@ $("#recommended-select option").on("click", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
 });
-$("#recommended-select option").on("touchend", e => {
+$("#recommended-select option").on("touchend", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
 });
