@@ -756,6 +756,19 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["suzuna", 5],
+    unit3: ["saren", 5],
+    unit4: ["makoto", 5],
+    unit5: ["jun", 4],
+    damage: 833646,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Don't use this it's bad."
   }
 ];
 
