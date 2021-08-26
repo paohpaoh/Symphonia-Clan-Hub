@@ -899,6 +899,32 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["tomo", 4],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["rima", 5],
+    damage: 1212475,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "Misery",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["rima", 5],
+    damage: 968162,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
@@ -1016,7 +1042,7 @@ function generateComps() {
     );
   } else if (whichBoss == "3") {
     $("#teamCompsCB").append(
-      "<div class='placeholder'>UPDATE - Saren comp is only optimal if you are not timelining Boss 5, or if you aren't able to hit Boss 5. If you are going full <strike>monkey</strike> auto, use a Jun comp that does NOT have Shiori/Suzuna on Boss 3. This way you can run the archer auto comp on Boss 5.<br /><br /></div>"
+      "<div class='placeholder'>Saren comp is good here, but check your comps for Boss 5 to make sure you aren't using units twice.<br /><br /></div>"
     );
   }
   $(tempComps).each((i, comp) => {
