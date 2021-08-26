@@ -1555,6 +1555,9 @@ function generateComps() {
 let bossSelectorValue = "1";
 // $(".boss-selector").on("click", e => {});
 
+$("#cbcomps-tab").on("click", function() {
+  generateComps();
+});
 $(".boss-selector").on("click", e => {
   if (!$(e.target).hasClass("active-boss")) {
     bossSelectorValue = $(e.target).val();
@@ -1572,12 +1575,16 @@ $("#btnFilterClose").on("click", function() {
 $(".cb-selector option").on("click", function() {
   generateComps();
 });
-$("#cbcomps-tab").on("click", function() {
-  generateComps();
-});
-$("#recommended-select option").on("click", function() {
+$("#recommended-select option").on("click", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
+});
+$("#recommended-select option").on("touchend", e => {
+  const child = e.target.matches(".child, .child *");
+  if (child) {
+    $(".boss-selector").removeClass("active-boss");
+    generateRecommendedComps();
+  }
 });
 
 // add padding to tabs to account for navbar placement
