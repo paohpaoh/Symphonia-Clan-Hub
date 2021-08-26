@@ -716,6 +716,20 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["s tamaki", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1312512,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "FULL AUTO - Try to not use this team if possible--we want to save physical teams for other bosses so that people who are missing a lot of units can use mages to hit this boss."
   }
 ];
 
