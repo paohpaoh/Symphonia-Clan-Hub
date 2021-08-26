@@ -1123,7 +1123,8 @@ var teamComps = [
     clanBattle: 7,
     lap: 2,
     player: "Symphonia",
-    notes: "FULL AUTO",
+    notes:
+      "FULL AUTO - can replace Hiyori with Tomo for 100k+ more damage. This comp also works for enrage.",
     special: 1
   },
   {
