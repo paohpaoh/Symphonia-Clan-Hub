@@ -730,6 +730,19 @@ var teamComps = [
     player: "paoh",
     notes:
       "FULL AUTO - Try to not use this team if possible--we want to save physical teams for other bosses so that people who are missing a lot of units can use mages to hit this boss."
+  },
+  {
+    unit1: ["s kokkoro", 5],
+    unit2: ["s tamaki", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1269838,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
@@ -843,7 +856,11 @@ function generateComps() {
   }
   if (whichBoss == "2") {
     $("#teamCompsCB").append(
-      "<div class='placeholder'>If you can make 3 physical teams, it would be optimal if you <u>didn't</u> hit Boss 2, and instead used your teams somewhere else. If you are unable to build 3 physical teams (i.e. you are missing Jun, lack physical DPS units, etc.) but you can build mages, you should hit Boss 2 with your mage team.<br /><br /></div>"
+      "<div class='placeholder'>MAGES PREFERRED - If you can make 3 physical teams, it would be optimal if you <u>didn't</u> hit Boss 2, and instead used your teams somewhere else. This boss should be saved for people who are unable to build 3 physical teams (i.e. you are missing Jun, lack physical DPS units, etc.) but can build mages.<br /><br /></div>"
+    );
+  } else if (whichBoss == "3") {
+    $("#teamCompsCB").append(
+      "<div class='placeholder'>Saren comp is probably optimal for this one because it allows the most flexibility for your other team comps. May require Jun to be 4* or higher(?)<br /><br /></div>"
     );
   }
   $(tempComps).each((i, comp) => {
