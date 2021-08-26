@@ -1580,11 +1580,8 @@ $("#recommended-select option").on("click", () => {
   generateRecommendedComps();
 });
 $("#recommended-select option").on("touchend", e => {
-  const child = e.target.matches(".child, .child *");
-  if (child) {
-    $(".boss-selector").removeClass("active-boss");
-    generateRecommendedComps();
-  }
+  $(".boss-selector").removeClass("active-boss");
+  generateRecommendedComps();
 });
 
 // add padding to tabs to account for navbar placement
