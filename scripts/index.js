@@ -990,6 +990,101 @@ var teamComps = [
     lap: 2,
     player: "Misery",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["hiyori", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["lima", 5],
+    damage: 1072352,
+    boss: 6,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["suzuna", 5],
+    unit3: ["mitsuki", 5],
+    unit4: ["makoto", 5],
+    unit5: ["lima", 5],
+    damage: 912660,
+    boss: 6,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "Mostly auto - auto until Suzuna is about to get UB, turn off auto until Mitsuki's def down debuff activates, then turn on auto again."
+  },
+  {
+    unit1: ["hiyori", 5],
+    unit2: ["makoto", 5],
+    unit3: ["nozomi", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 4],
+    damage: 988363,
+    boss: 6,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "FULL AUTO - recommended to NOT use because 1) sometimes all your units die and you lose 200k+ damage, and 2) using Jun + Kaori + Makoto can make it harder to make teams for other bosses. If this team is your last hit for the day then it's alright."
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["kokkoro", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1125080,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["suzuna", 5],
+    unit3: ["mitsuki", 5],
+    unit4: ["makoto", 5],
+    unit5: ["lima", 5],
+    damage: 968237,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["arisa", 5],
+    unit3: ["s kokkoro", 3],
+    unit4: ["s tamaki", 3],
+    unit5: ["makoto", 5],
+    damage: 956521,
+    boss: 1,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "FULL AUTO - good choice for a team 3 after using your main DPS on Bosses 3-5."
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["arisa", 5],
+    unit3: ["s kokkoro", 3],
+    unit4: ["djeeta", 4],
+    unit5: ["makoto", 5],
+    damage: 930886,
+    boss: 1,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "FULL AUTO - good choice for a team 3 after using your main DPS on Bosses 3-5."
   }
 ];
 
