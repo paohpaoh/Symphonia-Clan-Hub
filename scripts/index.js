@@ -1262,12 +1262,12 @@ function generateRecommendedComps() {
   switch (whichRecommendedComp) {
     case "1":
       $("#teamCompsCB").append(
-        "<div class='damage-goal'><b>Recommended Comps Set 1</b><br /><hr /></div>"
+        "<div class='damage-goal'><b>Recommended Comps Set 1</b><br /><br />These teams may not necessarily be best in class for each boss, but 3 of them put together are a good way to distribute your units.<hr /></div>"
       );
       break;
     case "2":
       $("#teamCompsCB").append(
-        "<div class='damage-goal'><b>Recommended Comps Set 2</b><br /><hr /></div>"
+        "<div class='damage-goal'><b>Recommended Comps Set 2</b><br /><br />These teams may not necessarily be best in class for each boss, but 3 of them together are a good way to distribute your units.<hr /></div>"
       );
       break;
   }
