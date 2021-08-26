@@ -107,8 +107,17 @@ button.active {
 #teamCompsCB {
   min-height: 80vh;
 }
+#recommended-select {
+  max-width: 300px !important;
+}
+.damage-goal {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #d1d1d1;
+}
 .placeholder {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 .placeholder-text {

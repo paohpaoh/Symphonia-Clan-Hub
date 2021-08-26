@@ -1060,7 +1060,7 @@ var teamComps = [
   },
   {
     unit1: ["suzuna", 5],
-    unit2: ["arisa", 5],
+    unit2: ["arisa", 3],
     unit3: ["s kokkoro", 3],
     unit4: ["s tamaki", 3],
     unit5: ["makoto", 5],
@@ -1074,7 +1074,7 @@ var teamComps = [
   },
   {
     unit1: ["suzuna", 5],
-    unit2: ["arisa", 5],
+    unit2: ["arisa", 3],
     unit3: ["s kokkoro", 3],
     unit4: ["djeeta", 4],
     unit5: ["makoto", 5],
@@ -1111,6 +1111,119 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["hiyori", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["lima", 5],
+    damage: 1100000,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO",
+    special: 1
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["saren", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 1100000,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO",
+    special: 1
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["mimi", 5],
+    unit3: ["s tamaki", 3],
+    unit4: ["tamaki", 5],
+    unit5: ["makoto", 5],
+    damage: 1000000,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO",
+    special: 1
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1150000,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO - only use this team if you can't build the first three",
+    special: 1
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["suzuna", 5],
+    unit3: ["monika", 5],
+    unit4: ["makoto", 5],
+    unit5: ["jun", 5],
+    damage: 1100000,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO",
+    special: 2
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["s tamaki", 3],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1250000,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes:
+      "FULL AUTO - can replace S Tamaki with regular Tamaki 5* for slightly less damage",
+    special: 2
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["kokkoro", 5],
+    unit3: ["djeeta", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1100000,
+    boss: 1,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO - can replace Djeeta with another flex DPS",
+    special: 2
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1150000,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO - only use this team if you can't build the first three",
+    special: 2
   }
 ];
 
@@ -1123,28 +1236,140 @@ function compareDamage(comp1, comp2) {
   }
   return 0;
 }
-teamComps.sort(compareDamage);
 
-function generateComps() {
+function generateRecommendedComps() {
   $("#teamCompsCB").html(""); // clear current comps
   let tempComps = JSON.parse(JSON.stringify(teamComps));
 
+  // filter out non-recommended comps
+  $(tempComps).each((x, tempComp) => {
+    if (!tempComps[x].special) {
+      tempComps[x] = "";
+    }
+  });
+  tempComps = tempComps.filter(item => item);
+
+  let whichRecommendedComp = $("#recommended-select").val();
+  console.log(whichRecommendedComp);
+  $(tempComps).each((x, tempComp) => {
+    if (tempComps[x].special != whichRecommendedComp) {
+      tempComps[x] = "";
+    }
+  });
+  tempComps = tempComps.filter(item => item);
+
+  switch (whichRecommendedComp) {
+    case "1":
+      $("#teamCompsCB").append(
+        "<div class='damage-goal'><b>Recommended Comps Set 1</b><br /><hr /></div>"
+      );
+      break;
+    case "2":
+      $("#teamCompsCB").append(
+        "<div class='damage-goal'><b>Recommended Comps Set 2</b><br /><hr /></div>"
+      );
+      break;
+  }
+
+  $(tempComps).each((i, comp) => {
+    let starContainer1String = "";
+    for (stars = 1; stars < 5; stars += 1) {
+      if (stars < comp.unit1[1]) {
+        starContainer1String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
+      } else {
+        starContainer1String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
+      }
+    }
+    let starContainer2String = "";
+    for (stars = 1; stars < 5; stars += 1) {
+      if (stars < comp.unit2[1]) {
+        starContainer2String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
+      } else {
+        starContainer2String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
+      }
+    }
+    let starContainer3String = "";
+    for (stars = 1; stars < 5; stars += 1) {
+      if (stars < comp.unit3[1]) {
+        starContainer3String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
+      } else {
+        starContainer3String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
+      }
+    }
+    let starContainer4String = "";
+    for (stars = 1; stars < 5; stars += 1) {
+      if (stars < comp.unit4[1]) {
+        starContainer4String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
+      } else {
+        starContainer4String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
+      }
+    }
+    let starContainer5String = "";
+    for (stars = 1; stars < 5; stars += 1) {
+      if (stars < comp.unit5[1]) {
+        starContainer5String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
+      } else {
+        starContainer5String +=
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
+      }
+    }
+    $("#teamCompsCB").append(
+      '<div class="placeholder mx-auto"><div class="submission-info"> B' +
+        comp.boss +
+        "L" +
+        comp.lap +
+        " - <b>" +
+        comp.damage.toLocaleString("en") +
+        "</b> - <i>submitted by " +
+        comp.player +
+        "</i>" +
+        // '<hr class="comp-spacer" />' +
+        `</div><div class="container mb-3 p-1 text-center"><div class="row mx-1"><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit1[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
+        starContainer1String +
+        `</div></div></div><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit2[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
+        starContainer2String +
+        `</div></div></div><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit3[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
+        starContainer3String +
+        `</div></div></div><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit4[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
+        starContainer4String +
+        `</div></div></div><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit5[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
+        starContainer5String +
+        '</div></div></div><div class="notes"><i>Notes</i> - ' +
+        comp.notes +
+        "<hr /></div></div></div></div>"
+    );
+  });
+}
+
+function generateComps() {
+  // clear recommended comps selector
+  $("#recommended-select")
+    .val("0")
+    .change();
+
+  $("#teamCompsCB").html(""); // clear current comps
+  let tempComps = JSON.parse(JSON.stringify(teamComps));
+  tempComps.sort(compareDamage);
+
+  // filter out recommended comps
+  $(tempComps).each((x, tempComp) => {
+    if (tempComps[x].special) {
+      tempComps[x] = "";
+    }
+  });
+  tempComps = tempComps.filter(item => item);
+
   // filter based on clan clanBattle
   const whichCB = $("select.cb-selector").val();
-  switch (whichCB) {
-    case "6":
-      $("#damage-goals").html(
-        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: 1,200,000+<br />B2: 1,100,000+<br />B3: 920,000+<br />B4: 900,000+<br />B5: 700,000+<br />B6: ---,---,---</div></div></div>'
-      );
-      break;
-    case "7":
-      $("#damage-goals").html(
-        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: 1,050,000+<br />B3: 1,050,000+<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
-      );
-      break;
-    case "8":
-      $("#damage-goals").html("CB#8 has not yet begun");
-  }
   $(tempComps).each((x, tempComp) => {
     if (tempComps[x].clanBattle != whichCB) {
       tempComps[x] = "";
@@ -1153,9 +1378,8 @@ function generateComps() {
   tempComps = tempComps.filter(item => item);
 
   // filter based on boss
-  const whichBoss = $(".active-boss").val();
   $(tempComps).each((x, tempComp) => {
-    if (tempComps[x].boss != whichBoss) {
+    if (tempComps[x].boss != bossSelectorValue) {
       tempComps[x] = "";
     }
   });
@@ -1222,15 +1446,32 @@ function generateComps() {
     );
     return false;
   }
-  if (whichBoss == "2") {
+  if (bossSelectorValue == "1") {
     $("#teamCompsCB").append(
-      "<div class='placeholder'>MAGES PREFERRED - If you can make 3 physical teams, it would be optimal if you <u>didn't</u> hit Boss 2, and instead used your teams somewhere else. This boss should be saved for people who are unable to build 3 physical teams (i.e. you are missing Jun, lack physical DPS units, etc.) but can build mages.<br /><br /></div>"
+      "<div class='damage-goal'><b>Damage goal for Boss 1: 1,100,000+</b><br /><hr /></div>"
     );
-  } else if (whichBoss == "3") {
+  } else if (bossSelectorValue == "2") {
     $("#teamCompsCB").append(
-      "<div class='placeholder'>Saren comp is good here, but check your comps for Boss 5 to make sure you aren't using units twice.<br /><br /></div>"
+      "<div class='damage-goal'><b>Damage goal for B2: 1,050,000+</b><br /><br />MAGES PREFERRED - If you can make 3 physical teams, it would be optimal if you <u>didn't</u> hit Boss 2, and instead used your teams somewhere else. This boss should be saved for people who can build mages but are unable to build 3 physical teams (i.e. you are missing Jun, lack physical DPS units, etc.).<br /><hr /></div>"
+    );
+  } else if (bossSelectorValue == "3") {
+    $("#teamCompsCB").append(
+      "<div class='damage-goal'><b>Damage goal for B3: 1,050,000+</b><br /><br />Saren comp is good here, but check your comps for Boss 5 to make sure you aren't using units twice.<br /><hr /></div>"
+    );
+  } else if (bossSelectorValue == "4") {
+    $("#teamCompsCB").append(
+      "<div class='damage-goal'><b>Damage goal for B4: 1,200,000+</b><br /><hr /></div>"
+    );
+  } else if (bossSelectorValue == "5") {
+    $("#teamCompsCB").append(
+      "<div class='damage-goal'><b>Damage goal for B5: 1,100,000+</b><br /><hr /></div>"
+    );
+  } else if (bossSelectorValue == "6") {
+    $("#teamCompsCB").append(
+      "<div class='damage-goal'><b>Damage goal for B6: ~1,000,000</b><hr /></div>"
     );
   }
+
   $(tempComps).each((i, comp) => {
     let starContainer1String = "";
     for (stars = 1; stars < 5; stars += 1) {
@@ -1311,14 +1552,15 @@ function generateComps() {
 }
 
 let bossSelectorValue = "1";
-$(".boss-selector").on("click", e => {
-  $(".boss-selector").removeClass("active-boss");
-  $(e.target).addClass("active-boss");
-  bossSelectorValue = $(e.target).val();
-});
+// $(".boss-selector").on("click", e => {});
 
-$(".boss-selector").on("click", function() {
-  generateComps();
+$(".boss-selector").on("click", e => {
+  if (!$(e.target).hasClass("active-boss")) {
+    bossSelectorValue = $(e.target).val();
+    generateComps();
+    $(".boss-selector").removeClass("active-boss");
+    $(e.target).addClass("active-boss");
+  }
 });
 $(".lap-selector").on("click", function() {
   generateComps();
@@ -1331,6 +1573,10 @@ $(".cb-selector option").on("click", function() {
 });
 $("#cbcomps-tab").on("click", function() {
   generateComps();
+});
+$("#recommended-select option").on("click", function() {
+  $(".boss-selector").removeClass("active-boss");
+  generateRecommendedComps();
 });
 
 // add padding to tabs to account for navbar placement
