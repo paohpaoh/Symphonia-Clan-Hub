@@ -732,12 +732,25 @@ var teamComps = [
       "FULL AUTO - Try to not use this team if possible--we want to save physical teams for other bosses so that people who are missing a lot of units can use mages to hit this boss."
   },
   {
-    unit1: ["s kokkoro", 5],
-    unit2: ["s tamaki", 5],
+    unit1: ["s kokkoro", 3],
+    unit2: ["s tamaki", 3],
     unit3: ["hiyori", 5],
     unit4: ["makoto", 5],
     unit5: ["kaori", 5],
     damage: 1269838,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["tamaki", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1222024,
     boss: 4,
     clanBattle: 7,
     lap: 2,
@@ -771,7 +784,7 @@ function generateComps() {
       break;
     case "7":
       $("#damage-goals").html(
-        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: 10,500,000+<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
+        'Minimum damage goals for each boss:<div class="row mt-1 justify-content-center"><div class="col-6 text-center"><u>Lap 1</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: ---,---,---<br />B3: ---,---,---<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div><div class="col-6 text-center"><u>Lap 2</u><div class="text-left mx-auto ps-3">B1: ---,---,---<br />B2: 10,500,000+<br />B3: 1,050,000+<br />B4: ---,---,---<br />B5: ---,---,---<br />B6: ---,---,---</div></div></div>'
       );
       break;
     case "8":
