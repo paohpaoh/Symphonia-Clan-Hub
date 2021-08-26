@@ -703,6 +703,19 @@ var teamComps = [
     lap: 2,
     player: "Layth",
     notes: "FULL AUTO - for people who don't have Karyl built."
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["saren", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 4],
+    damage: 1131149,
+    boss: 3,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
@@ -816,7 +829,7 @@ function generateComps() {
   }
   if (whichBoss == "2") {
     $("#teamCompsCB").append(
-      "<div class='placeholder'>If you are unable to build 3 physical teams (i.e. you are missing Jun or lack physical DPS units) but you can build mages, you should hit Boss 2 with your mage team.<br /><br /></div>"
+      "<div class='placeholder'>If you can make 3 physical teams, it would be optimal if you <u>didn't</u> hit Boss 2, and instead used your teams somewhere else. If you are unable to build 3 physical teams (i.e. you are missing Jun, lack physical DPS units, etc.) but you can build mages, you should hit Boss 2 with your mage team.<br /><br /></div>"
     );
   }
   $(tempComps).each((i, comp) => {
