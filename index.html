@@ -161,7 +161,7 @@
                 <option value="8">CB#8</option>
               </select>
             </h4>
-            <div class="d-flex justify-content-center mx-3">
+            <!-- <div class="d-flex justify-content-center mx-3">
               <select
                 id="recommended-select"
                 class="form-select form-select-md text-dark"
@@ -180,6 +180,40 @@
               >
                 Click to view recommended comps
               </button>
+            </div> -->
+            <div
+              id="recommended-select"
+              class="dropdown d-flex justify-content-center w-100"
+            >
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                id="recommended-comps-selector"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                See Recommended Comps
+              </button>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="recommended-comps-selector"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><option class="dropdown-item" value="1">Set 1</option></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><option class="dropdown-item" value="2">Set 2</option></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><option class="dropdown-item" value="3">Set 3</option></a
+                  >
+                </li>
+              </ul>
             </div>
             <div class="container mb-2 p-1 mt-3">
               <div class="row text-center">
@@ -257,7 +291,7 @@
               </div>
             </div>
 
-            <div class="text-center mt-3 mb-1">
+            <div id="select-boss-text" class="text-center mt-3 mb-1">
               Select Boss
             </div>
             <div class="container mx-0 px-0">
@@ -300,7 +334,7 @@
                 </button>
               </div>
             </div>
-            <div id="teamCompsCB" class="mt-3">
+            <div id="teamCompsCB" class="pt-3">
               <div class="placeholder"></div>
             </div>
           </div>

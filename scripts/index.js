@@ -1348,7 +1348,17 @@ function generateRecommendedComps() {
   });
   tempComps = tempComps.filter(item => item);
 
-  let whichRecommendedComp = $("#recommended-select").val();
+  // filter based on clan clanBattle
+  const whichCB = $("select.cb-selector").val();
+  $(tempComps).each((x, tempComp) => {
+    if (tempComps[x].clanBattle != whichCB) {
+      tempComps[x] = "";
+    }
+  });
+  tempComps = tempComps.filter(item => item);
+
+  // filter down to one set of comps
+  let whichRecommendedComp = recommendedCompValue;
   $(tempComps).each((x, tempComp) => {
     if (tempComps[x].special != whichRecommendedComp) {
       tempComps[x] = "";
@@ -1451,13 +1461,28 @@ function generateRecommendedComps() {
         "<hr /></div></div></div></div>"
     );
   });
+  $(".wrapper").animate(
+    {
+      // window.scrollTo(0, $("#teamCompsCB").offset().top)
+      // scrollTop:
+      //   document.getElementById("teamCompsCB").getBoundingClientRect().top -
+      //   navHeight +
+      //   window.scrollY
+      scrollTop:
+        $("#teamCompsCB").offset().top -
+        navHeight -
+        $(".wrapper").offset().top +
+        $(".wrapper").scrollTop()
+    },
+    700
+  );
 }
 
 function generateComps() {
   // clear recommended comps selector
-  $("#recommended-select")
-    .val("0")
-    .change();
+  // $("#recommended-select")
+  //   .val("0")
+  //   .change();
 
   $("#teamCompsCB").html(""); // clear current comps
   let tempComps = JSON.parse(JSON.stringify(teamComps));
@@ -1666,6 +1691,16 @@ $(".boss-selector").on("click", e => {
     generateComps();
     $(".boss-selector").removeClass("active-boss");
     $(e.target).addClass("active-boss");
+    $(".wrapper").animate(
+      {
+        scrollTop:
+          $("#select-boss-text").offset().top -
+          navHeight -
+          $(".wrapper").offset().top +
+          $(".wrapper").scrollTop()
+      },
+      700
+    );
   }
 });
 $(".lap-selector").on("click", function() {
@@ -1678,9 +1713,14 @@ $(".cb-selector option").on("click", function() {
   generateComps();
 });
 // $("#recommended-select option").on("click", () => {
-$("#recommended-comps-selector").on("click", () => {
+let recommendedCompValue = 0;
+$("#recommended-select li a.dropdown-item").on("click", e => {
   $(".boss-selector").removeClass("active-boss");
+  recommendedCompValue = $(e.target).val();
   generateRecommendedComps();
+  $("#recommended-comps-selector").removeClass("show");
+  $("#recommended-select").attr("aria-expanded", "false");
+  $("#recommended-select ul").removeClass("show");
 });
 
 // add padding to tabs to account for navbar placement
