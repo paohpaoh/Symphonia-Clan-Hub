@@ -1278,7 +1278,7 @@ var teamComps = [
     lap: 2,
     player: "Symphonia",
     notes:
-      "FULL AUTO - can replace Hiyori with Tomo for 100k+ more damage. This comp also works for enrage.",
+      "FULL AUTO - can replace Hiyori with Tomo for 100k+ more damage. This comp also works for enrage. If Hiyori dies you might want to reset.",
     special: 3
   },
   {
