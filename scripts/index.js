@@ -1463,11 +1463,6 @@ function generateRecommendedComps() {
   });
   $(".wrapper").animate(
     {
-      // window.scrollTo(0, $("#teamCompsCB").offset().top)
-      // scrollTop:
-      //   document.getElementById("teamCompsCB").getBoundingClientRect().top -
-      //   navHeight +
-      //   window.scrollY
       scrollTop:
         $("#teamCompsCB").offset().top -
         navHeight -
@@ -1479,11 +1474,6 @@ function generateRecommendedComps() {
 }
 
 function generateComps() {
-  // clear recommended comps selector
-  // $("#recommended-select")
-  //   .val("0")
-  //   .change();
-
   $("#teamCompsCB").html(""); // clear current comps
   let tempComps = JSON.parse(JSON.stringify(teamComps));
   tempComps.sort(compareDamage);
@@ -1576,7 +1566,7 @@ function generateComps() {
   }
   if (bossSelectorValue == "1") {
     $("#teamCompsCB").append(
-      "<div class='damage-goal'><b>Damage goal for Boss 1: 1,100,000+</b><br /><hr /></div>"
+      "<div class='damage-goal'><b>Damage goal for B1: 1,100,000+</b><br /><hr /></div>"
     );
   } else if (bossSelectorValue == "2") {
     $("#teamCompsCB").append(
