@@ -1287,12 +1287,13 @@ var teamComps = [
     unit3: ["s tamaki", 3],
     unit4: ["makoto", 5],
     unit5: ["kaori", 5],
-    damage: 1102909,
+    damage: 1100000,
     boss: 1,
     clanBattle: 7,
     lap: 2,
     player: "Symphonia",
-    notes: "FULL AUTO - can replace Djeeta with another flex DPS",
+    notes:
+      "FULL AUTO - can replace Djeeta with another flex DPS, and S Tamaki can be replaced with regular Tamaki.",
     special: 3
   },
   {
@@ -1301,7 +1302,7 @@ var teamComps = [
     unit3: ["tamaki", 5],
     unit4: ["makoto", 5],
     unit5: ["kaori", 5],
-    damage: 1161519,
+    damage: 1150000,
     boss: 4,
     clanBattle: 7,
     lap: 2,
