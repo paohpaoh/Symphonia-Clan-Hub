@@ -1677,7 +1677,8 @@ $("#btnFilterClose").on("click", function() {
 $(".cb-selector option").on("click", function() {
   generateComps();
 });
-$("#recommended-select option").on("click", () => {
+// $("#recommended-select option").on("click", () => {
+$("#recommended-comps-selector").on("click", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
 });
