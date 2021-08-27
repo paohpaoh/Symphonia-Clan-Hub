@@ -1201,7 +1201,7 @@ var teamComps = [
   {
     unit1: ["mitsuki", 5],
     unit2: ["kokkoro", 5],
-    unit3: ["djeeta", 5],
+    unit3: ["djeeta", 4],
     unit4: ["makoto", 5],
     unit5: ["kaori", 5],
     damage: 1100000,
@@ -1225,6 +1225,103 @@ var teamComps = [
     player: "Symphonia",
     notes: "FULL AUTO - only use this team if you can't build the first three",
     special: 2
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["djeeta", 4],
+    unit3: ["s tamaki", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1102909,
+    boss: 1,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - can replace Djeeta with another flex DPS"
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["s tamaki", 3],
+    unit3: ["tamaki", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1161519,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["suzuna", 5],
+    unit3: ["monika", 5],
+    unit4: ["makoto", 5],
+    unit5: ["jun", 5],
+    damage: 1100000,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO",
+    special: 3
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["hiyori", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["lima", 5],
+    damage: 1100000,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes:
+      "FULL AUTO - can replace Hiyori with Tomo for 100k+ more damage. This comp also works for enrage.",
+    special: 3
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["djeeta", 4],
+    unit3: ["s tamaki", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1102909,
+    boss: 1,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO - can replace Djeeta with another flex DPS",
+    special: 3
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["s tamaki", 3],
+    unit3: ["tamaki", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1161519,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO",
+    special: 3
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1150000,
+    boss: 2,
+    clanBattle: 7,
+    lap: 2,
+    player: "Symphonia",
+    notes: "FULL AUTO - only use this team if you can't build the first ones",
+    special: 3
   }
 ];
 
@@ -1261,12 +1358,17 @@ function generateRecommendedComps() {
   switch (whichRecommendedComp) {
     case "1":
       $("#teamCompsCB").append(
-        "<div class='damage-goal'><b>Recommended Comps Set 1</b><br /><br />These teams may not necessarily be best in class for each boss, but 3 of them put together are a good way to distribute your units.<hr /></div>"
+        "<div class='damage-goal'><b>Recommended Comps Set 1</b><br /><br />Use the first two teams, then use any one of the remaining teams.<hr /></div>"
       );
       break;
     case "2":
       $("#teamCompsCB").append(
-        "<div class='damage-goal'><b>Recommended Comps Set 2</b><br /><br />These teams may not necessarily be best in class for each boss, but 3 of them together are a good way to distribute your units.<hr /></div>"
+        "<div class='damage-goal'><b>Recommended Comps Set 2</b><br /><br />Use the first two teams, then use any one of the remaining teams.<hr /></div>"
+      );
+      break;
+    case "3":
+      $("#teamCompsCB").append(
+        "<div class='damage-goal'><b>Recommended Comps Set 3</b><br /><br />Use the first two teams, then use any one of the remaining teams.<hr /></div>"
       );
       break;
   }
@@ -1575,10 +1677,6 @@ $(".cb-selector option").on("click", function() {
   generateComps();
 });
 $("#recommended-select option").on("click", () => {
-  $(".boss-selector").removeClass("active-boss");
-  generateRecommendedComps();
-});
-$("#recommended-select option").on("touchstart", () => {
   $(".boss-selector").removeClass("active-boss");
   generateRecommendedComps();
 });
