@@ -1469,7 +1469,7 @@ function generateRecommendedComps() {
         $(".wrapper").offset().top +
         $(".wrapper").scrollTop()
     },
-    700
+    500
   );
 }
 
