@@ -1142,12 +1142,12 @@ var teamComps = [
     special: 1
   },
   {
-    unit1: ["s kokkoro", 3],
-    unit2: ["mimi", 5],
+    unit1: ["suzuna", 5],
+    unit2: ["s kokkoro", 3],
     unit3: ["s tamaki", 3],
     unit4: ["tamaki", 5],
     unit5: ["makoto", 5],
-    damage: 1000000,
+    damage: 1100000,
     boss: 4,
     clanBattle: 7,
     lap: 2,
@@ -1323,6 +1323,19 @@ var teamComps = [
     player: "Symphonia",
     notes: "FULL AUTO - only use this team if you can't build the first ones",
     special: 3
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["s kokkoro", 3],
+    unit3: ["s tamaki", 3],
+    unit4: ["tamaki", 5],
+    unit5: ["makoto", 5],
+    damage: 1102236,
+    boss: 4,
+    clanBattle: 7,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
 
