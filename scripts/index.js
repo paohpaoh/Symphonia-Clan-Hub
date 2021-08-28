@@ -1153,7 +1153,7 @@ var teamComps = [
     lap: 2,
     player: "Symphonia",
     notes:
-      "FULL AUTO - spam S Tamaki's UB to get one more off at literally the last second. May need to be 9-5 for her last UB to happen.",
+      "FULL AUTO - spam S Tamaki's UB to get one more off at literally the last second. May need to be 9-5 for her last UB to happen. Can also use a variation of this team for B1.",
     special: 1
   },
   {
