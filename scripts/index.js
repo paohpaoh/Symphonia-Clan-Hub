@@ -1337,6 +1337,33 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 5],
+    unit2: ["s karyl", 5],
+    unit3: ["karyl", 4],
+    unit4: ["akari", 5],
+    unit5: ["lima", 5],
+    damage: 906631,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "realda",
+    notes:
+      "MOSTLY AUTO - align UBs with debuffs at around 0:45 before turning auto back on for the rest of the fight. Works for enrage as well(?)"
+  },
+  {
+    unit1: ["tamaki", 5],
+    unit2: ["makoto", 5],
+    unit3: ["nozomi", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 4],
+    damage: 1068993,
+    boss: 5,
+    clanBattle: 7,
+    lap: 2,
+    player: "Taishi",
+    notes: "FULL AUTO - for enrage. Nozomi is 10-5."
   }
 ];
 
