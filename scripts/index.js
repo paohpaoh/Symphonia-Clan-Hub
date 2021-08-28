@@ -1147,12 +1147,13 @@ var teamComps = [
     unit3: ["s tamaki", 3],
     unit4: ["tamaki", 5],
     unit5: ["makoto", 5],
-    damage: 1100000,
+    damage: 1150000,
     boss: 4,
     clanBattle: 7,
     lap: 2,
     player: "Symphonia",
-    notes: "FULL AUTO",
+    notes:
+      "FULL AUTO - spam S Tamaki's UB to get one more off at literally the last second. May need to be 9-5 for her last UB to happen.",
     special: 1
   },
   {
