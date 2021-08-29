@@ -1,8 +1,110 @@
+// add padding to tabs to account for navbar placement
+const navHeight = $("nav.navbar").outerHeight(true);
+$(".tab-pane").css("padding-top", navHeight + 25);
+
+// close navbar after clicking a navbar item
+$("button.nav-link").click(() => {
+  $("button.navbar-toggler").addClass("collapsed");
+  $(".navbar-collapse").removeClass("show");
+});
+
+let compType = "";
+$("#cbcomps-tab").on("click", function() {
+  compType = "regular";
+  generateComps();
+});
+
+let bossSelectorValue = "1";
+$(".boss-selector").on("click", e => {
+  if (!$(e.target).hasClass("active-boss")) {
+    compType = "regular";
+    bossSelectorValue = $(e.target).val();
+    generateComps();
+    $(".boss-selector").removeClass("active-boss");
+    $(e.target).addClass("active-boss");
+    $(".wrapper").animate(
+      {
+        scrollTop:
+          $("#select-boss-text").offset().top -
+          navHeight -
+          $(".wrapper").offset().top +
+          $(".wrapper").scrollTop()
+      },
+      500
+    );
+  }
+});
+
+$(".lap-selector").on("click", function() {
+  compType = "regular";
+  generateComps();
+});
+
+$("#btnFilterClose").on("click", function() {
+  compType = "regular";
+  generateComps();
+});
+
+$(".cb-selector option").on("click", function() {
+  compType = "regular";
+  generateComps();
+});
+
+let pwCounter = 0;
+$("#pw").on("click", function() {
+  if (pwCounter == 0) {
+    $("select.cb-selector").append('<option value="8">CB#8</option>');
+    pwCounter += 1;
+    $("#recommended-select").css("display", "flex");
+  }
+});
+
+let recommendedCompValue = 0;
+$("#recommended-select li a.dropdown-item").on("click", e => {
+  compType = "special";
+  $(".boss-selector").removeClass("active-boss");
+  recommendedCompValue = $(e.target).val();
+  generateComps();
+  $("#recommended-comps-selector").removeClass("show");
+  $("#recommended-select").attr("aria-expanded", "false");
+  $("#recommended-select ul").removeClass("show");
+  $(".wrapper").animate(
+    {
+      scrollTop:
+        $("#teamCompsCB").offset().top -
+        navHeight -
+        $(".wrapper").offset().top +
+        $(".wrapper").scrollTop()
+    },
+    500
+  );
+});
+
 function compareDamage(comp1, comp2) {
   if (comp1.damage > comp2.damage) {
     return -1;
   }
   if (comp2.damage > comp1.damage) {
+    return 1;
+  }
+  return 0;
+}
+
+function compareRange(unit1, unit2) {
+  if (unit1.range < unit2.range) {
+    return -1;
+  }
+  if (unit2.range < unit1.range) {
+    return 1;
+  }
+  return 0;
+}
+
+function compareNames(unit1, unit2) {
+  if (unit1.unit < unit2.unit) {
+    return -1;
+  }
+  if (unit2.unit < unit1.unit) {
     return 1;
   }
   return 0;
@@ -174,7 +276,7 @@ function generateComps() {
         tempHeaders[0].special +
         `</b><br /><br />` +
         tempHeaders[0].notes +
-        `<hr /></div>`
+        `</div><hr />`
     );
   } else {
     let damageString = "";
@@ -190,7 +292,7 @@ function generateComps() {
         damageString +
         "</b><br /><br />" +
         tempHeaders[0].notes +
-        "<br /><hr /></div>"
+        "</div><hr />"
     );
   }
 
@@ -273,83 +375,6 @@ function generateComps() {
   });
 }
 
-let bossSelectorValue = "1";
-let compType = "";
-
-$("#cbcomps-tab").on("click", function() {
-  compType = "regular";
-  generateComps();
-});
-$(".boss-selector").on("click", e => {
-  if (!$(e.target).hasClass("active-boss")) {
-    compType = "regular";
-    bossSelectorValue = $(e.target).val();
-    generateComps();
-    $(".boss-selector").removeClass("active-boss");
-    $(e.target).addClass("active-boss");
-    $(".wrapper").animate(
-      {
-        scrollTop:
-          $("#select-boss-text").offset().top -
-          navHeight -
-          $(".wrapper").offset().top +
-          $(".wrapper").scrollTop()
-      },
-      500
-    );
-  }
-});
-$(".lap-selector").on("click", function() {
-  compType = "regular";
-  generateComps();
-});
-$("#btnFilterClose").on("click", function() {
-  compType = "regular";
-  generateComps();
-});
-$(".cb-selector option").on("click", function() {
-  compType = "regular";
-  generateComps();
-});
-let pwCounter = 0;
-$("#pw").on("click", function() {
-  if (pwCounter == 0) {
-    $("select.cb-selector").append('<option value="8">CB#8</option>');
-    pwCounter += 1;
-    $("#recommended-select").css("display", "flex");
-  }
-});
-let recommendedCompValue = 0;
-$("#recommended-select li a.dropdown-item").on("click", e => {
-  compType = "special";
-  $(".boss-selector").removeClass("active-boss");
-  recommendedCompValue = $(e.target).val();
-  generateComps();
-  $("#recommended-comps-selector").removeClass("show");
-  $("#recommended-select").attr("aria-expanded", "false");
-  $("#recommended-select ul").removeClass("show");
-  $(".wrapper").animate(
-    {
-      scrollTop:
-        $("#teamCompsCB").offset().top -
-        navHeight -
-        $(".wrapper").offset().top +
-        $(".wrapper").scrollTop()
-    },
-    500
-  );
-});
-
-// add padding to tabs to account for navbar placement
-const navHeight = $("nav.navbar").outerHeight(true);
-$(".tab-pane").css("padding-top", navHeight + 25);
-
-// close navbar after clicking a navbar item
-$("button.nav-link").click(() => {
-  $("button.navbar-toggler").addClass("collapsed");
-  $(".navbar-collapse").removeClass("show");
-});
-
 var unitList = [
   { unit: "Lima", range: 105, cb: true },
   { unit: "Miyako", range: 125, cb: true },
@@ -409,26 +434,6 @@ var unitList = [
   { unit: "Yuki", range: 805, cb: false },
   { unit: "Kyouka", range: 810, cb: true }
 ];
-
-function compareRange(unit1, unit2) {
-  if (unit1.range < unit2.range) {
-    return -1;
-  }
-  if (unit2.range < unit1.range) {
-    return 1;
-  }
-  return 0;
-}
-
-function compareNames(unit1, unit2) {
-  if (unit1.unit < unit2.unit) {
-    return -1;
-  }
-  if (unit2.unit < unit1.unit) {
-    return 1;
-  }
-  return 0;
-}
 unitList.sort(compareNames);
 
 // populate unit filter modal
@@ -479,6 +484,9 @@ var tempUnitList2 = JSON.parse(JSON.stringify(unitList));
 tempUnitList2.sort(compareRange);
 const sarenRange = tempUnitList2.find(i => i.unit === "Saren").range;
 for (i = 0; i < tempUnitList2.length; i += 1) {
+  if (tempUnitList2[i].unit === "Saren") {
+    $("div.guides").append("<br />");
+  }
   $("div.guides").append(
     `<div class="d-inline-block text-center unit-range m-1"><img class="img-fluid unit-range rounded-3" src="./images/${tempUnitList2[
       i
@@ -486,4 +494,7 @@ for (i = 0; i < tempUnitList2.length; i += 1) {
       tempUnitList2[i].range - sarenRange
     )}</div></div>`
   );
+  if (tempUnitList2[i].unit === "Saren") {
+    $("div.guides").append("<br />");
+  }
 }

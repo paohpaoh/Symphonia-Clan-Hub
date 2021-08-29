@@ -37,6 +37,7 @@ body {
   z-index: 100;
   position: fixed;
   top: 0;
+  opacity: 0.95;
   a.navbar-brand {
     font-family: Courier New, Courier;
   }
@@ -44,7 +45,6 @@ body {
 button.active {
   color: #36303c !important;
   background-color: #f8f9fa !important;
-  // border-radius: 0px !important;
 }
 .wrapper {
   position: fixed;
@@ -63,6 +63,9 @@ button.active {
 @media only screen and (min-width: 600px) {
   body {
     background-image: url("../images/background5a.jpg");
+  }
+  .navbar {
+    background-color: #160f16;
   }
 }
 @media only screen and (max-width: 575.5px) {
@@ -89,6 +92,9 @@ button.active {
   body {
     background-image: url("../images/mobile-background1.jpg");
   }
+  .navbar {
+    background-color: #36303c;
+  }
 }
 .header {
   padding-top: 20px;
@@ -111,8 +117,18 @@ button.active {
   // display: none;
   display: flex;
   justify-content: center !important;
+  button {
+  }
+  ul.dropdown-menu {
+    background-color: #36303c !important;
+  }
+  a:hover,
+  option:hover {
+    background-color: #6c757d !important;
+  }
 }
 .damage-goal {
+  padding-bottom: 1rem;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 1.2rem;
