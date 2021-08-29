@@ -10,18 +10,28 @@ $("button.nav-link").click(() => {
 
 let pwCounter = 0;
 $("#pw1").on("click", function() {
-  pwCounter += 10;
+  pwCounter += 11;
 });
 $("#pw2").on("click", function() {
+  pwCounter += 12;
+});
+$("#pw3").on("click", function() {
+  pwCounter += 13;
+});
+$("#pw4").on("click", function() {
+  pwCounter += 14;
+});
+$("#pw5").on("click", function() {
   pwCounter += 15;
 });
 
 let compType = "";
 $("#cbcomps-tab").on("click", function() {
   compType = "regular";
-  if (pwCounter == 40) {
+  if (pwCounter == 35) {
     $("select.cb-selector").append('<option value="8">CB#8</option>');
     $("#recommended-select").css("display", "flex");
+    pwCounter += 5;
   }
   generateComps();
 });
