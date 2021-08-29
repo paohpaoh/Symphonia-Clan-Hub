@@ -108,7 +108,9 @@ button.active {
   min-height: 80vh;
 }
 #recommended-select {
-  // max-width: 300px !important;
+  // display: none;
+  display: flex;
+  justify-content: center !important;
 }
 .damage-goal {
   margin-left: 10px;
