@@ -281,7 +281,7 @@ function generateComps() {
     !$(location).attr("href") ==
     "https://paohpaoh.github.io/Symphonia-Clan-Hub/"
   ) {
-    sub = '`<div class="placeholder-text"></div>`';
+    sub = '`<div class="placeholder-text">comps</div>`';
   }
 
   if (tempComps.length == 0) {
