@@ -276,6 +276,13 @@ function generateComps() {
     tempComps = tempComps.filter(item => item);
   }
 
+  let sub = "";
+  if (
+    $(location).attr("href") == "https://paohpaoh.github.io/Symphonia-Clan-Hub/"
+  ) {
+    sub = '`<div class="placeholder-text"></div>`';
+  }
+
   if (tempComps.length == 0) {
     $("#teamCompsCB").append(
       '<div class="placeholder-text">No team comps currently available for this boss with the current filters. Change your filters and try again, or check back later for updates!</div>'
@@ -373,6 +380,7 @@ function generateComps() {
         // '<hr class="comp-spacer" />' +
         `</div><div class="container mb-3 p-1 text-center"><div class="row mx-1"><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit1[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
         starContainer1String +
+        sub +
         `</div></div></div><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit2[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
         starContainer2String +
         `</div></div></div><div class="col p-1 mr-1"><img class="img-fluid unit rounded-3" src="./images/${comp.unit3[0]}.png" /><div class="container stars-container p-0"><div class="row p-0"><div class="col p-0 star first-star"><img class="img-fluid" src="./images/star.png" /></div>` +
