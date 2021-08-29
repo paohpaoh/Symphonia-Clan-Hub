@@ -322,7 +322,8 @@ function generateComps() {
     for (stars = 1; stars < 5; stars += 1) {
       if (stars < comp.unit1[1]) {
         starContainer1String +=
-          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>';
+          '<div class="col p-0 star"><img class="img-fluid" src="./images/star.png" /></div>' +
+          sub;
       } else {
         starContainer1String +=
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
