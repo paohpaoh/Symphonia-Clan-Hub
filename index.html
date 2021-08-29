@@ -96,7 +96,9 @@
         >
           <div class="text-white pt-1 mt-1">
             <h4 class="text-center mb-3 mx-auto">
-              <u><b>Symphonia Clan Hub</b></u>
+              <u
+                ><b>Symphonia Clan <span id="pw1">Hub</span></b></u
+              >
             </h4>
             <div class="mx-3">
               All suggestions and feedback welcome! Feel free to DM me or post
@@ -108,7 +110,10 @@
                   Added a Recommended Comps selector to the team comps tab
                 </li>
                 <li>Revamped the CB Comps UI</li>
-                <li>Added Saren distance reference to Guides tab</li>
+                <li>
+                  Added <span id="pw2">Saren</span> distance reference to Guides
+                  tab
+                </li>
                 <li>Added unit filters to team comps tab</li>
                 <li>New navigation bar</li>
                 <li>New pages added</li>
@@ -128,8 +133,7 @@
                 </li>
                 <li>
                   <strike
-                    >Clean up team comp filters to only include
-                    <span id="pw">CB</span> units</strike
+                    >Clean up team comp filters to only include CB units</strike
                   >
                   - DONE
                 </li>
@@ -159,26 +163,6 @@
                 <option value="7" selected>CB#7</option>
               </select>
             </h4>
-            <!-- <div class="d-flex justify-content-center mx-3">
-              <select
-                id="recommended-select"
-                class="form-select form-select-md text-dark"
-                size="1"
-                aria-label="Recommended Comps Selector"
-                ><option value="0" selected>Select Recommended Comps</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button
-                id="recommended-comps-selector"
-                class="py-2 my-2 mx-3 px-2"
-              >
-                Click to view recommended comps
-              </button>
-            </div> -->
             <div id="recommended-select" class="w-100">
               <button
                 class="btn btn-transparent text-light border border-2 border-light dropdown-toggle"
@@ -217,7 +201,7 @@
               </ul>
             </div>
             <div class="container mb-2 p-1 mt-3">
-              <div class="row text-center">
+              <div class="row text-center mx-auto" style="max-width: 327px;">
                 <div class="col-8 my-auto">
                   <button
                     type="button"
@@ -262,7 +246,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 my-auto ps-0 pe-0">
+                <div class="col-4 my-auto ps-0 pe-3">
                   <div class="form-check lap-selector">
                     <input
                       class="form-check-input"

@@ -8,9 +8,21 @@ $("button.nav-link").click(() => {
   $(".navbar-collapse").removeClass("show");
 });
 
+let pwCounter = 0;
+$("#pw1").on("click", function() {
+  pwCounter += 10;
+});
+$("#pw2").on("click", function() {
+  pwCounter += 15;
+});
+
 let compType = "";
 $("#cbcomps-tab").on("click", function() {
   compType = "regular";
+  if (pwCounter == 40) {
+    $("select.cb-selector").append('<option value="8">CB#8</option>');
+    $("#recommended-select").css("display", "flex");
+  }
   generateComps();
 });
 
@@ -48,15 +60,6 @@ $("#btnFilterClose").on("click", function() {
 $(".cb-selector option").on("click", function() {
   compType = "regular";
   generateComps();
-});
-
-let pwCounter = 0;
-$("#pw").on("click", function() {
-  if (pwCounter == 0) {
-    $("select.cb-selector").append('<option value="8">CB#8</option>');
-    pwCounter += 1;
-    $("#recommended-select").css("display", "flex");
-  }
 });
 
 let recommendedCompValue = 0;
