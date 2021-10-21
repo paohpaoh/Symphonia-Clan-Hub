@@ -1462,20 +1462,6 @@ var teamComps = [
     notes: "FULL AUTO - Can replace Arisa with Hiyori or Tomo"
   },
   {
-    unit1: ["mitsuki", 5],
-    unit2: ["hiyori", 5],
-    unit3: ["makoto", 5],
-    unit4: ["kaori", 5],
-    unit5: ["kuuka", 5],
-    damage: 1000000,
-    boss: 5,
-    clanBattle: 9,
-    lap: 2,
-    special: 1,
-    player: "Symphonia",
-    notes: "FULL AUTO - requires 9-6 Hiyori. Can also replace Hiyori with Tomo"
-  },
-  {
     unit1: ["shiori", 5],
     unit2: ["saren", 5],
     unit3: ["makoto", 5],

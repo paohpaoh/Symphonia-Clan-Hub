@@ -189,5 +189,47 @@ var compHeaders = [
     clanBattle: 9,
     notes:
       "HOW TO USE THIS LIST:<ol><li>Pick a mage comp</li><li>Pick a Jun comp</li><li>Pick any comp with Mitsuki</li></ul>"
+  },
+  {
+    boss: 1,
+    damage: 1300000,
+    lap: 2,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 1300000,
+    lap: 2,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 1400000,
+    lap: 2,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 1050000,
+    lap: 2,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 1000000,
+    lap: 2,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 6,
+    damage: 1000000,
+    lap: 2,
+    clanBattle: 9,
+    notes: ""
   }
 ];
