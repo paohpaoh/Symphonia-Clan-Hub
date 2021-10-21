@@ -183,5 +183,11 @@ var compHeaders = [
     special: 3,
     clanBattle: 7,
     notes: "Use the first two teams, then use any one of the remaining teams."
+  },
+  {
+    special: 1,
+    clanBattle: 9,
+    notes:
+      "HOW TO USE THIS LIST:<ol><li>Pick a mage comp</li><li>Pick a Jun comp</li><li>Pick any comp with Mitsuki</li></ul>"
   }
 ];
