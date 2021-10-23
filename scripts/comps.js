@@ -1529,6 +1529,7 @@ var teamComps = [
     clanBattle: 9,
     lap: 3,
     player: "paoh",
-    notes: "FULL AUTO - can replace Eriko with Hiyori, Tomo, Djeeta, etc."
+    notes:
+      "FULL AUTO - can replace Eriko with Hiyori, Tomo, Djeeta, etc. Can also replace Eriko with S Tamaki if you have her raised for a more consistent 650k+ damage but it requires manual use"
   }
 ];
