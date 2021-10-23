@@ -1560,7 +1560,7 @@ var teamComps = [
     special: 2,
     player: "Symphonia",
     notes:
-      "MOSTLY AUTO - I had to spam S Tamaki UB to line up with Mitsuki defense shred, but this may change depending on how geared your S Tamaki is."
+      "MOSTLY AUTO - I had to spam S Tamaki UB to line up with Mitsuki defense shred, but this may change depending on how geared your S Tamaki is. H Miyako is actually great here (can replace S Tamaki with H Miyako) if you have her built."
   },
   {
     unit1: ["kyouka", 3],
@@ -1590,7 +1590,7 @@ var teamComps = [
     special: 2,
     player: "Symphonia",
     notes:
-      "FULL AUTO - can replace Eriko with another flex DPS. Using S Tamaki in place of Eriko and manually playing can get you a consistent 650k+. However, you may want to use Eriko or another flex DPS here instead because this will allow you to hit B2 with the Jun + double Tamaki comp. You should always start your first physical team hit of the day by borrowing Makoto; this way you have the option to make either two Jun comps or two comps with Kaori + Makoto"
+      "FULL AUTO - can replace Eriko with another flex DPS. Using S Tamaki in place of Eriko and manually playing can get you a consistent 650k+. However, you may want to use Eriko or another flex DPS here instead because this will allow you to hit B2 with the Jun + double Tamaki comp (assuming you don't have H Miyako). You should always start your first physical team hit of the day by borrowing Makoto; this way you have the option to make either two Jun comps or two comps with Kaori + Makoto"
   },
   {
     unit1: ["kyouka", 3],
