@@ -215,7 +215,12 @@ function generateComps() {
           }
           break;
         case "2":
-          if (tempComp.lap == 1) {
+          if (tempComp.lap != 2) {
+            tempComps[x] = "";
+          }
+          break;
+        case "3":
+          if (tempComp.lap != 3) {
             tempComps[x] = "";
           }
           break;
@@ -230,7 +235,12 @@ function generateComps() {
           }
           break;
         case "2":
-          if (tempHeader.lap == 1) {
+          if (tempHeader.lap != 2) {
+            tempHeaders[x] = "";
+          }
+          break;
+        case "3":
+          if (tempHeader.lap != 3) {
             tempHeaders[x] = "";
           }
           break;

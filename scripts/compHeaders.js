@@ -231,5 +231,47 @@ var compHeaders = [
     lap: 2,
     clanBattle: 9,
     notes: ""
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 3,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 3,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 3,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 600000,
+    lap: 3,
+    clanBattle: 9,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 1000000,
+    lap: 3,
+    clanBattle: 9,
+    notes: "Mage comp recommended"
+  },
+  {
+    boss: 6,
+    damage: 1000000,
+    lap: 3,
+    clanBattle: 9,
+    notes: ""
   }
 ];

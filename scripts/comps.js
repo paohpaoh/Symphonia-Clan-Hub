@@ -1448,7 +1448,7 @@ var teamComps = [
       "FULL AUTO - Ilya has a high chance of dying, but you can spam UB to try to mitigate the risk. If you are afraid of the RNG, you can replace Ilya with regular Karyl for a safer run that does ~125k less damage (although there is still a chance that this comp fails as well)."
   },
   {
-    unit1: ["arisa", 4],
+    unit1: ["Shiori", 5],
     unit2: ["s kokkoro", 3],
     unit3: ["makoto", 5],
     unit4: ["kaori", 5],
@@ -1459,7 +1459,7 @@ var teamComps = [
     lap: 2,
     special: 1,
     player: "Symphonia",
-    notes: "FULL AUTO - Can replace Arisa with Hiyori or Tomo"
+    notes: "FULL AUTO - Can replace Shiori with Hiyori, Arisa, or Tomo"
   },
   {
     unit1: ["shiori", 5],
@@ -1517,5 +1517,18 @@ var teamComps = [
     special: 1,
     player: "Symphonia",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["eriko", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 621042,
+    boss: 4,
+    clanBattle: 9,
+    lap: 3,
+    player: "paoh",
+    notes: "FULL AUTO - can replace Eriko with Hiyori, Tomo, Djeeta, etc."
   }
 ];
