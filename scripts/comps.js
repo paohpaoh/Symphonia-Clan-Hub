@@ -1531,5 +1531,80 @@ var teamComps = [
     player: "paoh",
     notes:
       "FULL AUTO - can replace Eriko with Hiyori, Tomo, Djeeta, etc. Can also replace Eriko with S Tamaki if you have her raised for a more consistent 650k+ damage but it requires manual use"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["kokkoro", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 700000,
+    boss: 1,
+    clanBattle: 9,
+    lap: 3,
+    special: 2,
+    player: "Symphonia",
+    notes:
+      "MANUAL TANK SWAP - RNG heavily affects damage on this comp. If Kaori dies before you can tank swap, your damage will be closer to 700k. If Kaori lives and you fully manual, you can hit 900k+. This is not the most damaging comp you can use for B1, but it is optimal when you factor in all three of your hits for the day (because this comp only uses 2 defense down debuffers, and you want to save mages for B3/B5 if possible)"
+  },
+  {
+    unit1: ["mitsuki", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["tamaki", 5],
+    unit4: ["makoto", 5],
+    unit5: ["jun", 5],
+    damage: 700000,
+    boss: 2,
+    clanBattle: 9,
+    lap: 3,
+    special: 2,
+    player: "Symphonia",
+    notes:
+      "MOSTLY AUTO - I had to spam S Tamaki UB to line up with Mitsuki defense shred, but this may change depending on how geared your S Tamaki is."
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 4],
+    unit3: ["misato", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 700000,
+    boss: 3,
+    clanBattle: 9,
+    lap: 3,
+    special: 2,
+    player: "Symphonia",
+    notes:
+      "EASY MANUAL - Line up UBs with Akari's magic attack buff UB. Spam Ilya UB as necessary to prevent her from dying"
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["eriko", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 600000,
+    boss: 4,
+    clanBattle: 9,
+    lap: 3,
+    special: 2,
+    player: "Symphonia",
+    notes:
+      "FULL AUTO - can replace Eriko with another flex DPS. Using S Tamaki in place of Eriko and manually playing can get you a consistent 650k+. However, you may want to use Eriko or another flex DPS here instead because this will allow you to hit B2 with the Jun + double Tamaki comp. You should always start your first physical team hit of the day by borrowing Makoto; this way you have the option to make either two Jun comps or two comps with Kaori + Makoto"
+  },
+  {
+    unit1: ["kyouka", 3],
+    unit2: ["s karyl", 4],
+    unit3: ["misato", 5],
+    unit4: ["akari", 5],
+    unit5: ["ilya", 5],
+    damage: 1200000,
+    boss: 5,
+    clanBattle: 9,
+    lap: 3,
+    special: 2,
+    player: "Symphonia",
+    notes:
+      "EASY MANUAL - Line up UBs with Akari's magic attack buff UB. Spam Ilya UB as necessary to prevent her from dying"
   }
 ];
