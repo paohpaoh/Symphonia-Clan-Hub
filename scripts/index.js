@@ -38,6 +38,7 @@ $(".navbar-brand").on("click", function() {
     $("select.cb-selector").append('<option value="10">CB#10</option>');
     $("#recommended-select").css("display", "flex");
     pwCounter += 5;
+    $("select.cb-selector").val("10");
     generateComps();
     $("#cbcomps-tab").click();
   }
