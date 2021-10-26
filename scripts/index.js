@@ -38,9 +38,9 @@ $(".navbar-brand").on("click", function() {
     $("select.cb-selector").append('<option value="10">CB#10</option>');
     $("#recommended-select").css("display", "flex");
     pwCounter += 5;
+    generateComps();
+    $("#cbcomps-tab").click();
   }
-  generateComps();
-  $("#cbcomps-tab").click();
 });
 
 let bossSelectorValue = "1";
