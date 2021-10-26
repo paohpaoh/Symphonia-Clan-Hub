@@ -83,6 +83,20 @@
                   Guides
                 </button>
               </li>
+              <li class="nav-item mx-1" role="presentation">
+                <button
+                  class="nav-link py-1"
+                  id="hall-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#hall"
+                  type="button"
+                  role="tab"
+                  aria-controls="hall"
+                  aria-selected="false"
+                >
+                  Hall of Honor
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -96,10 +110,12 @@
         >
           <div class="text-white pt-1 mt-1">
             <h4 class="text-center mb-3 mx-auto">
-              <u
-                ><b>Symphonia Clan <span id="pw1">Hub</span></b></u
+              <b
+                ><span id="pw7">Symphonia</span> <span id="pw6">Clan</span>
+                <span id="pw1">Hub</span></b
               >
             </h4>
+            <hr class="pt-0 mt-0 mb-4 text-white" />
             <div class="mx-3">
               All suggestions and feedback welcome! Feel free to DM me or post
               in clan chat if you have a feature you'd like to see, or if you've
@@ -157,11 +173,11 @@
           role="tabpanel"
           aria-labelledby="cbcomps-tab"
         >
-          <div class="team-comps mx-auto text-white">
-            <h4 class="ms-5 text-center mb-3">
-              <b><u>Team Comps:</u> </b
+          <div class="team-comps mx-auto text-white pt-1 mt-1">
+            <h4 class="ms-5 text-center mb-3 py-0 border-0">
+              <b>Team Comps: </b
               ><select
-                class="form-select form-select-lg cb-selector text-white bg-transparent border-0 px-0 mx-0"
+                class="form-select form-select-lg cb-selector text-white bg-transparent border-0 py-0 my-0 px-0 mx-0"
                 size="1"
                 aria-label="CB Selector"
               >
@@ -171,6 +187,7 @@
                 <option value="9" selected>CB#9</option>
               </select>
             </h4>
+            <hr class="pt-0 mt-0 mb-4 text-white" />
             <div id="recommended-select" class="w-100">
               <button
                 class="btn btn-transparent text-light border border-2 border-light dropdown-toggle"
@@ -359,6 +376,45 @@
             <hr class="pt-0 mt-0 mb-4 text-white" />
             <div class="guides text-center">
               Saren distance reference <br />
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="hall"
+          role="tabpanel"
+          aria-labelledby="hall-tab"
+        >
+          <div class="mx-3 text-white">
+            <div class="mx-auto pt-1 mt-1">
+              <h4 class="text-center mb-3">
+                <b>Hall of Honor</b>
+              </h4>
+            </div>
+            <hr class="pt-0 mt-0 mb-4 text-white" />
+            <div class="hall mx-auto">
+              <div class="text-center">
+                <b> Clanmates who understand pain:</b><br />
+                <div class="text-left">
+                  <ul class="mx-auto ps-3">
+                    <li>
+                      <b>Sqorl</b>, who pulled <b>300</b> times for Christina
+                    </li>
+                    <li>
+                      <b>Grimmer</b>, who pulled <b>300</b> times for Christina
+                    </li>
+                    <li>
+                      <b>Banter</b>, who pulled <b>300</b> times for Christina
+                    </li>
+                    <li>
+                      <b>Ruben</b>, who pulled <b>300</b> times for Christina
+                    </li>
+                    <li>
+                      <b>Misery</b>, who pulled <b>293</b> times for Christina
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

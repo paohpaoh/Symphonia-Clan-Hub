@@ -117,8 +117,8 @@ button.active {
   min-height: 80vh;
 }
 #recommended-select {
-  // display: none;
-  display: flex;
+  display: none;
+  // display: flex;
   justify-content: center !important;
   button {
   }
@@ -192,6 +192,8 @@ button.active {
   &:focus {
     box-shadow: none !important;
   }
+  max-height: 24.7px !important;
+  margin-top: -2px !important;
 }
 .boss-selector {
   border: 1px solid grey;
@@ -225,4 +227,7 @@ button.active {
 }
 .text-left {
   text-align: left !important;
+}
+.hall {
+  max-width: 370px;
 }

@@ -24,16 +24,23 @@ $("#pw4").on("click", function() {
 $("#pw5").on("click", function() {
   pwCounter += 15;
 });
+$("#pw6").on("click", function() {
+  pwCounter += 16;
+});
+$("#pw7").on("click", function() {
+  pwCounter += 17;
+});
 
 let compType = "";
-$("#cbcomps-tab").on("click", function() {
+$(".navbar-brand").on("click", function() {
   compType = "regular";
-  if (pwCounter == 35) {
-    $("select.cb-selector").append('<option value="8">CB#8</option>');
+  if (pwCounter == 39) {
+    $("select.cb-selector").append('<option value="10">CB#10</option>');
     $("#recommended-select").css("display", "flex");
     pwCounter += 5;
   }
   generateComps();
+  $("#cbcomps-tab").click();
 });
 
 let bossSelectorValue = "1";
