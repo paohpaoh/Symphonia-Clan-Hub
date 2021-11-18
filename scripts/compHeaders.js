@@ -317,6 +317,7 @@ var compHeaders = [
     damage: 1500000,
     lap: 1,
     clanBattle: 10,
-    notes: ""
+    notes:
+      "You'll want to save your best team for this boss because it is the hardest to hit."
   }
 ];
