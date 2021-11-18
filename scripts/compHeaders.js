@@ -283,5 +283,40 @@ var compHeaders = [
     clanBattle: 9,
     notes:
       "The comps here can be used on full auto, but manual is greatly preferred as manual will increase your damage by 200k+ in many cases. When doing your first physical team hit of the day, always borrow Makoto first. This will allow you to make two comps with Jun, two comps with Kaori, or two comps with Mitsuki depending on which boss you're going to hit later"
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 1,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 1,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 1,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 1,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 1500000,
+    lap: 1,
+    clanBattle: 10,
+    notes: ""
   }
 ];

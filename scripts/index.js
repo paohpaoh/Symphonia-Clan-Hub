@@ -213,7 +213,7 @@ function generateComps() {
     });
     tempHeaders = tempHeaders.filter(item => item);
 
-    // filter based on lap
+    // filter based on lap and change "Select Boss" text
     const whichLap = $(".lap-selector .form-check-input:checked").val();
     $(tempComps).each((x, tempComp) => {
       switch (whichLap) {
@@ -292,6 +292,22 @@ function generateComps() {
       });
     });
     tempComps = tempComps.filter(item => item);
+
+    // change "Select Boss" text to reflect the laps associated with selected stage
+    var stageLaps;
+    console.log(stageLaps);
+    switch (whichLap) {
+      case "1":
+        stageLaps = "Select Boss - Stage 1 (Laps 1 through 3)";
+        break;
+      case "2":
+        stageLaps = "Select Boss - Stage 2 (Laps 4 through 10)";
+        break;
+      case "3":
+        stageLaps = "Select Boss - Stage 3 (Lap 11+)";
+        break;
+    }
+    $("#select-boss-text").html(stageLaps);
   }
 
   let sub = "";
@@ -440,6 +456,7 @@ var unitList = [
   { unit: "Djeeta", range: 245, cb: true },
   { unit: "Rei", range: 250, cb: true },
   { unit: "Shizuru", range: 285, cb: true },
+  { unit: "Christina", range: 290, cb: true },
   { unit: "Mimi", range: 360, cb: true },
   { unit: "Shinobu", range: 365, cb: true },
   { unit: "Mahiru", range: 395, cb: false },

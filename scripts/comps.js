@@ -1606,5 +1606,44 @@ var teamComps = [
     player: "Symphonia",
     notes:
       "EASY MANUAL - Line up UBs with Akari's magic attack buff UB. Spam Ilya UB as necessary to prevent her from dying"
+  },
+  {
+    unit1: ["shinobu", 3],
+    unit2: ["christina", 5],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1584833,
+    boss: 5,
+    clanBattle: 10,
+    lap: 1,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1452578,
+    boss: 5,
+    clanBattle: 10,
+    lap: 1,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["tomo", 3],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1335348,
+    boss: 5,
+    clanBattle: 10,
+    lap: 1,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
