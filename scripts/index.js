@@ -80,6 +80,11 @@ $(".cb-selector option").on("click", function() {
   generateComps();
 });
 
+$("#cbcomps-tab").on("click", function() {
+  compType = "regular";
+  generateComps();
+});
+
 let recommendedCompValue = 0;
 $("#recommended-select li a.dropdown-item").on("click", e => {
   compType = "special";
