@@ -286,14 +286,14 @@ var compHeaders = [
   },
   {
     boss: 1,
-    damage: 0,
+    damage: 1800000,
     lap: 1,
     clanBattle: 10,
     notes: ""
   },
   {
     boss: 2,
-    damage: 0,
+    damage: 1800000,
     lap: 1,
     clanBattle: 10,
     notes: ""
@@ -303,11 +303,11 @@ var compHeaders = [
     damage: 0,
     lap: 1,
     clanBattle: 10,
-    notes: ""
+    notes: "MAGES ONLY - see spreadsheet for specific comps"
   },
   {
     boss: 4,
-    damage: 0,
+    damage: 1700000,
     lap: 1,
     clanBattle: 10,
     notes: ""

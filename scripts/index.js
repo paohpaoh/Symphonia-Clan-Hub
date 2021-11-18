@@ -138,6 +138,11 @@ function generateComps() {
 
   // filter based on clan clan battle
   const whichCB = $("select.cb-selector").val();
+  if (whichCB >= 10) {
+    $("button.boss-selector[value=6]").css("display", "none");
+  } else {
+    $("button.boss-selector[value=6]").css("display", "initial");
+  }
   $(tempComps).each((x, tempComp) => {
     if (tempComps[x].clanBattle != whichCB) {
       tempComps[x] = "";
@@ -295,7 +300,6 @@ function generateComps() {
 
     // change "Select Boss" text to reflect the laps associated with selected stage
     var stageLaps;
-    console.log(stageLaps);
     switch (whichLap) {
       case "1":
         stageLaps = "Select Boss - Stage 1 (Laps 1 through 3)";
