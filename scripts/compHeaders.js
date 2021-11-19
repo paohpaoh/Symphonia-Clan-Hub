@@ -325,35 +325,39 @@ var compHeaders = [
     damage: 1800000,
     lap: 2,
     clanBattle: 10,
-    notes: ""
+    notes:
+      "1.8m damage is near the top end of what you can get, but it's preferred that you use a Kokkoro tank swap comp (~1.1m damage) in order to save your best units for Boss 4 and 5. Mages might work here as well if you know you aren't going to hit Boss 3."
   },
   {
     boss: 2,
     damage: 1700000,
     lap: 2,
     clanBattle: 10,
-    notes: ""
+    notes:
+      "1.7m damage is near the top end of what you can get, but it's preferred that you use a Kokkoro tank swap comp (~1.1m damage) in order to save your best units for Boss 4 and 5."
   },
   {
     boss: 3,
-    damage: 0,
+    damage: 1250000,
     lap: 2,
     clanBattle: 10,
-    notes: "MAGES ONLY - see spreadsheet for specific comps"
+    notes:
+      "MAGES ONLY - if you have your own 5* Ilya this opens up more options for you to experiment."
   },
   {
     boss: 4,
-    damage: 0,
+    damage: 1400000,
     lap: 2,
     clanBattle: 10,
-    notes: ""
+    notes:
+      "Recommended to use the S Kokkoro - Christina - S Tamaki - Eriko - Makoto comp."
   },
   {
     boss: 5,
     damage: 1300000,
     lap: 2,
     clanBattle: 10,
-    notes: ""
+    notes: "Recommended to use the Jun comp."
   },
   {
     special: 1,
