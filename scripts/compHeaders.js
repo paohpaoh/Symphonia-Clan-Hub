@@ -300,7 +300,7 @@ var compHeaders = [
   },
   {
     boss: 3,
-    damage: 0,
+    damage: 1700000,
     lap: 1,
     clanBattle: 10,
     notes: "MAGES ONLY - see spreadsheet for specific comps"
@@ -319,5 +319,40 @@ var compHeaders = [
     clanBattle: 10,
     notes:
       "You'll want to save your best team for this boss because it is the hardest to hit."
+  },
+  {
+    boss: 1,
+    damage: 1800000,
+    lap: 2,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 1700000,
+    lap: 2,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 2,
+    clanBattle: 10,
+    notes: "MAGES ONLY - see spreadsheet for specific comps"
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 2,
+    clanBattle: 10,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 1300000,
+    lap: 2,
+    clanBattle: 10,
+    notes: ""
   }
 ];
