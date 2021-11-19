@@ -2247,7 +2247,7 @@ var teamComps = [
     unit3: ["misato", 5],
     unit4: ["akari", 5],
     unit5: ["ilya", 5],
-    damage: 12500000,
+    damage: 1250000,
     boss: 3,
     clanBattle: 10,
     lap: 2,
