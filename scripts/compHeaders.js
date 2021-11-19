@@ -354,5 +354,11 @@ var compHeaders = [
     lap: 2,
     clanBattle: 10,
     notes: ""
+  },
+  {
+    special: 1,
+    clanBattle: 10,
+    notes:
+      "Hit Boss 5 with the first team and Boss 4 with the second team. Then, use a mage comp to hit Boss 3, <b>OR</b> use a Kokkoro swap comp to hit Boss 1 or 2. You can also use the team with S Tamaki to hit Boss 1 or 2 in a pinch, but you should really be saving that team for Boss 4."
   }
 ];
