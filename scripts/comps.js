@@ -2244,16 +2244,15 @@ var teamComps = [
   {
     unit1: ["kyouka", 4],
     unit2: ["s karyl", 3],
-    unit3: ["misato", 5],
+    unit3: ["karyl", 5],
     unit4: ["akari", 5],
-    unit5: ["ilya", 5],
-    damage: 1250000,
+    unit5: ["christina", 5],
+    damage: 1400000,
     boss: 3,
     clanBattle: 10,
     lap: 2,
     player: "Symphonia",
-    notes:
-      "ALMOST FULL AUTO - spam Ilya UB as necessary to keep her alive. If you have a 5* Ilya you have a few more options for team comps.",
+    notes: "FULL AUTO.",
     special: 1
   },
   {
@@ -2270,5 +2269,31 @@ var teamComps = [
     notes:
       "SEMI-AUTO - basically full auto, except manual to tank swap Kokkoro in. This comp does ~1.1m on B1 or ~1.3m on B2. Sub out Arisa or Djeeta as necessary with other flex DPS (that you aren't already using on Boss 4 or 5).",
     special: 1
+  },
+  {
+    unit1: ["kyouka", 4],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["akari", 5],
+    unit5: ["christina", 5],
+    damage: 1405638,
+    boss: 3,
+    clanBattle: 10,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 4],
+    unit2: ["s karyl", 3],
+    unit3: ["karyl", 5],
+    unit4: ["ilya", 5],
+    unit5: ["christina", 5],
+    damage: 1353768,
+    boss: 3,
+    clanBattle: 10,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   }
 ];
