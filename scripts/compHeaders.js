@@ -334,15 +334,15 @@ var compHeaders = [
     lap: 2,
     clanBattle: 10,
     notes:
-      "1.7m damage is near the top end of what you can get, but it's preferred that you use a Kokkoro tank swap comp (~1.1m damage) in order to save your best units for Boss 4 and 5."
+      "1.7m damage is near the top end of what you can get, but it's preferred that you use a Kokkoro tank swap comp (~1.3m damage) in order to save your best units for Boss 4 and 5."
   },
   {
     boss: 3,
-    damage: 1250000,
+    damage: 1400000,
     lap: 2,
     clanBattle: 10,
     notes:
-      "MAGES ONLY - if you have your own 5* Ilya this opens up more options for you to experiment."
+      "MAGES ONLY - Christina-Mage comp is preferred. If you have your own 5* Ilya this opens up more options for you to experiment."
   },
   {
     boss: 4,
