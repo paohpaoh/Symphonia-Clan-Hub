@@ -2223,7 +2223,7 @@ var teamComps = [
     lap: 2,
     player: "Symphonia",
     notes:
-      "FULL AUTO - there are a lot of small optimizations you can do if you line up UBs with Makoto UB to get +150k or more damage.",
+      "FULL AUTO - there are a lot of small optimizations you can do if you line up UBs with Makoto UB to get +150k or more damage. Can replace Tomo with Hiyori or another flex DPS.",
     special: 1
   },
   {
@@ -2238,7 +2238,7 @@ var teamComps = [
     lap: 2,
     player: "Symphonia",
     notes:
-      "FULL AUTO - can replace Tomo with Hiyori/Djeeta, and can also replace S Tamaki with regular Tamaki. Eriko is preferred here; try not to replace her.",
+      "FULL AUTO - can replace S Tamaki with regular Tamaki. Eriko is preferred here; try not to replace her.",
     special: 1
   },
   {
@@ -2268,7 +2268,7 @@ var teamComps = [
     lap: 2,
     player: "Symphonia",
     notes:
-      "SEMI-AUTO - basically full auto, except manual to tank swap Kokkoro in. This comp does ~1.1m on B1 or ~1.3m on B2.",
+      "SEMI-AUTO - basically full auto, except manual to tank swap Kokkoro in. This comp does ~1.1m on B1 or ~1.3m on B2. Sub out Arisa or Djeeta as necessary with other flex DPS (that you aren't already using on Boss 4 or 5).",
     special: 1
   }
 ];
