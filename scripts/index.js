@@ -224,7 +224,7 @@ function generateComps() {
     tempHeaders = tempHeaders.filter(item => item);
 
     // filter based on lap and change "Select Boss" text
-    const whichLap = $(".lap-selector .form-check-input:checked").val();
+    const whichLap = $(".lap-selector .btn-check:checked").val();
     $(tempComps).each((x, tempComp) => {
       switch (whichLap) {
         case "1":
@@ -266,54 +266,54 @@ function generateComps() {
     });
     tempHeaders = tempHeaders.filter(item => item);
 
-    // filter based on unchecked unit checkboxes
-    $("input:checkbox:checked").each((i, e) => {
-      $(tempComps).each((x, tempComp) => {
-        if (
-          tempComps[x] &&
-          (tempComps[x].unit1[0] ==
-            $(e)
-              .next()
-              .text()
-              .toLowerCase() ||
-            tempComps[x].unit2[0] ==
-              $(e)
-                .next()
-                .text()
-                .toLowerCase() ||
-            tempComps[x].unit3[0] ==
-              $(e)
-                .next()
-                .text()
-                .toLowerCase() ||
-            tempComps[x].unit4[0] ==
-              $(e)
-                .next()
-                .text()
-                .toLowerCase() ||
-            tempComps[x].unit5[0] ==
-              $(e)
-                .next()
-                .text()
-                .toLowerCase())
-        ) {
-          tempComps[x] = "";
-        }
-      });
-    });
-    tempComps = tempComps.filter(item => item);
+    // // filter based on unchecked unit checkboxes
+    // $("input:checkbox:checked").each((i, e) => {
+    //   $(tempComps).each((x, tempComp) => {
+    //     if (
+    //       tempComps[x] &&
+    //       (tempComps[x].unit1[0] ==
+    //         $(e)
+    //           .next()
+    //           .text()
+    //           .toLowerCase() ||
+    //         tempComps[x].unit2[0] ==
+    //           $(e)
+    //             .next()
+    //             .text()
+    //             .toLowerCase() ||
+    //         tempComps[x].unit3[0] ==
+    //           $(e)
+    //             .next()
+    //             .text()
+    //             .toLowerCase() ||
+    //         tempComps[x].unit4[0] ==
+    //           $(e)
+    //             .next()
+    //             .text()
+    //             .toLowerCase() ||
+    //         tempComps[x].unit5[0] ==
+    //           $(e)
+    //             .next()
+    //             .text()
+    //             .toLowerCase())
+    //     ) {
+    //       tempComps[x] = "";
+    //     }
+    //   });
+    // });
+    // tempComps = tempComps.filter(item => item);
 
     // change "Select Boss" text to reflect the laps associated with selected stage
     var stageLaps;
     switch (whichLap) {
       case "1":
-        stageLaps = "Select Boss - Stage 1 (Laps 1 through 3)";
+        stageLaps = "Select Boss: Stage 1 (Lap 1 - Lap 3)";
         break;
       case "2":
-        stageLaps = "Select Boss - Stage 2 (Laps 4 through 10)";
+        stageLaps = "Select Boss: Stage 2 (Lap 4 - Lap 10)";
         break;
       case "3":
-        stageLaps = "Select Boss - Stage 3 (Lap 11+)";
+        stageLaps = "Select Boss: Stage 3 (Lap 11+)";
         break;
     }
     $("#select-boss-text").html(stageLaps);
@@ -504,48 +504,48 @@ var unitList = [
 ];
 unitList.sort(compareNames);
 
-// populate unit filter modal
-var tempUnitList = JSON.parse(JSON.stringify(unitList));
-// remove non-CB units
-$(tempUnitList).each(i => {
-  if (!tempUnitList[i].cb) {
-    tempUnitList[i] = "";
-  }
-});
-tempUnitList = tempUnitList.filter(item => item);
-let unitCounter = 0;
-const rowCount = Math.ceil(tempUnitList.length / 3);
-var modalContent = document.createElement("div");
-$(modalContent).addClass("row");
-for (columns = 1; columns <= 3; columns += 1) {
-  const tempColumn = document.createElement("div");
-  $(tempColumn).addClass("col");
-  for (units = 1; units <= rowCount; units += 1) {
-    const tempFormCheck = document.createElement("div");
-    $(tempFormCheck).addClass("form-check");
-    let tempString =
-      '<input class="form-check-input" type="checkbox" id="inlineCheckbox' +
-      unitCounter +
-      1 +
-      '" value="option' +
-      unitCounter +
-      1 +
-      '" /><label class="form-check-label" for="inlineCheckbox' +
-      unitCounter +
-      1 +
-      '">' +
-      tempUnitList[unitCounter].unit +
-      "</label>";
-    $(tempFormCheck).append(tempString);
-    $(tempColumn).append(tempFormCheck);
-    unitCounter += 1;
-    if (unitCounter == $(tempUnitList).length) {
-      break;
-    }
-  }
-  $(modalContent).append(tempColumn);
-}
-$(".modal-body .container").append(modalContent);
+// // populate unit filter modal
+// var tempUnitList = JSON.parse(JSON.stringify(unitList));
+// // remove non-CB units
+// $(tempUnitList).each(i => {
+//   if (!tempUnitList[i].cb) {
+//     tempUnitList[i] = "";
+//   }
+// });
+// tempUnitList = tempUnitList.filter(item => item);
+// let unitCounter = 0;
+// const rowCount = Math.ceil(tempUnitList.length / 3);
+// var modalContent = document.createElement("div");
+// $(modalContent).addClass("row");
+// for (columns = 1; columns <= 3; columns += 1) {
+//   const tempColumn = document.createElement("div");
+//   $(tempColumn).addClass("col");
+//   for (units = 1; units <= rowCount; units += 1) {
+//     const tempFormCheck = document.createElement("div");
+//     $(tempFormCheck).addClass("form-check");
+//     let tempString =
+//       '<input class="form-check-input" type="checkbox" id="inlineCheckbox' +
+//       unitCounter +
+//       1 +
+//       '" value="option' +
+//       unitCounter +
+//       1 +
+//       '" /><label class="form-check-label" for="inlineCheckbox' +
+//       unitCounter +
+//       1 +
+//       '">' +
+//       tempUnitList[unitCounter].unit +
+//       "</label>";
+//     $(tempFormCheck).append(tempString);
+//     $(tempColumn).append(tempFormCheck);
+//     unitCounter += 1;
+//     if (unitCounter == $(tempUnitList).length) {
+//       break;
+//     }
+//   }
+//   $(modalContent).append(tempColumn);
+// }
+// $(".modal-body .container").append(modalContent);
 
 // show unit range from saren
 var tempUnitList2 = JSON.parse(JSON.stringify(unitList));

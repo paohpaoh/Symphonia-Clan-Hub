@@ -130,6 +130,9 @@ button.active {
     background-color: #6c757d !important;
   }
 }
+#recommended-comps-selector {
+  width: 270px;
+}
 .damage-goal {
   padding-bottom: 1rem;
   margin-left: 10px;
@@ -206,7 +209,6 @@ button.active {
 .lap-selector {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
-  margin-left: -15px !important;
 }
 .unit-filter-selector {
 }
