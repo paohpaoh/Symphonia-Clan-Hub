@@ -2284,16 +2284,16 @@ var teamComps = [
     notes: "FULL AUTO"
   },
   {
-    unit1: ["kyouka", 4],
-    unit2: ["s karyl", 3],
-    unit3: ["karyl", 5],
-    unit4: ["ilya", 5],
-    unit5: ["christina", 5],
-    damage: 1353768,
+    unit1: ["h misaki", 3],
+    unit2: ["kyouka", 4],
+    unit3: ["s karyl", 3],
+    unit4: ["nanaka", 4],
+    unit5: ["ilya", 5],
+    damage: 1785636,
     boss: 3,
     clanBattle: 10,
     lap: 2,
-    player: "paoh",
+    player: "FennekZero",
     notes: "FULL AUTO"
   }
 ];

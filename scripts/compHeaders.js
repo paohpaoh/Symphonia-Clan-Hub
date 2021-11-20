@@ -342,7 +342,7 @@ var compHeaders = [
     lap: 2,
     clanBattle: 10,
     notes:
-      "MAGES ONLY - Christina-Mage comp is preferred. If you have your own 5* Ilya this opens up more options for you to experiment."
+      "MAGES ONLY - Christina-Mage comp is preferred unless you have H Misaki / Nanaka raised. If you have your own 5* Ilya this opens up more options for you to experiment."
   },
   {
     boss: 4,
