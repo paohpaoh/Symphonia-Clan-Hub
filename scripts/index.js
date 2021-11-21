@@ -50,13 +50,15 @@ $(".boss-selector").on("click", e => {
     compType = "regular";
     bossSelectorValue = $(e.target).val();
     generateComps();
+    $("div.carousel-item .select-boss-text").html(bossSelectorValue);
     $(".boss-selector").removeClass("active-boss");
     $(e.target).addClass("active-boss");
     $(".wrapper").animate(
       {
         scrollTop:
-          $("#select-boss-text").offset().top -
+          $("#lapCarouselControls").offset().top -
           navHeight -
+          10 -
           $(".wrapper").offset().top +
           $(".wrapper").scrollTop()
       },
@@ -104,6 +106,13 @@ $("#recommended-select li a.dropdown-item").on("click", e => {
     },
     500
   );
+});
+
+var myCarousel = document.getElementById("lapCarouselControls");
+var whichLap = $(".carousel-item.active").data("value");
+myCarousel.addEventListener("slid.bs.carousel", function() {
+  whichLap = $(".carousel-item.active").data("value");
+  generateComps();
 });
 
 function compareDamage(comp1, comp2) {
@@ -224,20 +233,20 @@ function generateComps() {
     tempHeaders = tempHeaders.filter(item => item);
 
     // filter based on lap and change "Select Boss" text
-    const whichLap = $(".lap-selector .btn-check:checked").val();
+    // const whichLap = $(".lap-selector .btn-check:checked").val();
     $(tempComps).each((x, tempComp) => {
       switch (whichLap) {
-        case "1":
+        case 1:
           if (tempComp.lap != 1) {
             tempComps[x] = "";
           }
           break;
-        case "2":
+        case 2:
           if (tempComp.lap != 2) {
             tempComps[x] = "";
           }
           break;
-        case "3":
+        case 3:
           if (tempComp.lap != 3) {
             tempComps[x] = "";
           }
@@ -247,17 +256,17 @@ function generateComps() {
     tempComps = tempComps.filter(item => item);
     $(tempHeaders).each((x, tempHeader) => {
       switch (whichLap) {
-        case "1":
+        case 1:
           if (tempHeader.lap != 1) {
             tempHeaders[x] = "";
           }
           break;
-        case "2":
+        case 2:
           if (tempHeader.lap != 2) {
             tempHeaders[x] = "";
           }
           break;
-        case "3":
+        case 3:
           if (tempHeader.lap != 3) {
             tempHeaders[x] = "";
           }
@@ -302,21 +311,6 @@ function generateComps() {
     //   });
     // });
     // tempComps = tempComps.filter(item => item);
-
-    // change "Select Boss" text to reflect the laps associated with selected stage
-    var stageLaps;
-    switch (whichLap) {
-      case "1":
-        stageLaps = "Select Boss: Stage 1 (Lap 1 - Lap 3)";
-        break;
-      case "2":
-        stageLaps = "Select Boss: Stage 2 (Lap 4 - Lap 10)";
-        break;
-      case "3":
-        stageLaps = "Select Boss: Stage 3 (Lap 11+)";
-        break;
-    }
-    $("#select-boss-text").html(stageLaps);
   }
 
   let sub = "";

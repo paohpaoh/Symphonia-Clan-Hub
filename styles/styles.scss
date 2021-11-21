@@ -133,6 +133,13 @@ button.active {
 #recommended-comps-selector {
   width: 270px;
 }
+#lapCarouselControls {
+  width: 298px;
+}
+.carousel-inner {
+  // max-width: 66px;
+  max-width: 202px;
+}
 .damage-goal {
   padding-bottom: 1rem;
   margin-left: 10px;
@@ -233,4 +240,10 @@ button.active {
 }
 .hall {
   max-width: 370px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 1em;
+  height: 1em;
 }
