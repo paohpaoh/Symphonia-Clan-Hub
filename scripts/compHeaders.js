@@ -384,7 +384,8 @@ var compHeaders = [
     damage: 0,
     lap: 1,
     clanBattle: 11,
-    notes: ""
+    notes:
+      "You can semi-auto most comps here, but unfortunately you cannot full auto this boss. I have tried many times."
   },
   {
     boss: 4,
