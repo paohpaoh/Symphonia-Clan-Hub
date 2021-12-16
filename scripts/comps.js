@@ -2295,5 +2295,57 @@ var teamComps = [
     lap: 2,
     player: "FennekZero",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["mitsuki", 5],
+    unit3: ["christina", 5],
+    unit4: ["tamaki", 5],
+    unit5: ["tamaki", 5],
+    damage: 1503946,
+    boss: 5,
+    clanBattle: 11,
+    lap: 1,
+    player: "realda",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["rei", 4],
+    unit2: ["eriko", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1697687,
+    boss: 5,
+    clanBattle: 11,
+    lap: 1,
+    player: "realda",
+    notes: "Hiyori and Rei have UE"
+  },
+  {
+    unit1: ["rei", 4],
+    unit2: ["djeeta", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1847925,
+    boss: 5,
+    clanBattle: 11,
+    lap: 1,
+    player: "realda",
+    notes: "Hiyori and Rei have UE"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["rei", 4],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2068320,
+    boss: 5,
+    clanBattle: 11,
+    lap: 1,
+    player: "realda",
+    notes: "Hiyori and Rei have UE"
   }
 ];
