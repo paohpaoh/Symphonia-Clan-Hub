@@ -441,6 +441,6 @@ var compHeaders = [
     special: 1,
     clanBattle: 11,
     notes:
-      "<b>FOR STAGE 2: LAP 4 - LAP 10</b><br /><ol><li>Hit Boss 5 with Jun comp</li><li>Hit either Boss 4 or Boss 5 with a mage comp (the mage comp listed does ~1.4m on Boss 4)</li><li>Hit Boss 1 (~1.9m damage), Boss 2 (~1.85m damage), or Boss 3 with the S Tamaki comp</li></ol>"
+      "<b>FOR STAGE 2: LAP 4 - LAP 10</b><br /><ol><li>Hit Boss 5 with Jun comp</li><li>Hit either Boss 4 or Boss 5 with a mage comp (the mage comp listed does ~1.4m on Boss 4)</li><li>Hit Boss 1 (~1.9m damage), Boss 2 (~1.85m damage), or Boss 3 (~1.5m damage) with the S Tamaki comp</li></ol>"
   }
 ];
