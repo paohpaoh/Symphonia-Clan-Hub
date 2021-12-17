@@ -400,5 +400,41 @@ var compHeaders = [
     lap: 1,
     clanBattle: 11,
     notes: ""
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 2,
+    clanBattle: 11,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 2,
+    clanBattle: 11,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 2,
+    clanBattle: 11,
+    notes:
+      "You can semi-auto most comps here, but unfortunately you cannot full auto this boss. I have tried many times."
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 2,
+    clanBattle: 11,
+    notes: "Mage boss"
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 2,
+    clanBattle: 11,
+    notes: ""
   }
 ];
