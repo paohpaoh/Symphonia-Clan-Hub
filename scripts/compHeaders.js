@@ -448,34 +448,73 @@ var compHeaders = [
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: ""
+    notes:
+      "GOBLIN BRAVE [P-DEF 200  |  M-DEF 100]<br /><br />Use physical team."
   },
   {
     boss: 2,
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: ""
+    notes: "RAI-RAI [P-DEF 200  |  M-DEF 160]<br /><br />Use physical team."
   },
   {
     boss: 3,
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: ""
+    notes: "PEACOCK [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team."
   },
   {
     boss: 4,
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: ""
+    notes: "CYCLOPS [P-DEF 200  |  M-DEF 120]<br /><br />Use physical team."
   },
   {
     boss: 5,
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: ""
+    notes: "SHARPEDO [P-DEF 250  |  M-DEF 100]<br /><br />Use mage team."
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 2,
+    clanBattle: 12,
+    notes:
+      "GOBLIN BRAVE [P-DEF 225  |  M-DEF 100]<br /><br />Use physical team; Kokkoro tank swap is probably a good option."
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 2,
+    clanBattle: 12,
+    notes: "RAI-RAI [P-DEF 220  |  M-DEF 170]<br /><br />Use physical team."
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 2,
+    clanBattle: 12,
+    notes:
+      "PEACOCK [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team. Boss charms positions 1 and 2; might try using a taunt to prevent charm (Ruka/Kuuka/NY Rei)."
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 2,
+    clanBattle: 12,
+    notes:
+      "CYCLOPS [P-DEF 200  |  M-DEF 120]<br /><br />Use physical team. Boss targets unit with highest ATK. Can try to manipulate targeting with taunts (Ruka/Kuuka/NY Rei) or by using units that manipulate/buff attack (e.g. Shiori, Suzuna, Hiyori)."
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 2,
+    clanBattle: 12,
+    notes: "SHARPEDO [P-DEF 250  |  M-DEF 100]<br /><br />Use mage team."
   }
 ];

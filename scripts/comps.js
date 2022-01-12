@@ -2965,5 +2965,145 @@ var teamComps = [
     lap: 2,
     player: "Bshandon",
     notes: "SEMI AUTO"
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 1,
+    clanBattle: 12,
+    lap: 1,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 2,
+    clanBattle: 12,
+    lap: 1,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 3,
+    clanBattle: 12,
+    lap: 1,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 4,
+    clanBattle: 12,
+    lap: 1,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 5,
+    clanBattle: 12,
+    lap: 1,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 1,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 2,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 3,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+  },
+  {
+    unit1: ["kasumi", 5],
+    unit2: ["kasumi", 5],
+    unit3: ["kasumi", 5],
+    unit4: ["kasumi", 5],
+    unit5: ["kasumi", 5],
+    damage: 99999999,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
   }
 ];
