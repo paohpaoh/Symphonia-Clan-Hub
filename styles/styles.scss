@@ -197,12 +197,13 @@ button.active {
 }
 .cb-selector {
   display: inline-block !important;
-  width: 90px !important;
+  width: 110px !important;
+  // background-color: grey !important;
   font-weight: bold;
   &:focus {
     box-shadow: none !important;
   }
-  max-height: 24.7px !important;
+  // max-height: 24.7px !important;
   margin-top: -2px !important;
 }
 .boss-selector {
@@ -241,7 +242,10 @@ button.active {
 .hall {
   max-width: 370px;
 }
-
+.ranking {
+  max-width: 225px;
+  font-size: 0.9rem;
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 1em;

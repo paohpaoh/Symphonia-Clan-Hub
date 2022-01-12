@@ -253,7 +253,7 @@ var compHeaders = [
     lap: 3,
     clanBattle: 9,
     notes:
-      "Mage comp preferred for this boss. Can use Ilya + Akari + Misato + S Karyl + Kyouka. Manual preferred; UB with Akari first to get the magic attack buff, then use DPS UBs. Repeat when everybody's UB is up again. Spam Ilya UB as necessary to survive."
+      "Mage comp preferred for this boss. Can use Illya + Akari + Misato + S Karyl + Kyouka. Manual preferred; UB with Akari first to get the magic attack buff, then use DPS UBs. Repeat when everybody's UB is up again. Spam Illya UB as necessary to survive."
   },
   {
     boss: 4,
@@ -269,7 +269,7 @@ var compHeaders = [
     lap: 3,
     clanBattle: 9,
     notes:
-      "Mage comp preferred for this boss. Can use the standard Ilya + Akari + Misato + S Karyl + Kyouka. Trial first; may need to spam Ilya UB to survive."
+      "Mage comp preferred for this boss. Can use the standard Illya + Akari + Misato + S Karyl + Kyouka. Trial first; may need to spam Illya UB to survive."
   },
   {
     boss: 6,
@@ -342,7 +342,7 @@ var compHeaders = [
     lap: 2,
     clanBattle: 10,
     notes:
-      "MAGES ONLY - Christina-Mage comp is preferred unless you have H Misaki / Nanaka raised. If you have your own 5* Ilya this opens up more options for you to experiment."
+      "MAGES ONLY - Christina-Mage comp is preferred unless you have H Misaki / Nanaka raised. If you have your own 5* Illya this opens up more options for you to experiment."
   },
   {
     boss: 4,
@@ -442,5 +442,40 @@ var compHeaders = [
     clanBattle: 11,
     notes:
       "<b>FOR STAGE 2: LAP 4 - LAP 10</b><br /><ol><li>Hit Boss 5 with Jun comp</li><li>Hit either Boss 4 or Boss 5 with a mage comp (if hitting Boss 4 replace Misato with an offensive mage for more damage)</li><li>Hit Boss 1 (~1.9m damage), Boss 2 (~1.85m damage), or Boss 3 (~1.5m damage) with the S Tamaki comp</li></ol>"
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 1,
+    clanBattle: 12,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 1,
+    clanBattle: 12,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 1,
+    clanBattle: 12,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 1,
+    clanBattle: 12,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 1,
+    clanBattle: 12,
+    notes: ""
   }
 ];
