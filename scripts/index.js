@@ -419,11 +419,22 @@ function generateComps() {
           '<div class="col p-0 star"><img class="img-fluid" src="./images/star-grey.png" /></div>';
       }
     }
+    let phase = "";
+    switch (whichLap) {
+      case 1:
+        phase = "A";
+        break;
+      case 2:
+        phase = "B";
+        break;
+      case 3:
+        phase = "C";
+        break;
+    }
     $("#teamCompsCB").append(
-      '<div class="placeholder mx-auto"><div class="submission-info"> B' +
+      '<div class="placeholder mx-auto"><div class="submission-info"> ' +
+        phase +
         comp.boss +
-        "L" +
-        comp.lap +
         " - <b>" +
         comp.damage.toLocaleString("en") +
         "</b> - <i>submitted by " +
