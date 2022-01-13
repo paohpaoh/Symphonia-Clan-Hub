@@ -343,8 +343,21 @@ function generateComps() {
     } else {
       damageString = tempHeaders[0].damage.toLocaleString("en") + "+";
     }
+    let phase = "";
+    switch (whichLap) {
+      case 1:
+        phase = "A";
+        break;
+      case 2:
+        phase = "B";
+        break;
+      case 3:
+        phase = "C";
+        break;
+    }
     $("#teamCompsCB").append(
-      `<div class='damage-goal'><b>Damage goal for B` +
+      `<div class='damage-goal'><b>Damage goal for ` +
+        phase +
         tempHeaders[0].boss +
         `: ` +
         damageString +
@@ -561,9 +574,9 @@ tempUnitList2.sort(compareRange);
 const sarenRange = tempUnitList2.find(i => i.unit === "Saren").range;
 for (i = 0; i < tempUnitList2.length; i += 1) {
   if (tempUnitList2[i].unit === "Saren") {
-    $("div.guides").append("<br />");
+    $("#saren").append("<br />");
   }
-  $("div.guides").append(
+  $("#saren").append(
     `<div class="d-inline-block text-center unit-range m-1"><img class="img-fluid unit-range rounded-3" src="./images/${tempUnitList2[
       i
     ].unit.toLowerCase()}.png" /><div class="unit-range">${Math.abs(
@@ -571,6 +584,6 @@ for (i = 0; i < tempUnitList2.length; i += 1) {
     )}</div></div>`
   );
   if (tempUnitList2[i].unit === "Saren") {
-    $("div.guides").append("<br />");
+    $("#saren").append("<br />");
   }
 }

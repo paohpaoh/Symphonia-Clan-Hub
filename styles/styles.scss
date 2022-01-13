@@ -144,7 +144,7 @@ button.active {
   padding-bottom: 1rem;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: #d1d1d1;
 }
 .placeholder {
@@ -162,7 +162,7 @@ button.active {
 .submission-info {
   padding-left: 11px;
   padding-bottom: 0px;
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 .notes {
   margin-top: -5px;
@@ -238,6 +238,13 @@ button.active {
 }
 .text-left {
   text-align: left !important;
+}
+.guides {
+  font-size: 1rem;
+}
+.debuff {
+  max-width: 370px;
+  font-size: 0.85rem;
 }
 .hall {
   max-width: 370px;

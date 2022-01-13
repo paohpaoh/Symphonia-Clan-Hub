@@ -463,7 +463,7 @@ var compHeaders = [
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: "PEACOCK [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team."
+    notes: "PRISMA HEN [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team."
   },
   {
     boss: 4,
@@ -500,7 +500,7 @@ var compHeaders = [
     lap: 2,
     clanBattle: 12,
     notes:
-      "PEACOCK [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team. Boss charms positions 1 and 2; might try using a taunt to prevent charm (Ruka/Kuuka/NY Rei)."
+      "PRISMA HEN [P-DEF 220  |  M-DEF 100]<br /><br />Use physical team. Boss charms positions 1 and 2; might try using a taunt to prevent charm (Ruka/Kuuka/NY Rei)."
   },
   {
     boss: 4,
@@ -508,13 +508,13 @@ var compHeaders = [
     lap: 2,
     clanBattle: 12,
     notes:
-      "CYCLOPS [P-DEF 200  |  M-DEF 120]<br /><br />Use physical team. Boss targets unit with highest ATK. Can try to manipulate targeting with taunts (Ruka/Kuuka/NY Rei) or by using units that manipulate/buff attack (e.g. Shiori, Suzuna, Hiyori)."
+      "CYCLOPS [P-DEF 230  |  M-DEF 120]<br /><br />Use physical team. Boss targets unit with highest ATK. Can try to manipulate targeting with taunts (Ruka/Kuuka/NY Rei) or by using units that manipulate/buff attack (e.g. Shiori, Suzuna, Hiyori)."
   },
   {
     boss: 5,
     damage: 0,
     lap: 2,
     clanBattle: 12,
-    notes: "SHARPEDO [P-DEF 250  |  M-DEF 100]<br /><br />Use mage team."
+    notes: "SHARPEDO [P-DEF 360  |  M-DEF 120]<br /><br />Use mage team."
   }
 ];
