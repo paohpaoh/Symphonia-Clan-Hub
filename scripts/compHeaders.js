@@ -453,17 +453,18 @@ var compHeaders = [
   },
   {
     boss: 2,
-    damage: 0,
+    damage: 2100000,
     lap: 1,
     clanBattle: 12,
     notes: "RAI-RAI [P-DEF 200  |  M-DEF 160]<br /><br />Use physical team."
   },
   {
     boss: 3,
-    damage: 0,
+    damage: 1900000,
     lap: 1,
     clanBattle: 12,
-    notes: "PRISMA HEN [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team."
+    notes:
+      "PRISMA HEN [P-DEF 140  |  M-DEF 100]<br /><br />Use physical team. Make your life easier by putting NY Rei on your team."
   },
   {
     boss: 4,
@@ -477,7 +478,7 @@ var compHeaders = [
     damage: 0,
     lap: 1,
     clanBattle: 12,
-    notes: "SHARPEDO [P-DEF 250  |  M-DEF 100]<br /><br />Use mage team."
+    notes: "TORPEDON [P-DEF 250  |  M-DEF 100]<br /><br />Use mage team."
   },
   {
     boss: 1,
@@ -515,6 +516,6 @@ var compHeaders = [
     damage: 0,
     lap: 2,
     clanBattle: 12,
-    notes: "SHARPEDO [P-DEF 360  |  M-DEF 120]<br /><br />Use mage team."
+    notes: "TORPEDON [P-DEF 360  |  M-DEF 120]<br /><br />Use mage team."
   }
 ];
