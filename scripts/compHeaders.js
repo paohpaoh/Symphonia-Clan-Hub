@@ -460,7 +460,7 @@ var compHeaders = [
   },
   {
     boss: 3,
-    damage: 1900000,
+    damage: 2000000,
     lap: 1,
     clanBattle: 12,
     notes:

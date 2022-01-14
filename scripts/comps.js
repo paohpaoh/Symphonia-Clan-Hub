@@ -3077,7 +3077,7 @@ var teamComps = [
     unit3: ["eriko", 5],
     unit4: ["hiyori", 5],
     unit5: ["ny rei", 3],
-    damage: 1903051,
+    damage: 1732586,
     boss: 3,
     clanBattle: 12,
     lap: 1,
@@ -3085,18 +3085,56 @@ var teamComps = [
     notes: "FULL AUTO - Rei has UE."
   },
   {
-    unit1: ["kasumi", 5],
-    unit2: ["kasumi", 5],
-    unit3: ["kasumi", 5],
-    unit4: ["kasumi", 5],
-    unit5: ["kasumi", 5],
-    damage: 99999999,
+    unit1: ["saren", 5],
+    unit2: ["yukari", 5],
+    unit3: ["christina", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2139779,
+    boss: 3,
+    clanBattle: 12,
+    lap: 1,
+    player: "realda",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["yukari", 5],
+    unit2: ["christina", 5],
+    unit3: ["s tamaki", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2345961,
+    boss: 3,
+    clanBattle: 12,
+    lap: 1,
+    player: "Jari",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["christina", 5],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2269283,
     boss: 4,
     clanBattle: 12,
     lap: 1,
     player: "paoh",
-    notes:
-      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+    notes: "FULL AUTO - Makoto 9-6."
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["tomo", 3],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2157113,
+    boss: 4,
+    clanBattle: 12,
+    lap: 1,
+    player: "paoh",
+    notes: "FULL AUTO - Makoto 9-6."
   },
   {
     unit1: ["arisa", 5],
