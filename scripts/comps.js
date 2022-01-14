@@ -3309,18 +3309,69 @@ var teamComps = [
       "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
   },
   {
-    unit1: ["kasumi", 5],
-    unit2: ["kasumi", 5],
-    unit3: ["kasumi", 5],
-    unit4: ["kasumi", 5],
-    unit5: ["kasumi", 5],
-    damage: 99999999,
+    unit1: ["yukari", 5],
+    unit2: ["christina", 5],
+    unit3: ["rei", 5],
+    unit4: ["hiyori", 5],
+    unit5: ["makoto", 5],
+    damage: 1827310,
     boss: 3,
     clanBattle: 12,
     lap: 2,
-    player: "paoh",
-    notes:
-      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+    player: "realda",
+    notes: "FULL AUTO - Rei and Hiyori both have UE."
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["yukari", 5],
+    unit3: ["christina", 5],
+    unit4: ["rei", 5],
+    unit5: ["makoto", 5],
+    damage: 1770108,
+    boss: 3,
+    clanBattle: 12,
+    lap: 2,
+    player: "realda",
+    notes: "FULL AUTO - Rei has UE."
+  },
+  {
+    unit1: ["saren", 5],
+    unit2: ["yukari", 5],
+    unit3: ["christina", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1729776,
+    boss: 3,
+    clanBattle: 12,
+    lap: 2,
+    player: "realda",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["christina", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2112789,
+    boss: 3,
+    clanBattle: 12,
+    lap: 2,
+    player: "realda",
+    notes: "FULL AUTO - Hiyori has UE."
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["kokkoro", 4],
+    unit3: ["christina", 5],
+    unit4: ["hiyori", 5],
+    unit5: ["makoto", 5],
+    damage: 1892088,
+    boss: 3,
+    clanBattle: 12,
+    lap: 2,
+    player: "toon",
+    notes: "FULL AUTO - Makoto 9-6, Hiyori has UE."
   },
   {
     unit1: ["kasumi", 5],
@@ -3337,17 +3388,68 @@ var teamComps = [
       "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
   },
   {
-    unit1: ["kasumi", 5],
-    unit2: ["kasumi", 5],
-    unit3: ["kasumi", 5],
-    unit4: ["kasumi", 5],
-    unit5: ["kasumi", 5],
-    damage: 99999999,
+    unit1: ["s karyl", 4],
+    unit2: ["nanaka", 5],
+    unit3: ["akari", 5],
+    unit4: ["illya", 5],
+    unit5: ["shizuru", 5],
+    damage: 1585946,
     boss: 5,
     clanBattle: 12,
     lap: 2,
-    player: "paoh",
-    notes:
-      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+    player: "FennekZero",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["s karyl", 5],
+    unit2: ["karyl", 5],
+    unit3: ["akari", 5],
+    unit4: ["illya", 5],
+    unit5: ["shizuru", 5],
+    damage: 1445832,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "FennekZero",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 4],
+    unit2: ["s karyl", 5],
+    unit3: ["nanaka", 5],
+    unit4: ["misato", 5],
+    unit5: ["akari", 5],
+    damage: 1595412,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "FennekZero",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 4],
+    unit2: ["s karyl", 5],
+    unit3: ["ny yui", 3],
+    unit4: ["nanaka", 3],
+    unit5: ["akari", 5],
+    damage: 1838244,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "FennekZero",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 5],
+    unit2: ["s karyl", 5],
+    unit3: ["nanaka", 5],
+    unit4: ["misato", 5],
+    unit5: ["illya", 5],
+    damage: 1750232,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "Toon",
+    notes: "FULL AUTO"
   }
 ];
