@@ -3281,18 +3281,56 @@ var teamComps = [
     notes: "FULL AUTO"
   },
   {
-    unit1: ["kasumi", 5],
-    unit2: ["kasumi", 5],
-    unit3: ["kasumi", 5],
-    unit4: ["kasumi", 5],
-    unit5: ["kasumi", 5],
-    damage: 99999999,
+    unit1: ["s kokkoro", 3],
+    unit2: ["rei", 5],
+    unit3: ["s tamaki", 3],
+    unit4: ["hiyori", 5],
+    unit5: ["makoto", 5],
+    damage: 1607701,
     boss: 1,
     clanBattle: 12,
     lap: 2,
     player: "paoh",
-    notes:
-      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+    notes: "FULL AUTO - Rei has UE."
+  },
+  {
+    unit1: ["arisa", 5],
+    unit2: ["s kokkoro", 3],
+    unit3: ["rei", 5],
+    unit4: ["hiyori", 5],
+    unit5: ["makoto", 5],
+    damage: 1614469,
+    boss: 1,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Rei has UE."
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["christina", 5],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2076885,
+    boss: 1,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2401660,
+    boss: 1,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
   },
   {
     unit1: ["shiori", 5],
@@ -3319,6 +3357,19 @@ var teamComps = [
     lap: 2,
     player: "realda",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["tomo", 4],
+    unit3: ["ny hiyori", 4],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2551482,
+    boss: 2,
+    clanBattle: 12,
+    lap: 2,
+    player: "Toon",
+    notes: "SEMI AUTO"
   },
   {
     unit1: ["yukari", 5],
@@ -3552,6 +3603,62 @@ var teamComps = [
     clanBattle: 12,
     lap: 2,
     player: "Toon",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2300000,
+    boss: 1,
+    clanBattle: 12,
+    lap: 2,
+    player: "Symphonia",
+    special: 1,
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["christina", 5],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2000000,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "Symphonia",
+    special: 1,
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["christina", 5],
+    unit3: ["rei", 5],
+    unit4: ["djeeta", 5],
+    unit5: ["makoto", 5],
+    damage: 2000000,
+    boss: 2,
+    clanBattle: 12,
+    lap: 2,
+    player: "Symphonia",
+    special: 1,
+    notes: "FULL AUTO - Rei has UE"
+  },
+  {
+    unit1: ["saren", 5],
+    unit2: ["yukari", 5],
+    unit3: ["christina", 5],
+    unit4: ["djeeta", 5],
+    unit5: ["makoto", 5],
+    damage: 1800000,
+    boss: 3,
+    clanBattle: 12,
+    lap: 2,
+    player: "Symphonia",
+    special: 1,
     notes: "FULL AUTO"
   }
 ];

@@ -486,7 +486,7 @@ var compHeaders = [
     lap: 2,
     clanBattle: 12,
     notes:
-      "GOBLIN BRAVE [P-DEF 225  |  M-DEF 100]<br /><br />Use physical team; Kokkoro tank swap is probably a good option."
+      "GOBLIN BRAVE [P-DEF 225  |  M-DEF 100]<br /><br />Use physical team."
   },
   {
     boss: 2,
@@ -497,15 +497,14 @@ var compHeaders = [
   },
   {
     boss: 3,
-    damage: 0,
+    damage: 1800000,
     lap: 2,
     clanBattle: 12,
-    notes:
-      "PRISMA HEN [P-DEF 220  |  M-DEF 100]<br /><br />Use physical team. Boss charms positions 1 and 2; might try using a taunt to prevent charm (Ruka/Kuuka/NY Rei)."
+    notes: "PRISMA HEN [P-DEF 220  |  M-DEF 100]<br /><br />Use physical team"
   },
   {
     boss: 4,
-    damage: 0,
+    damage: 2000000,
     lap: 2,
     clanBattle: 12,
     notes:
@@ -517,5 +516,11 @@ var compHeaders = [
     lap: 2,
     clanBattle: 12,
     notes: "TORPEDON [P-DEF 360  |  M-DEF 120]<br /><br />Use mage team."
+  },
+  {
+    special: 1,
+    clanBattle: 12,
+    notes:
+      "How to allocate your hits:<ol><li>Use a mage comp on B5 (see the Boss 5 tab for comps)</li><li>Pick one of the two Kaori teams below to attack with (use Kokkoro if hitting B4, or replace Kokkoro with S Tamaki to hit B2)</li><li>Pick one of the remaining two comps to hit with (Saren/Yukari comp for B3, or the Shiori comp for B1)</li></ol>"
   }
 ];
