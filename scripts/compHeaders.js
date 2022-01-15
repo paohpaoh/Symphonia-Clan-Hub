@@ -482,7 +482,7 @@ var compHeaders = [
   },
   {
     boss: 1,
-    damage: 0,
+    damage: 2200000,
     lap: 2,
     clanBattle: 12,
     notes:
@@ -490,7 +490,7 @@ var compHeaders = [
   },
   {
     boss: 2,
-    damage: 0,
+    damage: 2000000,
     lap: 2,
     clanBattle: 12,
     notes: "RAI-RAI [P-DEF 220  |  M-DEF 170]<br /><br />Use physical team."
@@ -512,7 +512,7 @@ var compHeaders = [
   },
   {
     boss: 5,
-    damage: 0,
+    damage: 1700000,
     lap: 2,
     clanBattle: 12,
     notes: "TORPEDON [P-DEF 360  |  M-DEF 120]<br /><br />Use mage team."
