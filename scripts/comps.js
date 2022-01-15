@@ -3295,18 +3295,30 @@ var teamComps = [
       "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
   },
   {
-    unit1: ["kasumi", 5],
-    unit2: ["kasumi", 5],
-    unit3: ["kasumi", 5],
-    unit4: ["kasumi", 5],
-    unit5: ["kasumi", 5],
-    damage: 99999999,
+    unit1: ["shiori", 5],
+    unit2: ["christina", 5],
+    unit3: ["rei", 5],
+    unit4: ["s tamaki", 3],
+    unit5: ["makoto", 5],
+    damage: 2190151,
     boss: 2,
     clanBattle: 12,
     lap: 2,
-    player: "paoh",
-    notes:
-      "This comp is just a placeholder. Check back for updates soon<sup>TM</sup>."
+    player: "realda",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["christina", 5],
+    unit3: ["rei", 5],
+    unit4: ["djeeta", 5],
+    unit5: ["makoto", 5],
+    damage: 2084205,
+    boss: 2,
+    clanBattle: 12,
+    lap: 2,
+    player: "realda",
+    notes: "FULL AUTO"
   },
   {
     unit1: ["yukari", 5],
@@ -3361,6 +3373,58 @@ var teamComps = [
     notes: "FULL AUTO - Hiyori has UE."
   },
   {
+    unit1: ["kokkoro", 5],
+    unit2: ["christina", 5],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1805541,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Hiyori does not have UE."
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["christina", 5],
+    unit3: ["tomo", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 2078727,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kokkoro", 5],
+    unit2: ["christina", 5],
+    unit3: ["eriko", 3],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1731024,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["kokkoro", 5],
+    unit3: ["christina", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1722900,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO"
+  },
+  {
     unit1: ["suzuna", 5],
     unit2: ["kokkoro", 4],
     unit3: ["christina", 5],
@@ -3372,6 +3436,32 @@ var teamComps = [
     lap: 2,
     player: "toon",
     notes: "FULL AUTO - Makoto 9-6, Hiyori has UE."
+  },
+  {
+    unit1: ["suzuna", 5],
+    unit2: ["kokkoro", 4],
+    unit3: ["christina", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1804314,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Makoto 9-6."
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["tomo", 4],
+    unit3: ["hiyori", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 1771211,
+    boss: 4,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - Makoto 9-6."
   },
   {
     unit1: ["shiori", 5],
