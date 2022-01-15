@@ -521,6 +521,6 @@ var compHeaders = [
     special: 1,
     clanBattle: 12,
     notes:
-      "How to allocate your hits:<ol><li>Use a mage comp on B5 (see the Boss 5 tab for comps)</li><li>Pick one of the two Kaori teams below to attack with (use Kokkoro if hitting B4, or replace Kokkoro with S Tamaki to hit B2)</li><li>Pick one of the remaining two comps to hit with (Saren/Yukari comp for B3, or the Shiori comp for B1)</li></ol>"
+      "How to allocate your hits:<ol><li>Use a mage comp on B5 (see the Boss 5 tab for comps). NY Yui and Nanaka comps are safer, so use those if you have them.</li><li>Pick one of the two Kaori teams below to attack with (use Kokkoro if hitting B4, or replace Kokkoro with S Tamaki to hit B2)</li><li>Pick one of the remaining two comps to hit with (Saren/Yukari comp for B3, or the Shiori comp for B1)</li></ol>"
   }
 ];

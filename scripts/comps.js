@@ -3606,6 +3606,21 @@ var teamComps = [
     notes: "FULL AUTO"
   },
   {
+    unit1: ["kyouka", 5],
+    unit2: ["s karyl", 3],
+    unit3: ["misato", 5],
+    unit4: ["akari", 4],
+    unit5: ["illya", 5],
+    damage: 1700000,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "Symphonia",
+    special: 1,
+    notes:
+      "MOSTLY AUTO - spam Illya UB the whole time and pray she doesn't die. NY Yui and Nanaka comps are safer, so use those if you have them."
+  },
+  {
     unit1: ["christina", 5],
     unit2: ["s tamaki", 3],
     unit3: ["tomo", 3],
@@ -3660,5 +3675,19 @@ var teamComps = [
     player: "Symphonia",
     special: 1,
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["kyouka", 5],
+    unit2: ["s karyl", 3],
+    unit3: ["misato", 5],
+    unit4: ["akari", 4],
+    unit5: ["illya", 5],
+    damage: 1702670,
+    boss: 5,
+    clanBattle: 12,
+    lap: 2,
+    player: "paoh",
+    notes:
+      "MOSTLY AUTO - spam Illya UB the whole time and pray she doesn't die."
   }
 ];
