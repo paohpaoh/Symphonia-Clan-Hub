@@ -525,37 +525,43 @@ var compHeaders = [
   },
   {
     boss: 1,
-    damage: 0,
+    damage: 1600000,
     lap: 3,
     clanBattle: 12,
     notes: "GOBLIN BRAVE [P-DEF 290  |  M-DEF 100]"
   },
   {
     boss: 2,
-    damage: 0,
+    damage: 1700000,
     lap: 3,
     clanBattle: 12,
     notes: "RAI-RAI [P-DEF 330  |  M-DEF 170]"
   },
   {
     boss: 3,
-    damage: 0,
+    damage: 1300000,
     lap: 3,
     clanBattle: 12,
     notes: "PRISMA HEN [P-DEF 355  |  M-DEF 160]"
   },
   {
     boss: 4,
-    damage: 0,
+    damage: 1300000,
     lap: 3,
     clanBattle: 12,
     notes: "CYCLOPS [P-DEF 370  |  M-DEF 200]"
   },
   {
     boss: 5,
-    damage: 0,
+    damage: 1300000,
     lap: 3,
     clanBattle: 12,
     notes: "TORPEDON [P-DEF 400  |  M-DEF 170]<br /><br />Use mage team."
+  },
+  {
+    special: 2,
+    clanBattle: 12,
+    notes:
+      "How to allocate your hits for Stage 3:<ol><li>Pick a Jun comp to use (Jun w/S Tamaki for C1, or Jun w/Kokkoro for C4).</li><li>Pick one of the tankless comps to use (S Kokkoro comp for C2, or Saren/Yukari for C3).</li><li>Use a mage comp on B5 (see the Boss 5 tab for comps).</li></ol>"
   }
 ];
