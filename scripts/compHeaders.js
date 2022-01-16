@@ -522,5 +522,40 @@ var compHeaders = [
     clanBattle: 12,
     notes:
       "How to allocate your hits for Stage 2:<ol><li>Use a mage comp on B5 (see the Boss 5 tab for comps). NY Yui and Nanaka comps are safer, so use those if you have them.</li><li>Pick one of the two Kaori teams below to attack with (use Kokkoro if hitting B4, or replace Kokkoro with S Tamaki to hit B2)</li><li>Pick one of the remaining two comps to hit with (Saren/Yukari comp for B3, or the Shiori comp for B1)</li></ol>"
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 3,
+    clanBattle: 12,
+    notes: "GOBLIN BRAVE [P-DEF 290  |  M-DEF 100]"
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 3,
+    clanBattle: 12,
+    notes: "RAI-RAI [P-DEF 330  |  M-DEF 170]"
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 3,
+    clanBattle: 12,
+    notes: "PRISMA HEN [P-DEF 355  |  M-DEF 160]"
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 3,
+    clanBattle: 12,
+    notes: "CYCLOPS [P-DEF 370  |  M-DEF 200]"
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 3,
+    clanBattle: 12,
+    notes: "TORPEDON [P-DEF 400  |  M-DEF 170]<br /><br />Use mage team."
   }
 ];
