@@ -3926,7 +3926,6 @@ var teamComps = [
     player: "Symphonia",
     notes: "FULL AUTO"
   },
-  ,
   {
     unit1: ["s kokkoro", 3],
     unit2: ["christina", 5],
@@ -3938,7 +3937,7 @@ var teamComps = [
     clanBattle: 12,
     lap: 3,
     special: 2,
-    player: "paoh",
+    player: "Symphonia",
     notes: "FULL AUTO - S Kokkoro dies but it's ok."
   },
   {
