@@ -3926,6 +3926,21 @@ var teamComps = [
     player: "Symphonia",
     notes: "FULL AUTO"
   },
+  ,
+  {
+    unit1: ["s kokkoro", 3],
+    unit2: ["christina", 5],
+    unit3: ["rei", 5],
+    unit4: ["tomo", 3],
+    unit5: ["makoto", 5],
+    damage: 1700000,
+    boss: 2,
+    clanBattle: 12,
+    lap: 3,
+    special: 2,
+    player: "paoh",
+    notes: "FULL AUTO - S Kokkoro dies but it's ok."
+  },
   {
     unit1: ["saren", 5],
     unit2: ["yukari", 5],
