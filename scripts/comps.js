@@ -3806,5 +3806,18 @@ var teamComps = [
     lap: 3,
     player: "Toon",
     notes: "FULL AUTO"
+  },
+  {
+    unit1: ["christina", 5],
+    unit2: ["s tamaki", 3],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 1648752,
+    boss: 1,
+    clanBattle: 12,
+    lap: 3,
+    player: "realda",
+    notes: "FULL AUTO - Rei has UE."
   }
 ];
