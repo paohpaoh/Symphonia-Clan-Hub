@@ -563,5 +563,110 @@ var compHeaders = [
     clanBattle: 12,
     notes:
       "How to allocate your hits for Stage 3:<ol><li>Pick a Jun comp to use (Jun w/S Tamaki for C1, or Jun w/Kokkoro for C4).</li><li>Pick one of the tankless comps to use (S Kokkoro comp for C2, or Saren/Yukari for C3).</li><li>Use a mage comp on B5 (see the Boss 5 tab for comps).</li></ol>"
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 1,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 1,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 1,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 1,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 1,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 2,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 2,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 2,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 2,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 2,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 3,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 3,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 3,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 3,
+    clanBattle: 13,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 3,
+    clanBattle: 13,
+    notes: ""
   }
 ];
