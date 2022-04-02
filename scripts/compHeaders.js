@@ -568,105 +568,105 @@ var compHeaders = [
     boss: 1,
     damage: 0,
     lap: 1,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 2,
     damage: 0,
     lap: 1,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 3,
     damage: 0,
     lap: 1,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 4,
     damage: 0,
     lap: 1,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 5,
     damage: 0,
     lap: 1,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 1,
     damage: 0,
     lap: 2,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 2,
     damage: 0,
     lap: 2,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 3,
     damage: 0,
     lap: 2,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 4,
     damage: 0,
     lap: 2,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 5,
     damage: 0,
     lap: 2,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 1,
     damage: 0,
     lap: 3,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 2,
     damage: 0,
     lap: 3,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 3,
     damage: 0,
     lap: 3,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 4,
     damage: 0,
     lap: 3,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   },
   {
     boss: 5,
     damage: 0,
     lap: 3,
-    clanBattle: 13,
+    clanBattle: 15,
     notes: ""
   }
 ];
