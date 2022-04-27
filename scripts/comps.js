@@ -4157,12 +4157,13 @@ var teamComps = [
     unit3: ["anne", 4],
     unit4: ["akari", 5],
     unit5: ["illya", 5],
-    damage: 2835569,
+    damage: 3275754,
     boss: 5,
     clanBattle: 15,
     lap: 2,
     player: "paoh",
-    notes: "FULL AUTO - UE on Akari."
+    notes:
+      "FULL AUTO - UE on Akari. Good if you are missing UE for both Yori and Anna, and you don't have Anne. If Illya dies, you can swap out Kyouka for Misato for a slightly safer run and a bit less damage."
   },
   {
     unit1: ["s karyl", 5],
@@ -4300,5 +4301,18 @@ var teamComps = [
     lap: 2,
     player: "realda",
     notes: "FULL AUTO - UE on Anna and Misato."
+  },
+  {
+    unit1: ["kyouka", 5],
+    unit2: ["s karyl", 5],
+    unit3: ["misato", 5],
+    unit4: ["anne", 4],
+    unit5: ["illya", 5],
+    damage: 2532153,
+    boss: 5,
+    clanBattle: 15,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - UE on Misato."
   }
 ];
