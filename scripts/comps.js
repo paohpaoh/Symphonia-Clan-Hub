@@ -4259,20 +4259,6 @@ var teamComps = [
       "FULL AUTO - UE on Makoto, Eriko, and Kaori. If your Makoto is dying at 13-4, equipping her middle left gear will allow her to survive."
   },
   {
-    unit1: ["kyouka", 5],
-    unit2: ["christina", 5],
-    unit3: ["djeeta", 5],
-    unit4: ["eriko", 5],
-    unit5: ["makoto", 5],
-    damage: 3600000,
-    boss: 3,
-    clanBattle: 15,
-    lap: 2,
-    player: "Symphonia",
-    special: 1,
-    notes: "MANUAL - UE on Shiori, Djeeta, and Eriko."
-  },
-  {
     unit1: ["s karyl", 5],
     unit2: ["anne", 4],
     unit3: ["yori", 5],
