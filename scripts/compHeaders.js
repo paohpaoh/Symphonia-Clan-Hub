@@ -615,24 +615,24 @@ var compHeaders = [
   },
   {
     boss: 3,
-    damage: 0,
+    damage: 3600000,
     lap: 2,
     clanBattle: 15,
     notes: ""
   },
   {
     boss: 4,
-    damage: 0,
+    damage: 4400000,
     lap: 2,
     clanBattle: 15,
     notes: ""
   },
   {
     boss: 5,
-    damage: 0,
+    damage: 3200000,
     lap: 2,
     clanBattle: 15,
-    notes: ""
+    notes: "Boss 5 gets your mage comp priority."
   },
   {
     boss: 1,
@@ -668,5 +668,11 @@ var compHeaders = [
     lap: 3,
     clanBattle: 15,
     notes: ""
+  },
+  {
+    special: 1,
+    clanBattle: 15,
+    notes:
+      "How to allocate your hits for Stage 2:<ol><li>Use the Shiori comp to <u>manually</u> hit B3, OR use the Kaori comp to hit B4. If you are able to hit 4.5m+ damage on B4, prioritize B4 over B3.</li><li>Use a mage comp to hit B5. Target damage is at least 3m+; see the Boss 5 tab for additional mage comps if you are missing Anne or one of the requisite UEs.</li><li>Use the last comp to hit either B1 or B2. These bosses are easy to hit, so feel free to replace part of the comp with stronger flex units you might have (e.g. UE Hiyori, NY Hiyori, O Ninon, etc.)</li></ol>"
   }
 ];
