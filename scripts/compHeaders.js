@@ -674,5 +674,11 @@ var compHeaders = [
     clanBattle: 15,
     notes:
       "How to allocate your hits for Stage 2:<ol><li>Use the Shiori comp to <u>manually</u> hit B3, OR use the Kaori comp to hit B4. If you are able to hit 4.5m+ damage on B4, prioritize B4 over B3.</li><li>Use a mage comp to hit B5. Target damage is at least 3m+; see the Boss 5 tab for additional mage comps if you are missing Anne or one of the requisite UEs.</li><li>Use the last comp to hit either B1 or B2. These bosses are easy to hit, so feel free to replace part of the comp with stronger flex units you might have (e.g. UE Hiyori, NY Hiyori, O Ninon, etc.)</li></ol>"
+  },
+  {
+    special: 2,
+    clanBattle: 15,
+    notes:
+      "Stage 2 hit allocations with two B5 hits:<ol><li>Use the Shiori comp to <u>manually</u> hit B3 (does 2.9m+ damage) OR full auto on B4 (does ~3.9m damage).</li><li>Use a mage comp to hit B5. Target damage is at least 3m+; see the Boss 5 tab for additional mage comps if you are missing Anne or one of the requisite UEs.</li><li>Use the Muimi comp to hit B5.</li></ol>"
   }
 ];

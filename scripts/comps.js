@@ -4314,5 +4314,74 @@ var teamComps = [
     lap: 2,
     player: "paoh",
     notes: "FULL AUTO - UE on Misato."
+  },
+  {
+    unit1: ["shinobu", 5],
+    unit2: ["christina", 5],
+    unit3: ["eriko", 5],
+    unit4: ["tomo", 5],
+    unit5: ["muimi", 5],
+    damage: 3542256,
+    boss: 5,
+    clanBattle: 15,
+    lap: 2,
+    player: "paoh",
+    notes: "FULL AUTO - UE on Shinobu, Eriko, and Tomo."
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["v shizuru", 4],
+    unit3: ["djeeta", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 3900000,
+    boss: 4,
+    clanBattle: 15,
+    lap: 2,
+    player: "Symphonia",
+    special: 2,
+    notes: "FULL AUTO - UE on Shiori, Djeeta, Kaori, and Makoto. "
+  },
+  {
+    unit1: ["s karyl", 5],
+    unit2: ["anne", 4],
+    unit3: ["yori", 5],
+    unit4: ["anna", 5],
+    unit5: ["illya", 5],
+    damage: 3600000,
+    boss: 5,
+    clanBattle: 15,
+    lap: 2,
+    player: "Symphonia",
+    special: 2,
+    notes:
+      "FULL AUTO - UE on Anna and Yori. If you are missing Anne or either of the requisite UEs, check the Boss 5 tab for replacement comps. "
+  },
+  {
+    unit1: ["shinobu", 5],
+    unit2: ["christina", 5],
+    unit3: ["eriko", 5],
+    unit4: ["tomo", 5],
+    unit5: ["muimi", 5],
+    damage: 3400000,
+    boss: 5,
+    clanBattle: 15,
+    lap: 2,
+    player: "Symphonia",
+    special: 2,
+    notes: "FULL AUTO - UE on Shinobu, Eriko, and Tomo."
+  },
+  {
+    unit1: ["shiori", 5],
+    unit2: ["v shizuru", 4],
+    unit3: ["djeeta", 5],
+    unit4: ["makoto", 5],
+    unit5: ["kaori", 5],
+    damage: 3935014,
+    boss: 4,
+    clanBattle: 15,
+    lap: 2,
+    player: "Bshandon",
+    notes: "FULL AUTO - UE on Shiori, Djeeta, Kaori, and Makoto. "
   }
 ];
