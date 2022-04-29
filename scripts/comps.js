@@ -4397,7 +4397,7 @@ var teamComps = [
     player: "Symphonia",
     special: 3,
     notes:
-      "MANUAL - UE on everyone, although Jun's doesn't matter as much. Can replace Shinobu with Rei (must have UE) for slightly less damage."
+      "FULL AUTO - UE on everyone, although Jun's doesn't matter as much. Can replace Shinobu with Rei (must have UE) for slightly less damage."
   },
   {
     unit1: ["yukari", 5],
@@ -4441,5 +4441,20 @@ var teamComps = [
     special: 3,
     notes:
       "ALMOST FULL AUTO - UE on Rin and Makoto. Spam click V Shizuru and Rin UB; turn off 2x speed when their UB is about to be up so you can UB as early as possible. It actually makes a difference, so don't skip this step."
+  },
+  {
+    unit1: ["s karyl", 5],
+    unit2: ["anne", 4],
+    unit3: ["yori", 5],
+    unit4: ["anna", 5],
+    unit5: ["illya", 5],
+    damage: 3600000,
+    boss: 5,
+    clanBattle: 15,
+    lap: 3,
+    player: "Symphonia",
+    special: 3,
+    notes:
+      "FULL AUTO - UE on Anna and Yori. If you are missing Anne or either of the requisite UEs, check the Boss 5 tab for replacement comps. "
   }
 ];
