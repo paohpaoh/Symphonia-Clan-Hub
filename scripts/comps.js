@@ -4330,7 +4330,7 @@ var teamComps = [
   },
   {
     unit1: ["shiori", 5],
-    unit2: ["v shizuru", 4],
+    unit2: ["v shizuru", 3],
     unit3: ["djeeta", 5],
     unit4: ["makoto", 5],
     unit5: ["kaori", 5],
@@ -4373,7 +4373,7 @@ var teamComps = [
   },
   {
     unit1: ["shiori", 5],
-    unit2: ["v shizuru", 4],
+    unit2: ["v shizuru", 3],
     unit3: ["djeeta", 5],
     unit4: ["makoto", 5],
     unit5: ["kaori", 5],
@@ -4383,5 +4383,63 @@ var teamComps = [
     lap: 2,
     player: "Bshandon",
     notes: "FULL AUTO - UE on Shiori, Djeeta, Kaori, and Makoto. "
+  },
+  {
+    unit1: ["shinobu", 5],
+    unit2: ["djeeta", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 1900000,
+    boss: 1,
+    clanBattle: 15,
+    lap: 3,
+    player: "Symphonia",
+    special: 3,
+    notes:
+      "MANUAL - UE on everyone, although Jun's doesn't matter as much. Can replace Shinobu with Rei (must have UE) for slightly less damage."
+  },
+  {
+    unit1: ["yukari", 5],
+    unit2: ["v shizuru", 3],
+    unit3: ["christina", 5],
+    unit4: ["makoto", 5],
+    unit5: ["muimi", 5],
+    damage: 2400000,
+    boss: 2,
+    clanBattle: 15,
+    lap: 3,
+    player: "Symphonia",
+    special: 3,
+    notes: "FULL AUTO - UE on Makoto."
+  },
+  {
+    unit1: ["djeeta", 5],
+    unit2: ["eriko", 5],
+    unit3: ["makoto", 5],
+    unit4: ["kaori", 5],
+    unit5: ["jun", 5],
+    damage: 2400000,
+    boss: 3,
+    clanBattle: 15,
+    lap: 3,
+    player: "Symphonia",
+    special: 3,
+    notes: "MANUAL - UE on everyone, although Jun's doesn't matter as much."
+  },
+  {
+    unit1: ["rin", 5],
+    unit2: ["v shizuru", 3],
+    unit3: ["christina", 5],
+    unit4: ["makoto", 5],
+    unit5: ["muimi", 5],
+    damage: 3000000,
+    boss: 4,
+    clanBattle: 15,
+    lap: 3,
+    player: "Symphonia",
+    special: 3,
+    notes:
+      "ALMOST FULL AUTO - UE on Rin and Makoto. Spam click V Shizuru and Rin UB; turn off 2x speed when their UB is about to be up so you can UB as early as possible. It actually makes a difference, so don't skip this step."
   }
 ];

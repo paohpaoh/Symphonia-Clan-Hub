@@ -680,5 +680,11 @@ var compHeaders = [
     clanBattle: 15,
     notes:
       "Stage 2 hit allocations with two B5 hits:<ol><li>Use the Shiori comp to <u>manually</u> hit B3 (does 2.9m+ damage) OR full auto on B4 (does ~3.9m damage).</li><li>Use a mage comp to hit B5. Target damage is at least 3m+; see the Boss 5 tab for additional mage comps if you are missing Anne or one of the requisite UEs.</li><li>Use the Muimi comp to hit B5.</li></ol>"
+  },
+  {
+    special: 3,
+    clanBattle: 15,
+    notes:
+      "Stage 3 hit allocations:<ol><li>Use a mage comp to hit C5. Do not use mages on any other boss if you can help it.</li><li>Use a Jun comp to hit either C1 OR C3 (C3 is full manual).</li><li>Use a Muimi comp to hit either C2 OR C4 (read the notes on the C4 comp for hitting C4).</li></ol>"
   }
 ];
