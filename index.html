@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <nav
-        class="navbar navbar-expand-sm navbar-dark border-bottom border-1 border-light w-100"
+        class="navbar navbar-expand-md navbar-dark border-bottom border-1 border-light w-100"
       >
         <div class="container-fluid">
           <div class="border-end border-1 border-light">
@@ -97,6 +97,20 @@
                   Hall of Honor
                 </button>
               </li>
+              <li class="nav-item mx-1" role="presentation">
+                <button
+                  class="nav-link py-1"
+                  id="museum-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#museum"
+                  type="button"
+                  role="tab"
+                  aria-controls="museum"
+                  aria-selected="false"
+                >
+                  Museum
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -139,7 +153,8 @@
                     <li>CB#14: Rank 105</li>
                     <li>CB#15: Rank 86</li>
                     <li>CB#16: Rank 98</li>
-                    <li>CB#17: Rank ?</li>
+                    <li>CB#17: Rank 98</li>
+                    <li>CB#18: Rank ?</li>
                   </ul>
                 </div>
               </div>
@@ -548,7 +563,8 @@
                       Grea
                     </li>
                     <li>
-                      <b>Jari</b>, who had to pull <b>300</b> times for Anne
+                      <b>Jari</b>, who had to pull <b>300</b> times for Anne and
+                      <b>290</b> times for S Maho
                     </li>
                     <li>
                       <b>Toon</b>, who had to pull <b>300</b> times for Muimi
@@ -593,6 +609,579 @@
                       Christina and <b>300</b> times for Muimi
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="museum"
+          role="tabpanel"
+          aria-labelledby="museum-tab"
+        >
+          <div class="mx-3 text-white">
+            <div class="mx-auto pt-1 mt-1">
+              <h4 class="text-center mb-3">
+                <b>Museum of Culture</b>
+              </h4>
+            </div>
+            <hr class="pt-0 mt-0 mb-4 text-white" />
+          </div>
+          <div class="mx-auto pt-4" style="max-width: 193px;">
+            <ul
+              class="nav rounded border border-white"
+              style="max-width: 193px;"
+              id="museumTabs"
+              role="tablist"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Browse Art Galleries</a
+                >
+                <ul class="dropdown-menu border-1 border-white">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="snapshots1-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#snapshots1"
+                      type="button"
+                      role="tab"
+                      aria-controls="snapshots1"
+                      aria-selected="true"
+                      href="#"
+                      >Symphonia Snapshots: Year One</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="sqorl-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#sqorlCollection"
+                      type="button"
+                      role="tab"
+                      aria-controls="sqorlCollection"
+                      aria-selected="false"
+                      href="#"
+                      >The Sqorl Collection</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      id="contest1-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#contest1"
+                      type="button"
+                      role="tab"
+                      aria-controls="contest1"
+                      aria-selected="false"
+                      href="#"
+                      >Symphonia Art Contest - August 2022</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div
+              class="tab-pane py-0"
+              id="snapshots1"
+              role="tabpanel"
+              aria-labelledby="snapshots1-tab"
+            >
+              <div class="museum mx-auto text-white">
+                <div class="text-center p-5">
+                  <h5>Symphonia Snapshots: Year One</h5>
+                  Within this gallery you will find tidbits spanning one year of
+                  Symphonia's history, beginning with the clan's inception in
+                  August 2021.
+                </div>
+                <div class="container mx-auto px-0">
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-top border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Fennek vs Totem" - Fennek</h6>
+                      <i
+                        >Self-portrait of Fennek fighting Boss 4 during CB#15,
+                        Stage 3.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/fennek vs totem boss cb15 4-30-22.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Apes Together" - Symphonia</h6>
+                      <i
+                        >Since time immemorial, only three constants have proven
+                        certain through the ages: death, taxes, and monke on
+                        B3.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/monke/monke.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"CB Trials" - Symphonia</h6>
+                      <i>RNG giveth, RNG taketh away.</i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/trials/trials.PNG"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Serious Business" - Realda</h6>
+                      <i
+                        >The first time a rando DM'ed me because someone in
+                        Symphonia accidentally laddered them in arena.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/realda ladder angey man (1-25-22).png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"A Mysterious Pet" - Asose</h6>
+                      <i
+                        >To this day, it is uncertain whether Asose's pet is
+                        actually a cat or a blurry egg.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/asose cat (2-9-22).PNG"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"The Price of Friendship" - Symphonia</h6>
+                      <i
+                        >Hayabusa remains unable to redeem his gift card as
+                        record inflation causes shop prices to soar.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/consolation prize.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"What a Pity" - Fennek</h6>
+                      <i
+                        >That one time Fennek pitied Muimi for literally no
+                        reason lol.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/fennek tale/fennek pity.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"ReiStare" - Symphonia</h6>
+                      <i>ReiStare.</i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/ReiStare (1-27-22).jpg"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Live by the Gamba . . ." - Symphonia</h6>
+                      <i
+                        >. . . or die by the gamba. In this case, it's just
+                        dying.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/illya/illya.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Role Origins" - Sqorl</h6>
+                      <i
+                        >Discover how Sqorl earned his Discord role as resident
+                        wyvern slayer.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl role origin (8-28-21).png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Role Origins" - Misery</h6>
+                      <i
+                        >Discover how Misery earned his Discord role of manual
+                        opener of boxes.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/misery origins/misery origins.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Role Origins" - Asose</h6>
+                      <i
+                        >Discover how Asose earned his Discord role as a person
+                        confused by pink hair.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/asose role origin.jpeg"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Role Origins" - Hayabusa</h6>
+                      <i
+                        >Discover how Hayabusa earned his Discord role of false
+                        boss pinger.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/hayabusa origins/hayabusa origins.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Role Origins" - M</h6>
+                      <i
+                        >Discover how M earned his special Akino Discord
+                        role.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/m origins.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Role Origins" - Youko</h6>
+                      <i
+                        >Discover how Youko earned her Discord role as a damage
+                        padder.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/youko origins.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane py-0"
+              id="sqorlCollection"
+              role="tabpanel"
+              aria-labelledby="sqorl-tab"
+            >
+              <div class="museum mx-auto text-white">
+                <div class="container mx-auto mx-0 px-0">
+                  <div class="text-center p-5">
+                    <h5>The Sqorl Collection</h5>
+                    Bold. Brash. Uncompromising. All of these adjectives
+                    describe Sqorl's style, yet no words could ever truly
+                    capture the heartstring-tugging expressiveness of his work.
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-top border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Keqing" - 8 September 2021</h6>
+                      <i
+                        >Sqorl's art world debut features a Genshin favorite
+                        sporting a fashionable winter sweater, a purple scissor
+                        blade complete with floating noodles, and ears that
+                        totally do not belong to a cat.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/Masterpiece (9-8-21).png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Gold Star" - 20 October 2021</h6>
+                      <i
+                        >Created as a token of appreciation for Mephis's
+                        willingness to lend us a Priconne account for CB#9,
+                        Sqorl's second work is a testament to the dedication and
+                        care he shows for his craft. Here, Sqorl has opted to
+                        manually paint a uniquely shaped star, as opposed to
+                        drawing a perfectly symmetrical one using a pre-built
+                        shape function that any basic editing program would
+                        have.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/mephis_star(10-20-21).jpeg"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Christmas Present" - 25 December 2021</h6>
+                      <i
+                        >Sqorl expresses the love he has for his clan
+                        members.</i
+                      >
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/christmas present.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Happy New Year" - 31 December 2021</h6>
+                      <i
+                        >Sqorl's last work of 2021 is a celebratory piece
+                        commemorating the arrival of a new year. This
+                        one-of-a-kind image depicts two maracas with white
+                        decorative strings on the handles, a pair of green
+                        spider plants, and that one cockroach monster from the
+                        first Men in Black movie.
+                      </i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/HNY2022(12-31-22).png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Twitch Prime" - 7 February 2022</h6>
+                      <i
+                        >Sqorl displays a strangely intense affinity for Twitch
+                        Prime.
+                      </i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/sqorl prime (2-7-22).png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Mage CB" - 21 March 2022</h6>
+                      <i
+                        >Here, Bshandon is shown wearing a green traffic cone
+                        for a hat while sitting on a chair crying, presumably
+                        because someone surgically removed his kidney and placed
+                        it next to him. Meanwhile, his fellow clan members
+                        display an incredible amount of limb flexibility and
+                        dance in a shower of asbestos.
+                      </i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/Clan_Mage_CB (3-21-22).png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <h6>"Dinosaur" - 15 May 2022</h6>
+                      <i
+                        >Sqorl presents his own take on the highly questionable
+                        costume prop that someone had posted in the Discord
+                        moments earlier.
+                      </i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/sqorl collection/dainosoar 5-15-22.png"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane py-0"
+              id="contest1"
+              role="tabpanel"
+              aria-labelledby="contest1-tab"
+            >
+              <div class="museum mx-auto text-white">
+                <div class="text-center p-5">
+                  <h5>Symphonia Art Contest - August 2022</h5>
+                  We are now accepting art contest entries! Show off your talent
+                  with a drawing or meme commemorating Symphonia's one-year
+                  anniversary. Once the contest deadline has passed, your work
+                  will be displayed here for others to vote on. The artist with
+                  the most votes will win a $25 gift card.<br />
+                  <br />Don't have a creative bone in your body? Enter anyways!
+                  <b
+                    >All contest entrants will also automatically be entered in
+                    a random raffle for a $10 gift card, so even your abstract
+                    caveman drawings have a chance to win!</b
+                  ><br />
+                  <br /><small
+                    >DM your submission to paoh on Discord by end-of-day on
+                    August 14. Entries should be related to Priconne or
+                    Symphonia in some way. All entries must come in .gif, .jpg,
+                    or .png format and should be accompanied by a title and
+                    description.</small
+                  >
+                </div>
+                <div class="container mx-auto mx-0 px-0">
+                  <div
+                    class="row text-center px-2 py-5 mx-0 border-2 border-top border-bottom"
+                  >
+                    <div class="col-md mx-1 py-2 mx-auto">
+                      <h6 class="text-center">
+                        "Picture Title" - Your Name Here
+                      </h6>
+                      <i>Description of your work.</i>
+                    </div>
+                    <div class="col-md mx-1 py-2 text-center bg-transparent">
+                      <img
+                        src="./images/Art/Symphonia-Logo-Animated.gif"
+                        onclick="window.open(this.src)"
+                        class="img-fluid museum-img"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

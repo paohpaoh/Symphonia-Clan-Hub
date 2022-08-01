@@ -60,7 +60,7 @@ button.active {
     display: none;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   body {
     background-image: url("../images/background5a.jpg");
   }
@@ -68,7 +68,7 @@ button.active {
     background-color: #160f16;
   }
 }
-@media only screen and (max-width: 575.5px) {
+@media only screen and (max-width: 767px) {
   div.container-fluid .border-end {
     border: none !important;
   }
@@ -91,7 +91,7 @@ button.active {
     margin-left: -6px !important;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   body {
     background-image: url("../images/mobile-background1.jpg");
   }
@@ -257,4 +257,11 @@ button.active {
 .carousel-control-prev-icon {
   width: 1em;
   height: 1em;
+}
+.museum {
+  // max-width: 600px;
+}
+.museum-img {
+  max-height: 500px;
+  border: 1px solid white;
 }
