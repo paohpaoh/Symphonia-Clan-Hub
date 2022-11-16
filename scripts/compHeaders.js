@@ -686,5 +686,40 @@ var compHeaders = [
     clanBattle: 15,
     notes:
       "Stage 3 hit allocations:<ol><li>Use a mage comp to hit C5. Do not use mages on any other boss if you can help it.</li><li>Use a Jun comp to hit either C1 OR C3 (C3 is full manual).</li><li>Use a Muimi comp to hit either C2 OR C4 (read the notes on the C4 comp for hitting C4).</li></ol>"
+  },
+  {
+    boss: 1,
+    damage: 5227000,
+    lap: 3,
+    clanBattle: 21,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 5240000,
+    lap: 3,
+    clanBattle: 21,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 5028000,
+    lap: 3,
+    clanBattle: 21,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 4631000,
+    lap: 3,
+    clanBattle: 21,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 5812000,
+    lap: 3,
+    clanBattle: 21,
+    notes: ""
   }
 ];

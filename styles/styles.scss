@@ -169,7 +169,8 @@ button.active {
   text-align: left;
 }
 .unit {
-  min-width: 50px !important;
+  min-width: 45px !important;
+  max-width: 75px !important;
 }
 .unit-range {
   max-width: 40px;

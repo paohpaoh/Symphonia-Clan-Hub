@@ -275,42 +275,42 @@ function generateComps() {
     });
     tempHeaders = tempHeaders.filter(item => item);
 
-    // // filter based on unchecked unit checkboxes
-    // $("input:checkbox:checked").each((i, e) => {
-    //   $(tempComps).each((x, tempComp) => {
-    //     if (
-    //       tempComps[x] &&
-    //       (tempComps[x].unit1[0] ==
-    //         $(e)
-    //           .next()
-    //           .text()
-    //           .toLowerCase() ||
-    //         tempComps[x].unit2[0] ==
-    //           $(e)
-    //             .next()
-    //             .text()
-    //             .toLowerCase() ||
-    //         tempComps[x].unit3[0] ==
-    //           $(e)
-    //             .next()
-    //             .text()
-    //             .toLowerCase() ||
-    //         tempComps[x].unit4[0] ==
-    //           $(e)
-    //             .next()
-    //             .text()
-    //             .toLowerCase() ||
-    //         tempComps[x].unit5[0] ==
-    //           $(e)
-    //             .next()
-    //             .text()
-    //             .toLowerCase())
-    //     ) {
-    //       tempComps[x] = "";
-    //     }
-    //   });
-    // });
-    // tempComps = tempComps.filter(item => item);
+    // filter based on unchecked unit checkboxes
+    $("input:checkbox:checked").each((i, e) => {
+      $(tempComps).each((x, tempComp) => {
+        if (
+          tempComps[x] &&
+          (tempComps[x].unit1[0] ==
+            $(e)
+              .next()
+              .text()
+              .toLowerCase() ||
+            tempComps[x].unit2[0] ==
+              $(e)
+                .next()
+                .text()
+                .toLowerCase() ||
+            tempComps[x].unit3[0] ==
+              $(e)
+                .next()
+                .text()
+                .toLowerCase() ||
+            tempComps[x].unit4[0] ==
+              $(e)
+                .next()
+                .text()
+                .toLowerCase() ||
+            tempComps[x].unit5[0] ==
+              $(e)
+                .next()
+                .text()
+                .toLowerCase())
+        ) {
+          tempComps[x] = "";
+        }
+      });
+    });
+    tempComps = tempComps.filter(item => item);
   }
 
   let sub = "";
@@ -466,14 +466,15 @@ var unitList = [
   { unit: "Kuuka", range: 130, cb: true },
   { unit: "Jun", range: 135, cb: true },
   { unit: "Kaori", range: 145, cb: true },
-  { unit: "NY Rei", range: 153, cb: false },
-  { unit: "Pecorine", range: 155, cb: false },
+  { unit: "NY Rei", range: 153, cb: true },
+  { unit: "Pecorine", range: 155, cb: true },
   { unit: "Ruka", range: 158, cb: true },
   { unit: "Nozomi", range: 160, cb: true },
   { unit: "Muimi", range: 162, cb: true },
   { unit: "Makoto", range: 165, cb: true },
   { unit: "NY Hiyori", range: 170, cb: true },
   { unit: "Akino", range: 180, cb: true },
+  { unit: "S Makoto", range: 180, cb: true },
   { unit: "Matsuri", range: 185, cb: false },
   { unit: "V Eriko", range: 187, cb: true },
   { unit: "C Ayane", range: 190, cb: true },
@@ -493,26 +494,30 @@ var unitList = [
   { unit: "Christina", range: 290, cb: true },
   { unit: "Mimi", range: 360, cb: true },
   { unit: "Shinobu", range: 365, cb: true },
+  { unit: "H Mimi", range: 365, cb: true },
   { unit: "V Shizuru", range: 385, cb: true },
   { unit: "Mahiru", range: 395, cb: false },
   { unit: "Yukari", range: 405, cb: true },
-  { unit: "Monika", range: 410, cb: false },
+  { unit: "Monika", range: 410, cb: true },
   { unit: "Ninon", range: 415, cb: false },
-  { unit: "Mifuyu", range: 420, cb: false },
+  { unit: "Mifuyu", range: 420, cb: true },
   { unit: "Illya", range: 425, cb: true },
+  { unit: "S Kaori", range: 425, cb: true },
   { unit: "Saren", range: 430, cb: true },
-  { unit: "Anna", range: 440, cb: false },
+  { unit: "Anna", range: 440, cb: true },
   { unit: "H Shinobu", range: 440, cb: false },
-  { unit: "S Mifuyu", range: 495, cb: false },
+  { unit: "S Mifuyu", range: 495, cb: true },
   { unit: "Kokkoro", range: 500, cb: true },
   { unit: "S Kokkoro", range: 535, cb: true },
-  { unit: "Rin", range: 550, cb: false },
+  { unit: "Rin", range: 550, cb: true },
   { unit: "Mitsuki", range: 565, cb: true },
   { unit: "Akari", range: 570, cb: true },
-  { unit: "Yori", range: 575, cb: false },
+  { unit: "Yori", range: 575, cb: true },
   { unit: "H Miyako", range: 590, cb: true },
   { unit: "Arisa", range: 625, cb: true },
-  { unit: "Rino", range: 700, cb: false },
+  { unit: "Anne", range: 630, cb: true },
+  { unit: "T Aoi", range: 680, cb: true },
+  { unit: "Rino", range: 700, cb: true },
   { unit: "Suzuna", range: 705, cb: true },
   { unit: "Shiori", range: 710, cb: true },
   { unit: "Io", range: 715, cb: false },
@@ -523,61 +528,64 @@ var unitList = [
   { unit: "Karyl", range: 750, cb: true },
   { unit: "Hatsune", range: 755, cb: true },
   { unit: "Misaki", range: 760, cb: false },
+  { unit: "Luna", range: 765, cb: true },
   { unit: "C Chika", range: 770, cb: true },
   { unit: "S Suzume", range: 775, cb: false },
   { unit: "S Karyl", range: 780, cb: true },
   { unit: "Aoi", range: 785, cb: false },
-  { unit: "Chika", range: 790, cb: false },
+  { unit: "Chika", range: 790, cb: true },
+  { unit: "S Maho", range: 792, cb: true },
   { unit: "Maho", range: 795, cb: false },
   { unit: "Yui", range: 800, cb: false },
   { unit: "Yuki", range: 805, cb: false },
   { unit: "Kyouka", range: 810, cb: true },
-  { unit: "H Misaki", range: 820, cb: true }
+  { unit: "H Misaki", range: 820, cb: true },
+  { unit: "H Kyouka", range: 820, cb: true }
 ];
 unitList.sort(compareNames);
 
-// // populate unit filter modal
-// var tempUnitList = JSON.parse(JSON.stringify(unitList));
-// // remove non-CB units
-// $(tempUnitList).each(i => {
-//   if (!tempUnitList[i].cb) {
-//     tempUnitList[i] = "";
-//   }
-// });
-// tempUnitList = tempUnitList.filter(item => item);
-// let unitCounter = 0;
-// const rowCount = Math.ceil(tempUnitList.length / 3);
-// var modalContent = document.createElement("div");
-// $(modalContent).addClass("row");
-// for (columns = 1; columns <= 3; columns += 1) {
-//   const tempColumn = document.createElement("div");
-//   $(tempColumn).addClass("col");
-//   for (units = 1; units <= rowCount; units += 1) {
-//     const tempFormCheck = document.createElement("div");
-//     $(tempFormCheck).addClass("form-check");
-//     let tempString =
-//       '<input class="form-check-input" type="checkbox" id="inlineCheckbox' +
-//       unitCounter +
-//       1 +
-//       '" value="option' +
-//       unitCounter +
-//       1 +
-//       '" /><label class="form-check-label" for="inlineCheckbox' +
-//       unitCounter +
-//       1 +
-//       '">' +
-//       tempUnitList[unitCounter].unit +
-//       "</label>";
-//     $(tempFormCheck).append(tempString);
-//     $(tempColumn).append(tempFormCheck);
-//     unitCounter += 1;
-//     if (unitCounter == $(tempUnitList).length) {
-//       break;
-//     }
-//   }
-//   $(modalContent).append(tempColumn);
-// }
-// $(".modal-body .container").append(modalContent);
+// populate unit filter modal
+var tempUnitList = JSON.parse(JSON.stringify(unitList));
+// remove non-CB units
+$(tempUnitList).each(i => {
+  if (!tempUnitList[i].cb) {
+    tempUnitList[i] = "";
+  }
+});
+tempUnitList = tempUnitList.filter(item => item);
+let unitCounter = 0;
+const rowCount = Math.ceil(tempUnitList.length / 3);
+var modalContent = document.createElement("div");
+$(modalContent).addClass("row");
+for (columns = 1; columns <= 3; columns += 1) {
+  const tempColumn = document.createElement("div");
+  $(tempColumn).addClass("col");
+  for (units = 1; units <= rowCount; units += 1) {
+    const tempFormCheck = document.createElement("div");
+    $(tempFormCheck).addClass("form-check");
+    let tempString =
+      '<input class="form-check-input" type="checkbox" id="inlineCheckbox' +
+      unitCounter +
+      1 +
+      '" value="option' +
+      unitCounter +
+      1 +
+      '" /><label class="form-check-label" for="inlineCheckbox' +
+      unitCounter +
+      1 +
+      '">' +
+      tempUnitList[unitCounter].unit +
+      "</label>";
+    $(tempFormCheck).append(tempString);
+    $(tempColumn).append(tempFormCheck);
+    unitCounter += 1;
+    if (unitCounter == $(tempUnitList).length) {
+      break;
+    }
+  }
+  $(modalContent).append(tempColumn);
+}
+$(".modal-body .container").append(modalContent);
 
 // show unit range from saren
 var tempUnitList2 = JSON.parse(JSON.stringify(unitList));
