@@ -721,5 +721,40 @@ var compHeaders = [
     lap: 3,
     clanBattle: 21,
     notes: ""
+  },
+  {
+    boss: 1,
+    damage: 0,
+    lap: 3,
+    clanBattle: 25,
+    notes: ""
+  },
+  {
+    boss: 2,
+    damage: 0,
+    lap: 3,
+    clanBattle: 25,
+    notes: ""
+  },
+  {
+    boss: 3,
+    damage: 0,
+    lap: 3,
+    clanBattle: 25,
+    notes: ""
+  },
+  {
+    boss: 4,
+    damage: 0,
+    lap: 3,
+    clanBattle: 25,
+    notes: ""
+  },
+  {
+    boss: 5,
+    damage: 0,
+    lap: 3,
+    clanBattle: 25,
+    notes: ""
   }
 ];

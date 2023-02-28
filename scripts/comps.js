@@ -4613,4 +4613,16 @@ var teamComps = [
   //   player: "the sweatlords",
   //   notes: "FULL AUTO"
   // }
+,
+{unit1:["kokkoro",6],unit2:["christina",5],unit3:["rei",6],unit4:["hiyori",5],unit5:["makoto",5],damage:5131313,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
+{unit1:["yui",6],unit2:["s saren",3],unit3:["christina",5],unit4:["rei",6],unit5:["makoto",5],damage:5400852,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
+{unit1:["s saren",3],unit2:["v shizuru",3],unit3:["christina",5],unit4:["rei",6],unit5:["s makoto",5],damage:7641697,boss:2,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
+{unit1:["ny suzume",1],unit2:["v shizuru",3],unit3:["christina",5],unit4:["rei",6],unit5:["ny suzume",1],damage:5958562,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
+{unit1:["ny suzume",1],unit2:["v shizuru",3],unit3:["christina",5],unit4:["rei",6],unit5:["ny suzume",1],damage:6000000,special:1,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
+{unit1:["s saren",3],unit2:["christina",5],unit3:["rei",6],unit4:["hiyori",5],unit5:["makoto",5],damage:5800053,boss:2,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
 ];
