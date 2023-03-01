@@ -4624,6 +4624,8 @@ var teamComps = [
 ,
 {unit1:["ny suzume",1],unit2:["v shizuru",3],unit3:["christina",5],unit4:["rei",6],unit5:["s makoto",5],damage:6000000,special:1,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
 ,
+{unit1:["kokkoro",6],unit2:["christina",5],unit3:["rei",6],unit4:["s makoto",5],unit5:["ny hiyori",5],damage:6400000,special:1,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
 {unit1:["s saren",3],unit2:["christina",5],unit3:["rei",6],unit4:["hiyori",5],unit5:["makoto",5],damage:5800053,boss:2,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
 ,
 {unit1:["christina",5],unit2:["rei",6],unit3:["djeeta",5],unit4:["hiyori",6],unit5:["makoto",5],damage:6497559,boss:2,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
@@ -4631,6 +4633,8 @@ var teamComps = [
 {unit1:["h kyouka",3],unit2:["s karyl",5],unit3:["neneka",5],unit4:["anna",5],unit5:["c illya",5],damage:6200000,special:1,boss:1,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
 ,
 {unit1:["luna",3],unit2:["ny yui",3],unit3:["neneka",5],unit4:["anna",5],unit5:["c illya",5],damage:5700000,special:1,boss:3,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
+,
+{unit1:["h kyouka",3],unit2:["yui",6],unit3:["s karyl",5],unit4:["luna",3],unit5:["neneka",5],damage:4800000,special:1,boss:5,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
 ,
 {unit1:["christina",5],unit2:["rei",6],unit3:["djeeta",5],unit4:["hiyori",6],unit5:["makoto",5],damage:6500000,special:1,boss:2,clanBattle:25,lap:3,player:"paoh",notes:"FULL AUTO"}
 ,
