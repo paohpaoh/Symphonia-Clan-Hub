@@ -756,5 +756,11 @@ var compHeaders = [
     lap: 3,
     clanBattle: 25,
     notes: ""
+  },
+  {
+    special: 1,
+    clanBattle: 25,
+    notes:
+      "How to allocate your hits for Stage 3:<ol><li>Hit C5 with the NY Suzume comp</li><li>Hit C1, C3, or C5 with one of the mage comps below (see spreadsheet for C5 mage comp)</li><li>Hit C2, C3, or C4 with one of the other physical comps below.</ol>"
   }
 ];
