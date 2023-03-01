@@ -120,8 +120,8 @@ button.active {
   // display: none;
   display: flex;
   justify-content: center !important;
-  button {
-  }
+  // button {
+  // }
   ul.dropdown-menu {
     background-color: #36303c !important;
   }
@@ -170,6 +170,7 @@ button.active {
 }
 .unit {
   min-width: 45px !important;
+  // max-width: 65px !important;
 }
 .unit-range {
   max-width: 40px;
@@ -218,8 +219,8 @@ button.active {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
 }
-.unit-filter-selector {
-}
+// .unit-filter-selector {
+// }
 .form-check {
   text-align: left !important;
 }
